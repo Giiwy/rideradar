@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>RideRadar - Carreras de ciclismo en España</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .filtros {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h1>RideRadar</h1>
+  <p style="text-align:center;">Explora y filtra pruebas de ciclismo en España</p>
+
+  <div class="filtros">
+    <select id="provinciaFiltro">
+      <option value="">Todas las provincias</option>
+    </select>
+    <input type="date" id="fechaFiltro">
+    <select id="tipoFiltro">
+      <option value="">Todos los tipos</option>
+      <option value="MTB">MTB</option>
+      <option value="Carretera">Carretera</option>
+      <option value="Enduro">Enduro</option>
+      <option value="Gravel">Gravel</option>
+      <option value="Cicloturista">Cicloturista</option>
+      <option value="Competición">Competición</option>
+    </select>
+  </div>
+
+  <table id="tablaCarreras">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Provincia</th>
+        <th>Fecha</th>
+        <th>Tipo</th>
+      </tr>
+    </thead>
+    <tbody id="cuerpoTabla">
+      <!-- Las filas se generarán con JavaScript -->
+    </tbody>
+  </table>
+
+  <script>
+    const carreras = [
+      { nombre: "Vuelta a Burgos MTB", provincia: "Burgos", fecha: "2025-07-15", tipo: "MTB" },
+      { nombre: "Desafío Cantabria Gravel", provincia: "Cantabria", fecha: "2025-09-10", tipo: "Gravel" },
+      { nombre: "Gran Fondo Madrid", provincia: "Madrid", fecha: "2025-08-20", tipo: "Carretera" },
+      { nombre: "Open Enduro Pirineos", provincia: "Huesca", fecha: "2025-06-30", tipo: "Enduro" }
+    ];
+
+    const provinciaFiltro = document.getElementById('provinciaFiltro');
+    const fechaFiltro = document.getElementById('fechaFiltro');
+    const tipoFiltro = document.getElementById('tipoFiltro');
+    const cuerpoTabla = document.getElementById('cuerpoTabla');
+
+    function cargarProvincias() {
+      const provincias = [...new Set(carreras.map(c => c.provincia))];
+      provincias.forEach(p => {
+        const opt = document.createElement('option');
+        opt.value = p;
+        opt.textContent = p;
+        provinciaFiltro.appendChild(opt);
+      });
+    }
+
+    function filtrarCarreras() {
+      const provincia = provinciaFiltro.value;
+      const fecha = fechaFiltro.value;
+      const tipo = tipoFiltro.value;
+
+      cuerpoTabla.innerHTML = "";
+      carreras.forEach(c => {
+        if ((provincia === "" || c.provincia === provincia) &&
+            (fecha === "" || c.fecha === fecha) &&
+            (tipo === "" || c.tipo === tipo)) {
+          const fila = `<tr>
+            <td>\${c.nombre}</td>
+            <td>\${c.provincia}</td>
+            <td>\${c.fecha}</td>
+            <td>\${c.tipo}</td>
+          </tr>`;
+          cuerpoTabla.innerHTML += fila;
+        }
+      });
+    }
+
+    provinciaFiltro.addEventListener('change', filtrarCarreras);
+    fechaFiltro.addEventListener('change', filtrarCarreras);
+    tipoFiltro.addEventListener('change', filtrarCarreras);
+
+    cargarProvincias();
+    filtrarCarreras();
+  </script>
+</body>
+</html>
