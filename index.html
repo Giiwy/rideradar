@@ -44,12 +44,6 @@
     <input type="date" id="fechaFiltro">
     <select id="tipoFiltro">
       <option value="">Todos los tipos</option>
-      <option value="MTB">MTB</option>
-      <option value="Carretera">Carretera</option>
-      <option value="Enduro">Enduro</option>
-      <option value="Gravel">Gravel</option>
-      <option value="Cicloturista">Cicloturista</option>
-      <option value="Competición">Competición</option>
     </select>
   </div>
 
@@ -63,39 +57,49 @@
       </tr>
     </thead>
     <tbody id="cuerpoTabla">
-      <!-- Las filas se generarán con JavaScript -->
     </tbody>
   </table>
 
   <script>
-    const carreras = [
-      { nombre: "Vuelta a Burgos MTB", provincia: "Burgos", fecha: "2025-07-15", tipo: "MTB" },
-      { nombre: "Desafío Cantabria Gravel", provincia: "Cantabria", fecha: "2025-09-10", tipo: "Gravel" },
-      { nombre: "Gran Fondo Madrid", provincia: "Madrid", fecha: "2025-08-20", tipo: "Carretera" },
-      { nombre: "Open Enduro Pirineos", provincia: "Huesca", fecha: "2025-06-30", tipo: "Enduro" }
-    ];
+    const csvUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQge-qUgk3U5--ECcmHxmRutJ5DQ5eg66L9LfU-oS2HZRsKsw_2sPU5Ix5ZaC1qXqN2ZISUpS9weH1a/pub?output=csv";
+    let carreras = [];
 
-    const provinciaFiltro = document.getElementById('provinciaFiltro');
-    const fechaFiltro = document.getElementById('fechaFiltro');
-    const tipoFiltro = document.getElementById('tipoFiltro');
-    const cuerpoTabla = document.getElementById('cuerpoTabla');
+    async function cargarCSV() {
+      const res = await fetch(csvUrl);
+      const texto = await res.text();
+      const filas = texto.trim().split('\n').slice(1); // Ignorar encabezado
+      carreras = filas.map(fila => {
+        const [nombre, provincia, fecha, tipo] = fila.split(',');
+        return { nombre, provincia, fecha, tipo };
+      });
+    }
 
-    function cargarProvincias() {
-      const provincias = [...new Set(carreras.map(c => c.provincia))];
+    function cargarFiltros() {
+      const provincias = [...new Set(carreras.map(c => c.provincia))].sort();
+      const tipos = [...new Set(carreras.map(c => c.tipo))].sort();
+
       provincias.forEach(p => {
         const opt = document.createElement('option');
         opt.value = p;
         opt.textContent = p;
-        provinciaFiltro.appendChild(opt);
+        document.getElementById('provinciaFiltro').appendChild(opt);
+      });
+
+      tipos.forEach(t => {
+        const opt = document.createElement('option');
+        opt.value = t;
+        opt.textContent = t;
+        document.getElementById('tipoFiltro').appendChild(opt);
       });
     }
 
     function filtrarCarreras() {
-      const provincia = provinciaFiltro.value;
-      const fecha = fechaFiltro.value;
-      const tipo = tipoFiltro.value;
-
+      const provincia = document.getElementById('provinciaFiltro').value;
+      const fecha = document.getElementById('fechaFiltro').value;
+      const tipo = document.getElementById('tipoFiltro').value;
+      const cuerpoTabla = document.getElementById('cuerpoTabla');
       cuerpoTabla.innerHTML = "";
+
       carreras.forEach(c => {
         if ((provincia === "" || c.provincia === provincia) &&
             (fecha === "" || c.fecha === fecha) &&
@@ -111,12 +115,17 @@
       });
     }
 
-    provinciaFiltro.addEventListener('change', filtrarCarreras);
-    fechaFiltro.addEventListener('change', filtrarCarreras);
-    tipoFiltro.addEventListener('change', filtrarCarreras);
+    document.getElementById('provinciaFiltro').addEventListener('change', filtrarCarreras);
+    document.getElementById('fechaFiltro').addEventListener('change', filtrarCarreras);
+    document.getElementById('tipoFiltro').addEventListener('change', filtrarCarreras);
 
-    cargarProvincias();
-    filtrarCarreras();
+    async function iniciar() {
+      await cargarCSV();
+      cargarFiltros();
+      filtrarCarreras();
+    }
+
+    iniciar();
   </script>
 </body>
 </html>
