@@ -1,1 +1,330 @@
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  background: #f2f4f8;
+  color: #222;
+}
+
+/* --- HEADER --- */
+header {
+  background: linear-gradient(180deg, #f6f7fa 60%, #dfe3ea 100%);
+  box-shadow: 0 2px 24px 0 #dde2ee;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.logo img {
+  width: 28px;
+  border-radius: 8px;
+}
+
+/* --- MENÚ DESKTOP --- */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+  transition: max-height 0.3s;
+}
+
+.menu li a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.menu li a:hover {
+  color: #3578e5;
+}
+
+/* --- HAMBURGUESA (MOBILE) --- */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #222;
+  cursor: pointer;
+}
+
+/* --- HERO --- */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 48px 0 28px 0;
+}
+
+.hero-icon {
+  width: 58px;
+  margin-bottom: 10px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 3px 10px #dde2ee;
+  padding: 10px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0.2em 0 0.1em 0;
+  letter-spacing: -1px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #444;
+  margin: 0;
+  margin-bottom: 18px;
+  font-weight: 400;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* --- MODALIDAD --- */
+.modalidad {
+  padding: 38px 16px 0 16px;
+  text-align: center;
+}
+
+.modalidad h2 {
+  font-size: 2.3rem;
+  margin-bottom: 0.3em;
+}
+
+.modalidad .desc {
+  margin-bottom: 2.5em;
+  color: #333;
+}
+
+/* --- CARDS --- */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 28px;
+  justify-content: center;
+  margin-bottom: 44px;
+}
+
+.card {
+  background: #f6f7fa;
+  box-shadow: 0 3px 18px 0 #dde2ee;
+  border-radius: 16px;
+  padding: 32px 24px;
+  text-align: left;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 10px 32px 0 #ccd1e2;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 0.8em;
+  font-size: 1.25rem;
+}
+
+/* --- CONTACTO --- */
+.contacto {
+  margin: 32px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-card {
+  background: #fff;
+  box-shadow: 0 3px 16px 0 #dde2ee;
+  border-radius: 16px;
+  padding: 22px 26px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.icon-email {
+  font-size: 2rem;
+  color: #3578e5;
+  margin-top: 4px;
+}
+
+.contact-card a {
+  color: #3578e5;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+/* --- FOOTER --- */
+footer {
+  background: #eceff5;
+  margin-top: 60px;
+  padding: 30px 0 10px 0;
+  font-size: 1rem;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 16px 16px 16px;
+  border-bottom: 1px solid #dde2ee;
+  gap: 2rem;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+}
+
+.footer-logo img {
+  width: 24px;
+  border-radius: 7px;
+}
+
+.footer-top ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 18px;
+  margin: 0;
+}
+
+.footer-top ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.footer-top ul li a:hover {
+  color: #3578e5;
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 3px;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: #888;
+  font-size: 0.92em;
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.footer-bottom a {
+  color: #3578e5;
+  text-decoration: none;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 990px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem 0.8rem;
+  }
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 750px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .contact-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 14px;
+  }
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+  .modalidad h2 {
+    font-size: 1.6rem;
+  }
+  main {
+    padding: 0 5px;
+  }
+  .footer-bottom {
+    font-size: 0.88em;
+  }
+}
+
+/* --- MENÚ HAMBURGUESA RESPONSIVE --- */
+@media (max-width: 600px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 0.8rem 0.5rem;
+  }
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 17px;
+    z-index: 20;
+  }
+  .menu {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    width: 100%;
+    background: #f6f7fa;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    text-align: right;
+    border-radius: 0 0 14px 14px;
+    box-shadow: 0 3px 12px #dde2ee;
+    padding: 0;
+    transition: max-height 0.4s;
+  }
+  .menu.open {
+    max-height: 220px;
+    padding: 10px 0 12px 0;
+    z-index: 21;
+  }
+  .menu li {
+    margin: 0 14px 12px 0;
+    display: block;
+  }
+  .menu li:last-child {
+    margin-bottom: 0;
+  }
+}
 
