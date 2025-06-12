@@ -1,5 +1,5 @@
 
-fetch('data/carreras.json')
+fetch('carreras.json')
   .then(response => response.json())
   .then(carreras => {
     const contenedor = document.getElementById('contenedor-carreras');
