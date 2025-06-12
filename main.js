@@ -1,10 +1,9 @@
-
 fetch('carreras.json')
-  .then(res => res.json())
-  .then(data => console.log(data))
-  .catch(err => console.error(err));;
-    });
+  .then(res => {
+    if (!res.ok) throw new Error('No se pudo cargar el JSON');
+    return res.json();
   })
-  .catch(error => {
-    console.error("Error cargando las carreras:", error);
-  });
+  .then(data => {
+    console.log(data); // o renderiza los datos
+  })
+  .catch(err => console.error('Error cargando las carreras:', err));
