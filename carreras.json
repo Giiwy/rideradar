@@ -1,0 +1,29 @@
+[
+  {
+    "nombre": "Desafío Sierra Espuña",
+    "fecha": "2025-09-15",
+    "lugar": "Totana (Murcia)",
+    "categoria": "MTB",
+    "tipo": "Maratón",
+    "distancia": "80 km",
+    "web": "https://enlaceacarrera.com"
+  },
+  {
+    "nombre": "Gravel Bajo Segura",
+    "fecha": "2025-10-01",
+    "lugar": "Orihuela",
+    "categoria": "Gravel",
+    "tipo": "Cicloturista",
+    "distancia": "60 km",
+    "web": "https://gravelbajosegura.com"
+  },
+  {
+    "nombre": "Subida al Pico del Águila",
+    "fecha": "2025-11-10",
+    "lugar": "Caravaca",
+    "categoria": "Carretera",
+    "tipo": "Contrarreloj",
+    "distancia": "12 km",
+    "web": "https://inscripciones.com"
+  }
+]
