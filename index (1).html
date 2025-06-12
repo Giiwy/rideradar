@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rideradar - Encuentra tu próxima aventura</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <h1>Agenda de Carreras de Ciclismo</h1>
+
+  <div id="filtros">
+    <input type="text" id="buscador" placeholder="Buscar por nombre o ubicación..." />
+    <select id="filtro-modalidad">
+      <option value="">Todas las modalidades</option>
+      <option value="Gravel">Gravel</option>
+      <option value="BTT XCM">BTT XCM</option>
+      <option value="BTT XCO">BTT XCO</option>
+      <option value="Enduro MTB">Enduro MTB</option>
+      <option value="Marcha cicloturista">Marcha cicloturista</option>
+      <option value="Carretera">Carretera</option>
+    </select>
+  </div>
+
+  <div id="contenedor-carreras"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
