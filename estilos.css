@@ -63,3 +63,8 @@ a {
 a:hover {
   text-decoration: underline;
 }
+.titulo-principal {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
