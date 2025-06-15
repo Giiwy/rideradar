@@ -1,4 +1,5 @@
 let datosCarreras = [];
+let ordenAscendente = true; // Estado para el botón de orden
 
 const urlCSV = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQge-qUgk3U5--ECcmHxmRutJ5DQ5eg66L9LfU-oS2HZRsKsw_2sPU5Ix5ZaC1qXqN2ZISUpS9weH1a/pub?gid=0&single=true&output=csv';
 
@@ -51,6 +52,18 @@ const renderizarTabla = (datos) => {
   contenedor.appendChild(tabla);
 };
 
+const ordenarYMostrar = () => {
+  const copia = [...datosCarreras];
+
+  copia.sort((a, b) => {
+    const fechaA = new Date(a.Fecha || '2100-01-01');
+    const fechaB = new Date(b.Fecha || '2100-01-01');
+    return ordenAscendente ? fechaA - fechaB : fechaB - fechaA;
+  });
+
+  renderizarTabla(copia);
+};
+
 const cargarCSVdesdeGSheets = async () => {
   try {
     const respuesta = await fetch(urlCSV);
@@ -70,7 +83,7 @@ const cargarCSVdesdeGSheets = async () => {
     });
 
     datosCarreras = datos;
-    renderizarTabla(datosCarreras);
+    ordenarYMostrar();
 
   } catch (err) {
     console.error('Error cargando las carreras:', err);
@@ -80,6 +93,18 @@ const cargarCSVdesdeGSheets = async () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   cargarCSVdesdeGSheets();
+
+  // Añadir el comportamiento del botón de orden
+  const botonOrden = document.getElementById('boton-orden-fecha');
+  if (botonOrden) {
+    botonOrden.addEventListener('click', () => {
+      ordenAscendente = !ordenAscendente;
+      botonOrden.innerText = ordenAscendente
+        ? "Ordenar por fecha (ascendente)"
+        : "Ordenar por fecha (descendente)";
+      ordenarYMostrar();
+    });
+  }
 });
 
 document.addEventListener('input', () => {
@@ -97,4 +122,3 @@ document.addEventListener('input', () => {
 
   renderizarTabla(filtrado);
 });
-
