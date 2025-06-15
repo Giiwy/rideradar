@@ -1,7 +1,6 @@
 let datosCarreras = [];
 
-// 👉 Reemplaza esta URL por tu enlace público en formato CSV desde Google Sheets
-const urlCSV = 'https://docs.google.com/spreadsheets/d/e/TU_ENLACE_AQUI/pub?output=csv';
+const urlCSV = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQge-qUgk3U5--ECcmHxmRutJ5DQ5eg66L9LfU-oS2HZRsKsw_2sPU5Ix5ZaC1qXqN2ZISUpS9weH1a/pub?gid=0&single=true&output=csv';
 
 const normalizar = (valor) => {
   return (valor && valor.trim() !== "" && valor.trim() !== "-" && valor.trim() !== "") 
