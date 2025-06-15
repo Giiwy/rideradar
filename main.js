@@ -1,5 +1,8 @@
 let datosCarreras = [];
 
+// 👉 Reemplaza esta URL por tu enlace público en formato CSV desde Google Sheets
+const urlCSV = 'https://docs.google.com/spreadsheets/d/e/TU_ENLACE_AQUI/pub?output=csv';
+
 const normalizar = (valor) => {
   return (valor && valor.trim() !== "" && valor.trim() !== "-" && valor.trim() !== "") 
     ? valor.replaceAll("?", "").trim() 
@@ -49,19 +52,36 @@ const renderizarTabla = (datos) => {
   contenedor.appendChild(tabla);
 };
 
-fetch('/carreras.json')
-  .then(res => {
-    if (!res.ok) throw new Error('No se pudo cargar el JSON');
-    return res.json();
-  })
-  .then(data => {
-    datosCarreras = data;
+const cargarCSVdesdeGSheets = async () => {
+  try {
+    const respuesta = await fetch(urlCSV);
+    if (!respuesta.ok) throw new Error('No se pudo obtener el CSV');
+
+    const texto = await respuesta.text();
+    const lineas = texto.trim().split('\n');
+    const cabeceras = lineas[0].split(',');
+
+    const datos = lineas.slice(1).map(linea => {
+      const valores = linea.split(',');
+      const obj = {};
+      cabeceras.forEach((cab, i) => {
+        obj[cab.trim()] = valores[i] ? valores[i].trim() : "";
+      });
+      return obj;
+    });
+
+    datosCarreras = datos;
     renderizarTabla(datosCarreras);
-  })
-  .catch(err => {
+
+  } catch (err) {
     console.error('Error cargando las carreras:', err);
     document.getElementById('contenedor-carreras').innerText = '⚠️ Error cargando los datos.';
-  });
+  }
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  cargarCSVdesdeGSheets();
+});
 
 document.addEventListener('input', () => {
   const texto = document.getElementById('buscador').value.toLowerCase();
@@ -78,3 +98,4 @@ document.addEventListener('input', () => {
 
   renderizarTabla(filtrado);
 });
+
