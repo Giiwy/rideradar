@@ -18,13 +18,9 @@ h1 {
   font-size: 1rem;
   line-height: 1.6;
 }
-
-#filtros {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  margin-bottom: 1.5rem;
+#controles {
+  text-align: right;
+  margin: 1rem 2rem;
 }
 
 #boton-orden-fecha {
@@ -40,6 +36,15 @@ h1 {
 
 #boton-orden-fecha:hover {
   background-color: #1e6fbb;
+}
+
+
+#filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
 }
 
 #filtros input,
