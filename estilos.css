@@ -1,23 +1,37 @@
+/* 🌐 Estilos generales */
+body {
+  font-family: "Segoe UI", sans-serif;
+  padding: 1.5rem;
+  background-color: #f2f7fa;
+  color: #333;
+}
+
+/* 🧭 Título e introducción */
 .titulo-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 900px;
   margin: 2rem auto;
   padding: 1rem;
+  gap: 1rem;
   text-align: center;
 }
 
 .titulo-principal h1 {
   font-size: 2.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 .titulo-principal .intro {
   text-align: justify;
   font-size: 1.1rem;
   line-height: 1.6;
-  margin: 0 auto;
   max-width: 700px;
+  margin: 0 auto;
 }
 
+/* 📱 Responsive */
 @media screen and (max-width: 768px) {
   .titulo-principal h1 {
     font-size: 1.8rem;
@@ -30,34 +44,8 @@
     padding: 0 1rem;
   }
 }
-body {
-  font-family: "Segoe UI", sans-serif;
-  padding: 1.5rem;
-  background-color: #f2f7fa;
-  color: #333;
-}
-.titulo-principal {
-  display: flex;
-  flex-direction: column;
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 1rem;
-  gap: 1rem;
-}
 
-h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem; 
-  text-align: center;
-}
-
-.intro {
-  text-align: justify;
-  max-width: 800px;
-  margin-top: 1rem;
-  font-size: 1rem;
-  line-height: 1.6;
-}
+/* 🔘 Botón de orden por fecha */
 #controles {
   text-align: right;
   margin: 1rem 2rem;
@@ -78,7 +66,7 @@ h1 {
   background-color: #1e6fbb;
 }
 
-
+/* 🔍 Filtros */
 #filtros {
   display: flex;
   flex-wrap: wrap;
@@ -96,6 +84,7 @@ h1 {
   background-color: #fff;
 }
 
+/* 📋 Tabla de carreras */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -104,11 +93,6 @@ table {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
   overflow: hidden;
-}
-
-#controles {
-  text-align: right;
-  margin: 1rem 2rem;
 }
 
 th {
@@ -127,6 +111,7 @@ tr:nth-child(even) {
   background-color: #f4f9fc;
 }
 
+/* 🔗 Enlaces */
 a {
   color: #0077cc;
   text-decoration: none;
@@ -135,7 +120,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
-.titulo-principal {
+
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
