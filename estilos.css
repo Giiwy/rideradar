@@ -46,6 +46,26 @@ table {
   overflow: hidden;
 }
 
+#controles {
+  text-align: right;
+  margin: 1rem 2rem;
+}
+
+#boton-orden-fecha {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #2e86de;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#boton-orden-fecha:hover {
+  background-color: #1e6fbb;
+}
+
 th {
   background-color: #1a3e5d;
   color: white;
