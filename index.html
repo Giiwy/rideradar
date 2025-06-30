@@ -2,37 +2,137 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="Descubre todas las carreras ciclistas de España 2025. Pruebas MTB, carretera, gravel y enduro organizadas por fecha y tipo. Encuentra tu próxima aventura sobre ruedas.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6956985497786675" crossorigin="anonymous"></script>
+  <meta name="description" content="Descubre todas las carreras ciclistas de España 2025. Pruebas MTB, carretera, gravel y enduro organizadas por fecha y tipo. Encuentra tu próxima aventura sobre ruedas.">
+  <meta name="keywords" content="ciclismo, carreras ciclismo España 2025, MTB, gravel, carretera, enduro, calendario ciclista, eventos ciclistas España">
+  <meta name="author" content="RideRadar">
+  
   <title>Rideradar - Encuentra tu próxima aventura</title>
   <link rel="stylesheet" href="estilos.css">
+
+  <!-- Google Ads -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6956985497786675" crossorigin="anonymous"></script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QMBEPPFFJJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-QMBEPPFFJJ');
+  </script>
+
+  <style>
+    .eventos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .tarjeta-evento {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+    }
+    .tarjeta-evento img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .contenido-tarjeta {
+      padding: 15px;
+    }
+    .modalidad {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .modalidad.MTB { color: red; }
+    .modalidad.Gravel { color: green; }
+    .modalidad.Carretera { color: blue; }
+    .modalidad.Enduro { color: orange; }
+    .info-evento {
+      font-size: 0.9em;
+      color: #555;
+      margin-bottom: 5px;
+    }
+    .nombre-evento {
+      font-size: 1.1em;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .btn-ver {
+      margin-top: auto;
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+      border-top: 1px solid #eee;
+    }
+  </style>
 </head>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QMBEPPFFJJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-QMBEPPFFJJ');
-</script>
-
 <body>
-  <div class="titulo-principal">
-  <h1>Agenda de Carreras de Ciclismo en España 2025</h1>
-  <p class="intro">
-    Bienvenido a RideRadar, tu guía de confianza para encontrar las mejores carreras, marchas y eventos ciclistas de España en 2025.
-  </p>
-</div>
+  <header class="titulo-principal">
+    <h1>Agenda de Carreras de Ciclismo en España 2025</h1>
+    <p class="intro">
+      Bienvenido a RideRadar, tu guía de confianza para encontrar las mejores carreras, marchas y eventos ciclistas de España en 2025.
+    </p>
+  </header>
 
-  <div id="controles">
-  <button id="boton-orden-fecha">Ordenar por fecha (ascendente)</button>
-  </div>
+  <section id="controles">
+    <button id="boton-orden-fecha">Ordenar por fecha (ascendente)</button>
+  </section>
 
-  <div id="contenedor-carreras"></div>
+  <!-- Contenedor de tarjetas -->
+  <section class="eventos-grid" id="contenedor-carreras"></section>
 
-  <script src="main.js"></script>
+  <!-- Script de carga de eventos -->
+  <script>
+    let ordenAscendente = true;
+
+    function cargarEventos() {
+      fetch('eventos_rideradar.json')
+        .then(res => res.json())
+        .then(eventos => {
+          mostrarEventos(eventos);
+          document.getElementById('boton-orden-fecha').addEventListener('click', () => {
+            eventos.sort((a, b) => {
+              const fechaA = new Date(a.fecha);
+              const fechaB = new Date(b.fecha);
+              return ordenAscendente ? fechaA - fechaB : fechaB - fechaA;
+            });
+            ordenAscendente = !ordenAscendente;
+            mostrarEventos(eventos);
+          });
+        });
+    }
+
+    function mostrarEventos(eventos) {
+      const contenedor = document.getElementById('contenedor-carreras');
+      contenedor.innerHTML = '';
+
+      eventos.forEach(e => {
+        const tarjeta = document.createElement('article');
+        tarjeta.className = 'tarjeta-evento';
+
+        tarjeta.innerHTML = `
+          <img src="${e.imagen}" alt="${e.nombre}">
+          <div class="contenido-tarjeta">
+            <div class="modalidad ${e.modalidad}">${e.modalidad}</div>
+            <div class="info-evento">📅 ${e.fecha} | 📍 ${e.provincia}</div>
+            <div class="nombre-evento">${e.nombre}</div>
+            <a href="${e.web}" class="btn-ver" target="_blank" rel="noopener">Ver más</a>
+          </div>
+        `;
+        contenedor.appendChild(tarjeta);
+      });
+    }
+
+    cargarEventos();
+  </script>
 </body>
 </html>
-
