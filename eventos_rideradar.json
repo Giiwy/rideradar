@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos RideRadar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f6f6f6;
+      margin: 0;
+      padding: 20px;
+    }
+    .event-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 15px;
+    }
+    .modalidad {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .modalidad.MTB { color: red; }
+    .modalidad.Gravel { color: green; }
+    .modalidad.Carretera { color: blue; }
+    .info {
+      font-size: 0.9em;
+      color: #555;
+      margin-bottom: 5px;
+    }
+    .event-title {
+      font-size: 1.1em;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .ver-btn {
+      margin-top: auto;
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+  <h1>Eventos RideRadar</h1>
+  <div class="event-container" id="eventContainer"></div>
+
+  <script>
+    fetch('eventos_rideradar.json')
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById('eventContainer');
+
+        data.forEach(evento => {
+          const card = document.createElement('div');
+          card.className = 'card';
+
+          card.innerHTML = `
+            <img src="${evento.imagen}" alt="${evento.nombre}">
+            <div class="card-content">
+              <div class="modalidad ${evento.modalidad}">${evento.modalidad}</div>
+              <div class="info">📅 ${evento.fecha} | 📍 ${evento.provincia}</div>
+              <div class="event-title">${evento.nombre}</div>
+              <a href="${evento.web}" class="ver-btn" target="_blank">Ver más</a>
+            </div>
+          `;
+
+          container.appendChild(card);
+        });
+      });
+  </script>
+</body>
+</html>
