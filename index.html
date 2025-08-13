@@ -2,13 +2,38 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RideRadar - Inicio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RideRadar – Inicio</title>
+  <style>
+    :root{
+      --bg:#f5f7fb; --card:#fff; --ink:#111827; --muted:#6b7280;
+      --mtb:#16a34a; --carretera:#2563eb; --gravel:#fb923c; --enduro:#ef4444;
+      --shadow:0 6px 20px rgba(0,0,0,.06);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+    header{background:#1f2937;color:#fff;padding:1rem}
+    header h1{margin:.2rem 0;font-size:1.35rem}
+    nav{display:flex;gap:.8rem;flex-wrap:wrap;justify-content:center}
+    nav a{color:#fff;text-decoration:none;font-weight:600;padding:.25rem .5rem;border-radius:.5rem}
+    nav a:hover{background:rgba(255,255,255,.12)}
+    main{max-width:1200px;margin:0 auto;padding:1rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem}
+    .banner{grid-column:1/-1;margin-bottom:.5rem;background:var(--card);border:1px solid #eef2f7;border-radius:12px;box-shadow:var(--shadow);padding:1rem}
+    .evento{background:var(--card);border:1px solid #eef2f7;border-left:6px solid #e5e7eb;border-radius:12px;box-shadow:var(--shadow);padding:1rem}
+    .evento h3{margin:.2rem 0 .5rem;font-size:1.1rem}
+    .evento p{margin:.25rem 0;color:var(--ink)}
+    .evento .muted{color:var(--muted)}
+    .evento a{display:inline-block;margin-top:.4rem;font-weight:600;text-decoration:none}
+    .mtb{border-left-color:var(--mtb)}
+    .carretera{border-left-color:var(--carretera)}
+    .gravel{border-left-color:var(--gravel)}
+    .enduro{border-left-color:var(--enduro)}
+    .pill{display:inline-block;padding:.15rem .5rem;border-radius:999px;font-size:.8rem;border:1px solid #e5e7eb;margin-left:.4rem}
+  </style>
 </head>
 <body>
   <header>
-    <h1>RideRadar - Inicio</h1>
+    <h1>RideRadar</h1>
     <nav>
       <a href="index.html">Inicio</a>
       <a href="mtb.html">MTB</a>
@@ -17,10 +42,80 @@
       <a href="enduro.html">Enduro</a>
     </nav>
   </header>
+
   <main id="eventos-container" data-modalidad="todas">
-    <!-- Las tarjetas se cargarán aquí -->
+    <section class="banner">
+      <strong>Consejo:</strong> asegúrate de tener el archivo <code>/data/eventos.json</code> en la raíz del sitio (carpeta <code>data</code>).
+    </section>
+    <noscript>Activa JavaScript para ver los eventos.</noscript>
   </main>
-  <script src="js/utils.js"></script>
-  <script src="js/main.js"></script>
+
+  <script>
+    // ===== CONFIG =====
+    // Para GitHub Pages o sitio bajo subcarpeta, usa ruta RELATIVA:
+    const DATA_URL = "data/eventos.json";  // ← importante
+
+    // ===== RENDER =====
+    function eventoHTML(e){
+      const modalidad = (e.modalidad||"").toLowerCase();
+      const clase = ["evento", modalidad].join(" ");
+      const enlaces = [];
+      if(e.enlace) enlaces.push(`<a href="${e.enlace}" target="_blank" rel="noopener">Enlace oficial</a>`);
+      if(Number.isFinite(e.id)) enlaces.push(`<a href="detalle.html?id=${e.id}">Ver detalles</a>`);
+      return `
+        <article class="${clase}">
+          <h3>${e.nombre||"Evento"} <span class="pill">${(modalidad||"").toUpperCase()}</span></h3>
+          <p><strong>Fecha:</strong> ${e.fecha||"-"}</p>
+          <p><strong>Ubicación:</strong> ${e.ubicacion||"-"} (${e.provincia||"-"})</p>
+          ${e.desnivel!=null ? `<p><strong>Desnivel:</strong> ${e.desnivel} m</p>`:""}
+          <p class="muted">ID: ${e.id!=null?e.id:"-"}</p>
+          ${enlaces.join(" · ")}
+        </article>
+      `;
+    }
+
+    // ===== APP =====
+    document.addEventListener("DOMContentLoaded", async ()=>{
+      const container = document.getElementById("eventos-container");
+      const modalidad = (container.dataset.modalidad || "todas").toLowerCase();
+
+      // estado cargando
+      const loading = document.createElement("div");
+      loading.className = "banner";
+      loading.textContent = "Cargando eventos…";
+      container.appendChild(loading);
+
+      try{
+        const res = await fetch(DATA_URL + "?t=" + Date.now(), {cache:"no-cache"});
+        if(!res.ok) throw new Error("HTTP " + res.status + " al cargar " + DATA_URL);
+        const eventos = await res.json();
+
+        // validación básica
+        if(!Array.isArray(eventos)) throw new Error("El JSON debe ser un array de eventos");
+
+        // filtrar por modalidad si procede
+        const lista = modalidad === "todas"
+          ? eventos
+          : eventos.filter(e => (e.modalidad||"").toLowerCase() === modalidad);
+
+        // pintar
+        container.innerHTML = container.innerHTML.replace(/[\s\S]*?<noscript>.*?<\/noscript>/,''); // limpia el hint si quedó
+        if(!lista.length){
+          container.innerHTML = `<section class="banner">No hay eventos para <strong>${modalidad}</strong> ahora mismo.</section>`;
+          return;
+        }
+        container.innerHTML = lista.map(eventoHTML).join("");
+
+      }catch(err){
+        console.error(err);
+        container.innerHTML = `
+          <section class="banner" style="background:#fff3cd;border-left:6px solid #ffec99;">
+            No se pudieron cargar los eventos. Revisa que <code>${DATA_URL}</code> exista,
+            que el nombre y mayúsculas coincidan y que el JSON sea válido.
+          </section>
+        `;
+      }
+    });
+  </script>
 </body>
 </html>
