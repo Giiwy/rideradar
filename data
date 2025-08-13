@@ -1,1 +1,43 @@
+[
+  {
+    "id": 1,
+    "nombre": "Desafío MTB Sierra Norte",
+    "fecha": "2025-09-15",
+    "modalidad": "mtb",
+    "ubicacion": "Madrid",
+    "provincia": "Madrid",
+    "enlace": "https://ejemplo.com/desafio-mtb",
+    "desnivel": 1500
+  },
+  {
+    "id": 2,
+    "nombre": "Ruta Carretera Costa del Sol",
+    "fecha": "2025-10-02",
+    "modalidad": "carretera",
+    "ubicacion": "Málaga",
+    "provincia": "Málaga",
+    "enlace": "https://ejemplo.com/ruta-carretera",
+    "desnivel": 800
+  },
+  {
+    "id": 3,
+    "nombre": "Gravel Experience Navarra",
+    "fecha": "2025-08-25",
+    "modalidad": "gravel",
+    "ubicacion": "Pamplona",
+    "provincia": "Navarra",
+    "enlace": "https://ejemplo.com/gravel-navarra",
+    "desnivel": 1200
+  },
+  {
+    "id": 4,
+    "nombre": "Enduro Trail Pirineos",
+    "fecha": "2025-09-10",
+    "modalidad": "enduro",
+    "ubicacion": "Biescas",
+    "provincia": "Huesca",
+    "enlace": "https://ejemplo.com/enduro-pirineos",
+    "desnivel": 1800
+  }
+]
 
