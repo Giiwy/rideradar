@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RideRadar – MTB</title>
+  <title>RideRadar – MTB + Mapa por CCAA</title>
+
+  <!-- Estilos básicos -->
   <style>
     :root{
       --bg:#f5f7fb; --card:#fff; --ink:#111827; --muted:#6b7280;
@@ -17,67 +19,21 @@
     nav{display:flex;gap:.8rem;flex-wrap:wrap;justify-content:center}
     nav a{color:#fff;text-decoration:none;font-weight:600;padding:.25rem .5rem;border-radius:.5rem}
     nav a:hover{background:rgba(255,255,255,.12)}
-    main{max-width:1200px;margin:0 auto;padding:1rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem}
-    .banner{grid-column:1/-1;margin-bottom:.5rem;background:var(--card);border:1px solid #eef2f7;border-radius:12px;box-shadow:var(--shadow);padding:1rem}
+    main{max-width:1200px;margin:0 auto;padding:1rem}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem}
+    .banner{margin:0 0 .75rem;background:var(--card);border:1px solid #eef2f7;border-radius:12px;box-shadow:var(--shadow);padding:1rem}
     .evento{background:var(--card);border:1px solid #eef2f7;border-left:6px solid var(--mtb);border-radius:12px;box-shadow:var(--shadow);padding:1rem}
     .evento h3{margin:.2rem 0 .5rem;font-size:1.1rem}
     .evento p{margin:.25rem 0;color:var(--ink)}
-    .evento .muted{color:var(--muted)}
-    .evento a{display:inline-block;margin-top:.4rem;font-weight:600;text-decoration:none}
+    .muted{color:var(--muted)}
     .pill{display:inline-block;padding:.15rem .5rem;border-radius:999px;font-size:.8rem;border:1px solid #e5e7eb;margin-left:.4rem}
-  </style>
-</head>
-<body>
-  <header>
-    <h1>RideRadar – MTB</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="mtb.html">MTB</a>
-      <a href="carretera.html">Carretera</a>
-      <a href="gravel.html">Gravel</a>
-      <a href="enduro.html">Enduro</a>
-    </nav>
-  </header>
+    .controls{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;margin:.5rem 0 1rem}
+    .btn{appearance:none;border:1px solid #e5e7eb;background:#fff;padding:.4rem .7rem;border-radius:.6rem;font-weight:600;cursor:pointer}
+    .btn:hover{background:#f3f4f6}
+    /* Mapa */
+    #map-wrapper{margin-top:1rem}
+    #map{height:420px;border-radius:12px;overflow:hidden;border:1px solid #eef2f7;box-sha
 
-  <main id="eventos-container" data-modalidad="mtb">
-    <noscript>Activa JavaScript para ver los eventos.</noscript>
-  </main>
-
-  <script>
-    const DATA_URL = "data/eventos.json";
-
-    function eventoHTML(e){
-      return `
-        <article class="evento">
-          <h3>${e.nombre||"Evento"} <span class="pill">${(e.modalidad||"").toUpperCase()}</span></h3>
-          <p><strong>Fecha:</strong> ${e.fecha||"-"}</p>
-          <p><strong>Ubicación:</strong> ${e.ubicacion||"-"} (${e.provincia||"-"})</p>
-          ${e.desnivel!=null ? `<p><strong>Desnivel:</strong> ${e.desnivel} m</p>`:""}
-          ${e.id != null ? `<a href="detalle.html?id=${e.id}">Ver detalles</a>` : ""}
-        </article>
-      `;
-    }
-
-    document.addEventListener("DOMContentLoaded", async ()=>{
-      const container = document.getElementById("eventos-container");
-      const modalidad = container.dataset.modalidad.toLowerCase();
-      container.innerHTML = `<section class="banner">Cargando eventos MTB…</section>`;
-
-      try{
-        const res = await fetch(DATA_URL + "?t=" + Date.now(), {cache:"no-cache"});
-        if(!res.ok) throw new Error("HTTP " + res.status);
-        const eventos = await res.json();
-        const lista = eventos.filter(e => (e.modalidad||"").toLowerCase() === modalidad);
-        if(!lista.length){
-          container.innerHTML = `<section class="banner">No hay eventos para MTB ahora mismo.</section>`;
-          return;
-        }
-        container.innerHTML = lista.map(eventoHTML).join("");
-      }catch(err){
-        console.error(err);
-        container.innerHTML = `<section class="banner" style="background:#fff3cd;border-left:6px solid #ffec99;">No se pudieron cargar los eventos.</section>`;
-      }
-    });
   </script>
 </body>
 </html>
