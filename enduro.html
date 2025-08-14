@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RideRadar – Enduro + Mapa CCAA</title>
+  <style>
+    :root{--bg:#f5f7fb;--card:#fff;--ink:#111827;--muted:#6b7280;
+      --mtb:#16a34a;--carretera:#2563eb;--gravel:#fb923c;--enduro:#ef4444;--shadow:0 6px 20px rgba(0,0,0,.06)}
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+    header{background:#1f2937;color:#fff;padding:1rem} header h1{margin:.2rem 0;font-size:1.35rem}
+    nav{display:flex;gap:.8rem;flex-wrap:wrap;justify-content:center}
+    nav a{color:#fff;text-decoration:none;font-weight:600;padding:.25rem .5rem;border-radius:.5rem} nav a:hover{background:rgba(255,255,255,.12)}
+    main{max-width:1200px;margin:0 auto;padding:1rem}
+    .controls{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;margin:.5rem 0 1rem}
+    .btn{appearance:none;border:1px solid #e5e7eb;background:#fff;padding:.4rem .7rem;border-radius:.6rem;font-weight:600;cursor:pointer}
+    .btn:hover{background:#f3f4f6}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem}
+    .banner{margin:0 0 .75rem;background:var(--card);border:1px solid #eef2f7;border-radius:12px;box-shadow:var(--shadow);padding:1rem}
+    .evento{background:var(--card);border:1px solid #eef2f7;border-left:6px solid var(--enduro);border-radius:12px;box-shadow:var(--shadow);padding:1rem}
+    .evento h3{margin:.2rem 0 .5rem;font-size:1.1rem} .evento p{margin:.25rem 0}
+    .muted{color:var(--muted)} .pill{display:inline-block;padding:.15rem .5rem;border-radius:999px;font-size:.8rem;border:1px solid #e5e7eb;margin-left:.4rem}
+    #map-wrapper{margin-top:1rem} #map{height:420px;border-radius:12px;overflow:hidden;border:1px solid #eef2f7;box-shadow:var(--shadow)}
+    .map-legend{font-size:.9rem;margin:.5rem 0;color:var(--muted)}
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+<body>
+  <header>
+    <h1>RideRadar – Enduro</h1>
+    <nav>
+      <a href="index.html">Inicio</a><a href="mtb.html">MTB</a><a href="carretera.html">Carretera</a><a href="gravel.html">Gravel</a><a href="enduro.html">Enduro</a>
+    </nav>
+  </header>
+  <main>
+    <div class="controls">
+      <span class="muted">Vista por defecto: solo Enduro</span>
+      <button id="reset-map-filter" class="btn" style="display:none;">Quitar filtro del mapa</button>
+    </div>
+    <section id="eventos-container" class="grid" data-modalidad="enduro">
+      <noscript>Activa JavaScript para ver los eventos.</noscript>
+    </section>
+    <section id="map-wrapper">
+      <div class="banner">
+        <strong>Mapa por Comunidad Autónoma:</strong> haz click en una comunidad para ver <u>todas</u> las pruebas en esa comunidad (cualquier modalidad).
+        <div class="map-legend">Península Ibérica + Baleares.</div>
+      </div>
+      <div id="map"></div>
+    </section>
+  </main>
+  <script>
+    const DATA_URL="data/eventos.json";
+    const PROVINCIA_A_CCAA={"Álava":"País Vasco","Vizcaya":"País Vasco","Guipúzcoa":"País Vasco","Navarra":"Navarra","La Rioja":"La Rioja","Cantabria":"Cantabria","Asturias":"Asturias","Lugo":"Galicia","A Coruña":"Galicia","Ourense":"Galicia","Pontevedra":"Galicia","León":"Castilla y León","Zamora":"Castilla y León","Salamanca":"Castilla y León","Palencia":"Castilla y León","Valladolid":"Castilla y León","Burgos":"Castilla y León","Soria":"Castilla y León","Segovia":"Castilla y León","Ávila":"Castilla y León","Huesca":"Aragón","Zaragoza":"Aragón","Teruel":"Aragón","Girona":"Cataluña","Barcelona":"Cataluña","Tarragona":"Cataluña","Lleida":"Cataluña","Castellón":"Comunitat Valenciana","Valencia":"Comunitat Valenciana","Alicante":"Comunitat Valenciana","Murcia":"Región de Murcia","Albacete":"Castilla-La Mancha","Ciudad Real":"Castilla-La Mancha","Cuenca":"Castilla-La Mancha","Guadalajara":"Castilla-La Mancha","Toledo":"Castilla-La Mancha","Madrid":"Comunidad de Madrid","Badajoz":"Extremadura","Cáceres":"Extremadura","Córdoba":"Andalucía","Sevilla":"Andalucía","Huelva":"Andalucía","Cádiz":"Andalucía","Málaga":"Andalucía","Granada":"Andalucía","Jaén":"Andalucía","Almería":"Andalucía","Illes Balears":"Illes Balears","Islas Baleares":"Illes Balears"};
+    const CCAA_CENTROS=[{ccaa:"Galicia",lat:42.8,lng:-8.3},{ccaa:"Asturias",lat:43.36,lng:-5.85},{ccaa:"Cantabria",lat:43.2,lng:-4.04},{ccaa:"País Vasco",lat:43.0,lng:-2.65},{ccaa:"Navarra",lat:42.7,lng:-1.65},{ccaa:"La Rioja",lat:42.3,lng:-2.45},{ccaa:"Castilla y León",lat:41.7,lng:-4.9},{ccaa:"Aragón",lat:41.1,lng:-0.9},{ccaa:"Cataluña",lat:41.7,lng:1.6},{ccaa:"Comunidad de Madrid",lat:40.42,lng:-3.7},{ccaa:"Castilla-La Mancha",lat:39.6,lng:-3.1},{ccaa:"Comunitat Valenciana",lat:39.5,lng:-0.6},{ccaa:"Región de Murcia",lat:37.99,lng:-1.13},{ccaa:"Extremadura",lat:39.2,lng:-6.0},{ccaa:"Andalucía",lat:37.5,lng:-4.6},{ccaa:"Illes Balears",lat:39.6,lng:2.9}];
+    let TODOS=[], filtroCCAA=null; const MODALIDAD_DEFECTO="enduro";
+    const obtenerCCAA=(prov,ubi)=>prov?PROVINCIA_A_CCAA[prov]||null:(PROVINCIA_A_CCAA[ubi]||null);
+    const eventoHTML=(e)=>`<article class="evento"><h3>${e.nombre||"Evento"} <span class="pill">${(e.modalidad||"").toUpperCase()}</span></h3><p><strong>Fecha:</strong> ${e.fecha||"-"}</p><p><strong>Ubicación:</strong> ${e.ubicacion||"-"} (${e.provincia||"-"})</p><p class="muted">CCAA: ${obtenerCCAA(e.provincia,e.ubicacion)||"—"}</p>${e.desnivel!=null?`<p><strong>Desnivel:</strong> ${e.desnivel} m</p>`:""}${e.id!=null?`<a href="detalle.html?id=${e.id}">Ver detalles</a>`:""}</article>`;
+    function pintar(){const c=document.getElementById("eventos-container");let l=[];if(filtroCCAA){l=TODOS.filter(e=>(obtenerCCAA(e.provincia,e.ubicacion)||"")===filtroCCAA);}else{l=TODOS.filter(e=>(e.modalidad||"").toLowerCase()===MODALIDAD_DEFECTO);}c.innerHTML=l.length?l.map(eventoHTML).join(""):`<div class="banner">No hay eventos para ${filtroCCAA?`la comunidad <strong>${filtroCCAA}</strong>`:"Enduro"} ahora mismo.</div>`;}
+    async function cargar(){const r=await fetch(DATA_URL+"?t="+Date.now(),{cache:"no-cache"});if(!r.ok)throw new Error("HTTP "+r.status);const d=await r.json();if(!Array.isArray(d))throw new Error("JSON debe ser array");TODOS=d;}
+    function initMapa(){const map=L.map('map',{center:[40.2,-3.7],zoom:6,minZoom:5,maxZoom:10,scrollWheelZoom:true});L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; OpenStreetMap'}).addTo(map);CCAA_CENTROS.forEach(({ccaa,lat,lng})=>{const m=L.marker([lat,lng]).addTo(map);m.bindPopup(`<strong>${ccaa}</strong><br><button id="btn-${ccaa.replaceAll(' ','-')}" class="btn">Ver pruebas aquí</button>`);m.on('popupopen',()=>{const el=document.getElementById(`btn-${ccaa.replaceAll(' ','-')}`);if(el){el.onclick=()=>{filtroCCAA=ccaa;document.getElementById('reset-map-filter').style.display='inline-block';pintar();map.closePopup();};}});});document.getElementById('reset-map-filter').addEventListener('click',()=>{filtroCCAA=null;document.getElementById('reset-map-filter').style.display='none';pintar();});}
+    (async function(){const c=document.getElementById("eventos-container");c.innerHTML=`<div class="banner">Cargando eventos…</div>`;try{await cargar();pintar();initMapa();}catch(e){console.error(e);c.innerHTML=`<div class="banner" style="background:#fff3cd;border-left:6px solid #ffec99;">No se pudieron cargar los eventos.</div>`;}})();
+  </script>
+</body>
+</html>
