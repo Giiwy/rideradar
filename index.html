@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RideRadar – Inicio</title>
+  <title>RideRadar – Todas las modalidades + Mapa CCAA</title>
+
+  <!-- Estilos básicos -->
   <style>
     :root{
       --bg:#f5f7fb; --card:#fff; --ink:#111827; --muted:#6b7280;
@@ -17,19 +19,40 @@
     nav{display:flex;gap:.8rem;flex-wrap:wrap;justify-content:center}
     nav a{color:#fff;text-decoration:none;font-weight:600;padding:.25rem .5rem;border-radius:.5rem}
     nav a:hover{background:rgba(255,255,255,.12)}
-    main{max-width:1200px;margin:0 auto;padding:1rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem}
-    .banner{grid-column:1/-1;margin-bottom:.5rem;background:var(--card);border:1px solid #eef2f7;border-radius:12px;box-shadow:var(--shadow);padding:1rem}
+    main{max-width:1200px;margin:0 auto;padding:1rem}
+    .controls{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;margin:.5rem 0 1rem}
+    .btn{appearance:none;border:1px solid #e5e7eb;background:#fff;padding:.4rem .7rem;border-radius:.6rem;font-weight:600;cursor:pointer}
+    .btn:hover{background:#f3f4f6}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem}
+    .banner{margin:0 0 .75rem;background:var(--card);border:1px solid #eef2f7;border-radius:12px;box-shadow:var(--shadow);padding:1rem}
     .evento{background:var(--card);border:1px solid #eef2f7;border-left:6px solid #e5e7eb;border-radius:12px;box-shadow:var(--shadow);padding:1rem}
     .evento h3{margin:.2rem 0 .5rem;font-size:1.1rem}
     .evento p{margin:.25rem 0;color:var(--ink)}
-    .evento .muted{color:var(--muted)}
-    .evento a{display:inline-block;margin-top:.4rem;font-weight:600;text-decoration:none}
-    .mtb{border-left-color:var(--mtb)}
-    .carretera{border-left-color:var(--carretera)}
-    .gravel{border-left-color:var(--gravel)}
-    .enduro{border-left-color:var(--enduro)}
+    .muted{color:var(--muted)}
     .pill{display:inline-block;padding:.15rem .5rem;border-radius:999px;font-size:.8rem;border:1px solid #e5e7eb;margin-left:.4rem}
+    /* Colores por modalidad */
+    .mod-mtb{border-left-color:var(--mtb)!important}
+    .mod-carretera{border-left-color:var(--carretera)!important}
+    .mod-gravel{border-left-color:var(--gravel)!important}
+    .mod-enduro{border-left-color:var(--enduro)!important}
+    /* Mapa */
+    #map-wrapper{margin-top:1rem}
+    #map{height:420px;border-radius:12px;overflow:hidden;border:1px solid #eef2f7;box-shadow:var(--shadow)}
+    .map-legend{font-size:.9rem;margin:.5rem 0;color:var(--muted)}
   </style>
+
+  <!-- Leaflet (CDN) -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
 </head>
 <body>
   <header>
@@ -43,79 +66,173 @@
     </nav>
   </header>
 
-  <main id="eventos-container" data-modalidad="todas">
-    <section class="banner">
-      <strong>Consejo:</strong> asegúrate de tener el archivo <code>/data/eventos.json</code> en la raíz del sitio (carpeta <code>data</code>).
+  <main>
+    <!-- CONTROLES -->
+    <div class="controls">
+      <span class="muted">Vista inicial: todas las modalidades</span>
+      <button id="reset-map-filter" class="btn" style="display:none;">Quitar filtro del mapa</button>
+    </div>
+
+    <!-- TARJETAS -->
+    <section id="eventos-container" class="grid" data-modalidad="todas">
+      <noscript>Activa JavaScript para ver los eventos.</noscript>
     </section>
-    <noscript>Activa JavaScript para ver los eventos.</noscript>
+
+    <!-- MAPA -->
+    <section id="map-wrapper">
+      <div class="banner">
+        <strong>Mapa por Comunidad Autónoma:</strong>
+        haz click en una comunidad para ver <u>todas</u> las pruebas en esa comunidad.
+        <div class="map-legend">Península Ibérica + Baleares. (Canarias no incluida en esta vista inicial.)</div>
+      </div>
+      <div id="map"></div>
+    </section>
   </main>
 
   <script>
-    // ===== CONFIG =====
-    // Para GitHub Pages o sitio bajo subcarpeta, usa ruta RELATIVA:
-    const DATA_URL = "data/eventos.json";  // ← importante
+    // ====== Config ======
+    const DATA_URL = "data/eventos.json";
 
-    // ===== RENDER =====
+    // Provincia -> CCAA (resumen; añade/ajusta según tu JSON)
+    const PROVINCIA_A_CCAA = {
+      "Álava":"País Vasco","Vizcaya":"País Vasco","Guipúzcoa":"País Vasco",
+      "Navarra":"Navarra","La Rioja":"La Rioja","Cantabria":"Cantabria","Asturias":"Asturias",
+      "Lugo":"Galicia","A Coruña":"Galicia","Ourense":"Galicia","Pontevedra":"Galicia",
+      "León":"Castilla y León","Zamora":"Castilla y León","Salamanca":"Castilla y León","Palencia":"Castilla y León","Valladolid":"Castilla y León","Burgos":"Castilla y León","Soria":"Castilla y León","Segovia":"Castilla y León","Ávila":"Castilla y León",
+      "Huesca":"Aragón","Zaragoza":"Aragón","Teruel":"Aragón",
+      "Girona":"Cataluña","Barcelona":"Cataluña","Tarragona":"Cataluña","Lleida":"Cataluña",
+      "Castellón":"Comunitat Valenciana","Valencia":"Comunitat Valenciana","Alicante":"Comunitat Valenciana",
+      "Murcia":"Región de Murcia",
+      "Albacete":"Castilla-La Mancha","Ciudad Real":"Castilla-La Mancha","Cuenca":"Castilla-La Mancha","Guadalajara":"Castilla-La Mancha","Toledo":"Castilla-La Mancha",
+      "Madrid":"Comunidad de Madrid",
+      "Badajoz":"Extremadura","Cáceres":"Extremadura",
+      "Córdoba":"Andalucía","Sevilla":"Andalucía","Huelva":"Andalucía","Cádiz":"Andalucía","Málaga":"Andalucía","Granada":"Andalucía","Jaén":"Andalucía","Almería":"Andalucía",
+      "Illes Balears":"Illes Balears","Islas Baleares":"Illes Balears"
+    };
+
+    // Centros aproximados por CCAA (para marcadores)
+    const CCAA_CENTROS = [
+      {ccaa:"Galicia", lat:42.8, lng:-8.3},
+      {ccaa:"Asturias", lat:43.36, lng:-5.85},
+      {ccaa:"Cantabria", lat:43.2, lng:-4.04},
+      {ccaa:"País Vasco", lat:43.0, lng:-2.65},
+      {ccaa:"Navarra", lat:42.7, lng:-1.65},
+      {ccaa:"La Rioja", lat:42.3, lng:-2.45},
+      {ccaa:"Castilla y León", lat:41.7, lng:-4.9},
+      {ccaa:"Aragón", lat:41.1, lng:-0.9},
+      {ccaa:"Cataluña", lat:41.7, lng:1.6},
+      {ccaa:"Comunidad de Madrid", lat:40.42, lng:-3.7},
+      {ccaa:"Castilla-La Mancha", lat:39.6, lng:-3.1},
+      {ccaa:"Comunitat Valenciana", lat:39.5, lng:-0.6},
+      {ccaa:"Región de Murcia", lat:37.99, lng:-1.13},
+      {ccaa:"Extremadura", lat:39.2, lng:-6.0},
+      {ccaa:"Andalucía", lat:37.5, lng:-4.6},
+      {ccaa:"Illes Balears", lat:39.6, lng:2.9}
+      // Canarias no incluida en esta primera vista
+    ];
+
+    // ====== Estado ======
+    let TODOS = [];
+    let filtroCCAA = null;
+
+    // ====== Util ======
+    function obtenerCCAA(provincia, ubicacion){
+      if(!provincia && ubicacion) return PROVINCIA_A_CCAA[ubicacion] || null;
+      return PROVINCIA_A_CCAA[provincia] || null;
+    }
+    function colorClase(mod){
+      switch((mod||"").toLowerCase()){
+        case "mtb": return "mod-mtb";
+        case "carretera": return "mod-carretera";
+        case "gravel": return "mod-gravel";
+        case "enduro": return "mod-enduro";
+        default: return "";
+      }
+    }
     function eventoHTML(e){
-      const modalidad = (e.modalidad||"").toLowerCase();
-      const clase = ["evento", modalidad].join(" ");
-      const enlaces = [];
-      if(e.enlace) enlaces.push(`<a href="${e.enlace}" target="_blank" rel="noopener">Enlace oficial</a>`);
-      if(Number.isFinite(e.id)) enlaces.push(`<a href="detalle.html?id=${e.id}">Ver detalles</a>`);
+      const mod = (e.modalidad||"").toLowerCase();
+      const ccaa = obtenerCCAA(e.provincia, e.ubicacion) || "—";
       return `
-        <article class="${clase}">
-          <h3>${e.nombre||"Evento"} <span class="pill">${(modalidad||"").toUpperCase()}</span></h3>
+        <article class="evento ${colorClase(mod)}">
+          <h3>${e.nombre||"Evento"} <span class="pill">${(mod||"").toUpperCase()}</span></h3>
           <p><strong>Fecha:</strong> ${e.fecha||"-"}</p>
           <p><strong>Ubicación:</strong> ${e.ubicacion||"-"} (${e.provincia||"-"})</p>
+          <p class="muted">CCAA: ${ccaa}</p>
           ${e.desnivel!=null ? `<p><strong>Desnivel:</strong> ${e.desnivel} m</p>`:""}
-          <p class="muted">ID: ${e.id!=null?e.id:"-"}</p>
-          ${enlaces.join(" · ")}
+          ${e.id != null ? `<a href="detalle.html?id=${e.id}">Ver detalles</a>` : ""}
         </article>
       `;
     }
 
-    // ===== APP =====
-    document.addEventListener("DOMContentLoaded", async ()=>{
+    // ====== Render ======
+    function pintarTarjetas(){
       const container = document.getElementById("eventos-container");
-      const modalidad = (container.dataset.modalidad || "todas").toLowerCase();
+      const lista = filtroCCAA
+        ? TODOS.filter(e => (obtenerCCAA(e.provincia, e.ubicacion)||"") === filtroCCAA)
+        : TODOS; // todas las modalidades
+      container.innerHTML = lista.length
+        ? lista.map(eventoHTML).join("")
+        : `<div class="banner">No hay eventos para ${filtroCCAA ? "la comunidad <strong>"+filtroCCAA+"</strong>" : "mostrar"} ahora mismo.</div>`;
+    }
 
-      // estado cargando
-      const loading = document.createElement("div");
-      loading.className = "banner";
-      loading.textContent = "Cargando eventos…";
-      container.appendChild(loading);
+    // ====== Datos ======
+    async function cargarEventos(){
+      const res = await fetch(DATA_URL + "?t=" + Date.now(), {cache:"no-cache"});
+      if(!res.ok) throw new Error("HTTP " + res.status + " al cargar eventos.json");
+      const data = await res.json();
+      if(!Array.isArray(data)) throw new Error("El JSON debe ser un array");
+      TODOS = data;
+    }
 
+    // ====== Mapa ======
+    function initMapa(){
+      const map = L.map('map', {
+        center: [40.2, -3.7],
+        zoom: 6, minZoom: 5, maxZoom: 10, scrollWheelZoom: true
+      });
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap'
+      }).addTo(map);
+
+      CCAA_CENTROS.forEach(({ccaa, lat, lng})=>{
+        const marker = L.marker([lat, lng]).addTo(map);
+        marker.bindPopup(`<strong>${ccaa}</strong><br><button id="btn-${ccaa.replaceAll(' ','-')}" class="btn">Ver pruebas aquí</button>`);
+        marker.on('popupopen', ()=>{
+          const id = `btn-${ccaa.replaceAll(' ','-')}`;
+          const el = document.getElementById(id);
+          if(el){
+            el.onclick = ()=>{
+              filtroCCAA = ccaa;
+              document.getElementById('reset-map-filter').style.display = 'inline-block';
+              pintarTarjetas();
+              map.closePopup();
+            };
+          }
+        });
+      });
+
+      document.getElementById('reset-map-filter').addEventListener('click', ()=>{
+        filtroCCAA = null;
+        document.getElementById('reset-map-filter').style.display = 'none';
+        pintarTarjetas();
+      });
+    }
+
+    // ====== App ======
+    (async function init(){
+      const container = document.getElementById("eventos-container");
+      container.innerHTML = `<div class="banner">Cargando eventos…</div>`;
       try{
-        const res = await fetch(DATA_URL + "?t=" + Date.now(), {cache:"no-cache"});
-        if(!res.ok) throw new Error("HTTP " + res.status + " al cargar " + DATA_URL);
-        const eventos = await res.json();
-
-        // validación básica
-        if(!Array.isArray(eventos)) throw new Error("El JSON debe ser un array de eventos");
-
-        // filtrar por modalidad si procede
-        const lista = modalidad === "todas"
-          ? eventos
-          : eventos.filter(e => (e.modalidad||"").toLowerCase() === modalidad);
-
-        // pintar
-        container.innerHTML = container.innerHTML.replace(/[\s\S]*?<noscript>.*?<\/noscript>/,''); // limpia el hint si quedó
-        if(!lista.length){
-          container.innerHTML = `<section class="banner">No hay eventos para <strong>${modalidad}</strong> ahora mismo.</section>`;
-          return;
-        }
-        container.innerHTML = lista.map(eventoHTML).join("");
-
+        await cargarEventos();
+        pintarTarjetas();
+        initMapa();
       }catch(err){
         console.error(err);
-        container.innerHTML = `
-          <section class="banner" style="background:#fff3cd;border-left:6px solid #ffec99;">
-            No se pudieron cargar los eventos. Revisa que <code>${DATA_URL}</code> exista,
-            que el nombre y mayúsculas coincidan y que el JSON sea válido.
-          </section>
-        `;
+        container.innerHTML = `<div class="banner" style="background:#fff3cd;border-left:6px solid #ffec99;">
+          No se pudieron cargar los eventos. Revisa que <code>${DATA_URL}</code> exista y sea válido.
+        </div>`;
       }
-    });
+    })();
   </script>
 </body>
 </html>
