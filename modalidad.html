@@ -69,10 +69,56 @@
     .empty-state h3{margin:0 0 .5rem;color:var(--ink)}
     
     @media (max-width: 768px){
-      .hero h2{font-size:1.4rem}
-      .hero .stats{gap:1rem}
-      .controls{flex-direction:column;align-items:stretch}
-      .filter-group{width:100%}
+      header{padding:.75rem}
+      header h1{font-size:1.1rem}
+      nav{gap:.5rem;font-size:.85rem}
+      nav a{padding:.3rem .6rem}
+      
+      main{padding:.75rem}
+      
+      .hero{padding:1.5rem 1rem}
+      .hero h2{font-size:1.3rem}
+      .hero p{font-size:1rem}
+      .hero .stats{gap:.75rem}
+      .hero .stat{padding:.4rem .8rem}
+      .hero .stat strong{font-size:1.4rem;margin-bottom:.2rem}
+      
+      .search-bar input{padding:.7rem .8rem;font-size:.95rem}
+      
+      .controls{flex-direction:column;align-items:stretch;gap:.75rem}
+      .filter-group{width:100%;flex-wrap:wrap;gap:.4rem}
+      .filter-group label{width:100%;margin-bottom:.2rem}
+      .filter-btn{flex:1;min-width:calc(33.333% - .27rem);text-align:center;font-size:.8rem}
+      .btn{width:100%;justify-content:center}
+      
+      .stats-bar{font-size:.85rem}
+      
+      .grid{grid-template-columns:1fr;gap:.75rem}
+      
+      .evento{padding:.85rem}
+      .evento h3{font-size:1rem}
+      .evento p{font-size:.85rem}
+      .badge{font-size:.75rem}
+      
+      #map{height:300px}
+      .banner{padding:.85rem;font-size:.9rem}
+    }
+    
+    @media (max-width: 480px){
+      header h1{font-size:1rem}
+      nav{font-size:.8rem;gap:.4rem}
+      nav a{padding:.25rem .5rem}
+      
+      .hero h2{font-size:1.15rem}
+      .hero p{font-size:.9rem}
+      .hero .stats{flex-direction:column;gap:.5rem;margin-top:.75rem}
+      .hero .stat{width:100%;padding:.35rem .7rem}
+      
+      .filter-btn{min-width:calc(50% - .2rem);font-size:.75rem;padding:.35rem .6rem}
+      
+      .controls{gap:.5rem}
+      
+      #map{height:250px}
     }
   </style>
 
