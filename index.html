@@ -64,6 +64,8 @@
     .pill{display:inline-block;padding:.15rem .5rem;border-radius:999px;font-size:.8rem;border:1px solid #e5e7eb;margin-left:.4rem;font-weight:600}
     .evento a{color:#667eea;text-decoration:none;font-weight:600;font-size:.9rem}
     .evento a:hover{text-decoration:underline}
+    .categorias{display:flex;gap:.4rem;flex-wrap:wrap;margin-top:.5rem}
+    .categoria-badge{display:inline-block;padding:.25rem .6rem;border-radius:6px;font-size:.75rem;font-weight:600;background:#f3f4f6;color:#374151;border:1px solid #e5e7eb}
     
     .mod-mtb{border-left-color:var(--mtb)!important}
     .mod-carretera{border-left-color:var(--carretera)!important}
@@ -282,6 +284,13 @@
       const mod = (e.modalidad||"").toLowerCase();
       const ccaa = obtenerCCAA(e.provincia, e.ubicacion) || "—";
       const futuro = esFuturo(e.fecha);
+      
+      const categoriasHTML = (e.categorias && e.categorias.length > 0) 
+        ? `<div class="categorias">
+             ${e.categorias.map(cat => `<span class="categoria-badge">${cat}</span>`).join('')}
+           </div>` 
+        : '';
+      
       return `
         <article class="evento ${colorClase(mod)}">
           <h3>${e.nombre||"Evento"} <span class="pill">${(mod||"").toUpperCase()}</span></h3>
@@ -289,6 +298,7 @@
           <p><strong>📍 Ubicación:</strong> ${e.ubicacion||"-"}, ${e.provincia||"-"}</p>
           <p class="muted">🗺️ ${ccaa}</p>
           ${e.desnivel!=null ? `<p><strong>⛰️ Desnivel:</strong> ${e.desnivel} m</p>`:""}
+          ${categoriasHTML}
           ${e.enlace ? `<p><a href="${e.enlace}" target="_blank" rel="noopener">🔗 Más información</a></p>` : ""}
         </article>
       `;
