@@ -78,8 +78,54 @@
     .empty-state h3{margin:0 0 .5rem;color:var(--ink)}
     
     @media (max-width: 768px){
-      .hero h2{font-size:1.4rem}
-      .modalidades-grid{grid-template-columns:1fr 1fr}
+      header{padding:.75rem}
+      header h1{font-size:1.1rem}
+      nav{gap:.5rem;font-size:.85rem}
+      nav a{padding:.3rem .6rem}
+      
+      main{padding:.75rem}
+      
+      .hero{padding:1.5rem 1rem}
+      .hero h2{font-size:1.3rem}
+      .hero p{font-size:1rem}
+      .hero .stats{gap:.75rem;font-size:.85rem}
+      .hero .stat strong{font-size:1.4rem}
+      
+      .modalidades-grid{grid-template-columns:1fr 1fr;gap:.75rem}
+      .modalidad-card{padding:1rem}
+      .modalidad-card h3{font-size:1.1rem}
+      .modalidad-card .count{font-size:1.6rem}
+      
+      .search-bar input{padding:.7rem .8rem;font-size:.95rem}
+      
+      .controls{gap:.5rem}
+      .btn{padding:.45rem .7rem;font-size:.85rem}
+      
+      .grid{grid-template-columns:1fr;gap:.75rem}
+      
+      .evento{padding:.85rem}
+      .evento h3{font-size:1rem}
+      .evento p{font-size:.85rem}
+      
+      #map{height:300px}
+      .banner{padding:.85rem;font-size:.9rem}
+    }
+    
+    @media (max-width: 480px){
+      header h1{font-size:1rem}
+      nav{font-size:.8rem}
+      
+      .hero h2{font-size:1.15rem}
+      .hero p{font-size:.9rem}
+      .hero .stats{flex-direction:column;gap:.5rem;margin-top:.75rem}
+      .hero .stat{width:100%;padding:.4rem}
+      
+      .modalidades-grid{grid-template-columns:1fr}
+      
+      .controls{flex-direction:column;align-items:stretch}
+      .stats{width:100%;justify-content:flex-start}
+      
+      #map{height:250px}
     }
   </style>
 
@@ -399,5 +445,3 @@
   </script>
 </body>
 </html>
-</html>
-
