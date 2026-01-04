@@ -1,43 +1,72 @@
-
 [
   {
     "id": 1,
     "nombre": "Desafío MTB Sierra Norte",
     "fecha": "2025-09-15",
     "modalidad": "mtb",
+    "tipo_prueba": "XCM",
     "ubicacion": "Madrid",
     "provincia": "Madrid",
-    "enlace": "https://ejemplo.com/desafio-mtb",
-    "desnivel": 1500
+    "distancia_km": 45,
+    "desnivel_m": 1500,
+    "categorias": [
+      "Elite",
+      "Sub23",
+      "Femenino",
+      "Master 40",
+      "Open"
+    ],
+    "enlace": "https://ejemplo.com/desafio-mtb"
   },
   {
     "id": 2,
     "nombre": "Ruta Carretera Costa del Sol",
     "fecha": "2025-10-02",
     "modalidad": "carretera",
+    "tipo_prueba": "marcha",
     "ubicacion": "Málaga",
     "provincia": "Málaga",
-    "enlace": "https://ejemplo.com/ruta-carretera",
-    "desnivel": 800
+    "distancia_km": 120,
+    "desnivel_m": 800,
+    "categorias": [
+      "Open"
+    ],
+    "enlace": "https://ejemplo.com/ruta-carretera"
   },
   {
     "id": 3,
     "nombre": "Gravel Experience Navarra",
     "fecha": "2025-08-25",
     "modalidad": "gravel",
+    "tipo_prueba": "aventura",
     "ubicacion": "Pamplona",
     "provincia": "Navarra",
-    "enlace": "https://ejemplo.com/gravel-navarra",
-    "desnivel": 1200
+    "distancia_km": 80,
+    "desnivel_m": 1200,
+    "categorias": [
+      "Elite",
+      "Master 30",
+      "Master 40",
+      "Master 50"
+    ],
+    "enlace": "https://ejemplo.com/gravel-navarra"
   },
   {
     "id": 4,
     "nombre": "Enduro Trail Pirineos",
     "fecha": "2025-09-10",
     "modalidad": "enduro",
+    "tipo_prueba": "competicion",
     "ubicacion": "Biescas",
     "provincia": "Huesca",
-    "enlace": "https://ejemplo.com/enduro-pirineos",
-    "desnivel": 1800
+    "distancia_km": 35,
+    "desnivel_m": 1800,
+    "categorias": [
+      "Elite",
+      "Sub23",
+      "Cadete",
+      "Femenino"
+    ],
+    "enlace": "https://ejemplo.com/enduro-pirineos"
   }
 ]
