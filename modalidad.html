@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="RideRadar - Eventos de ciclismo en España">
+  <title>RideRadar - Eventos</title>
+
+  <style>
+    :root{
+      --bg:#f5f7fb; --card:#fff; --ink:#111827; --muted:#6b7280;
+      --mtb:#16a34a; --carretera:#2563eb; --gravel:#fb923c; --enduro:#ef4444;
+      --shadow:0 6px 20px rgba(0,0,0,.06);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+    
+    header{background:#1f2937;color:#fff;padding:1rem}
+    header h1{margin:.2rem 0;font-size:1.35rem}
+    nav{display:flex;gap:.8rem;flex-wrap:wrap;justify-content:center}
+    nav a{color:#fff;text-decoration:none;font-weight:600;padding:.25rem .5rem;border-radius:.5rem}
+    nav a:hover{background:rgba(255,255,255,.12)}
+    nav a.active{background:rgba(255,255,255,.2)}
+    
+    main{max-width:1200px;margin:0 auto;padding:1rem}
+    
+    .hero{color:#fff;padding:2rem;border-radius:12px;margin-bottom:1.5rem;text-align:center;background:linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%)}
+    .hero h2{margin:0 0 .5rem;font-size:1.8rem}
+    .hero p{margin:0;opacity:.9;font-size:1.1rem}
+    .hero .stats{display:flex;gap:2rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+    .hero .stat{background:rgba(255,255,255,.15);padding:.5rem 1rem;border-radius:8px;backdrop-filter:blur(10px)}
+    .hero .stat strong{display:block;font-size:1.8rem}
+    
+    .search-bar{margin-bottom:1.5rem}
+    .search-bar input{width:100%;padding:.8rem 1rem;border:2px solid #e5e7eb;border-radius:8px;font-size:1rem}
+    .search-bar input:focus{outline:none;border-color:var(--color-primary)}
+    
+    .controls{display:flex;gap:.8rem;align-items:center;flex-wrap:wrap;margin:1rem 0}
+    .btn{appearance:none;border:1px solid #e5e7eb;background:#fff;padding:.5rem .9rem;border-radius:.6rem;font-weight:600;cursor:pointer;font-size:.9rem}
+    .btn:hover{background:#f3f4f6}
+    .btn-primary{background:var(--color-primary);color:#fff;border-color:var(--color-primary)}
+    .btn-primary:hover{opacity:.9}
+    
+    .filter-group{display:flex;gap:.5rem;flex-wrap:wrap}
+    .filter-btn{padding:.4rem .8rem;border:2px solid #e5e7eb;background:#fff;border-radius:6px;cursor:pointer;font-size:.85rem;font-weight:600}
+    .filter-btn:hover{background:#f9fafb}
+    .filter-btn.active{background:var(--color-primary);color:#fff;border-color:var(--color-primary)}
+    
+    .stats-bar{display:flex;gap:1rem;align-items:center;font-size:.9rem;color:var(--muted)}
+    
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1rem;margin-bottom:2rem}
+    .banner{margin:0 0 1rem;background:var(--card);border:1px solid #eef2f7;border-radius:12px;box-shadow:var(--shadow);padding:1rem}
+    
+    .evento{background:var(--card);border:1px solid #eef2f7;border-left:6px solid var(--color-primary);border-radius:12px;box-shadow:var(--shadow);padding:1rem;transition:transform .2s}
+    .evento:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,.12)}
+    .evento h3{margin:.2rem 0 .5rem;font-size:1.15rem}
+    .evento p{margin:.3rem 0;color:var(--ink);font-size:.9rem}
+    .muted{color:var(--muted)}
+    .pill{display:inline-block;padding:.15rem .5rem;border-radius:999px;font-size:.75rem;border:1px solid #e5e7eb;margin-left:.4rem;font-weight:600}
+    .evento a{color:var(--color-primary);text-decoration:none;font-weight:600;font-size:.9rem}
+    .evento a:hover{text-decoration:underline}
+    .badge{display:inline-block;padding:.2rem .6rem;border-radius:4px;font-size:.8rem;font-weight:600;margin-top:.3rem}
+    .badge-warning{background:#fff3cd;color:#856404}
+    
+    #map-wrapper{margin-top:2rem}
+    #map{height:420px;border-radius:12px;overflow:hidden;border:1px solid #eef2f7;box-shadow:var(--shadow)}
+    
+    .empty-state{text-align:center;padding:3rem 1rem;color:var(--muted)}
+    .empty-state h3{margin:0 0 .5rem;color:var(--ink)}
+    
+    @media (max-width: 768px){
+      .hero h2{font-size:1.4rem}
+      .hero .stats{gap:1rem}
+      .controls{flex-direction:column;align-items:stretch}
+      .filter-group{width:100%}
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+<body>
+  <header>
+    <h1>🚴 RideRadar</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="modalidad.html?tipo=mtb" id="nav-mtb">MTB</a>
+      <a href="modalidad.html?tipo=carretera" id="nav-carretera">Carretera</a>
+      <a href="modalidad.html?tipo=gravel" id="nav-gravel">Gravel</a>
+      <a href="modalidad.html?tipo=enduro" id="nav-enduro">Enduro</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO DINÁMICO -->
+    <div class="hero" id="hero">
+      <h2 id="hero-title">Cargando...</h2>
+      <p id="hero-subtitle"></p>
+      <div class="stats">
+        <div class="stat">
+          <strong id="stat-total">-</strong>
+          <span>Eventos próximos</span>
+        </div>
+        <div class="stat">
+          <strong id="stat-provincias">-</strong>
+          <span>Provincias</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- BUSCADOR -->
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="🔍 Buscar por nombre, ubicación o provincia..." />
+    </div>
+
+    <!-- CONTROLES Y FILTROS -->
+    <div class="controls">
+      <div class="filter-group">
+        <label style="font-weight:600;margin-right:.5rem;color:var(--muted)">Ordenar:</label>
+        <button class="filter-btn active" data-sort="fecha">📅 Fecha</button>
+        <button class="filter-btn" data-sort="desnivel">⛰️ Desnivel</button>
+        <button class="filter-btn" data-sort="provincia">🗺️ Provincia</button>
+      </div>
+      
+      <div style="flex:1"></div>
+      
+      <button id="toggle-pasados" class="btn">Mostrar pasados</button>
+      <button id="reset-filtros" class="btn btn-primary" style="display:none;">Limpiar filtros</button>
+    </div>
+
+    <div class="stats-bar">
+      <span>Mostrando <strong id="eventos-visibles">0</strong> de <strong id="eventos-totales">0</strong> eventos</span>
+    </div>
+
+    <!-- EVENTOS -->
+    <section id="eventos-container" class="grid">
+      <div class="banner">Cargando eventos…</div>
+    </section>
+
+    <!-- MAPA -->
+    <section id="map-wrapper">
+      <div class="banner">
+        <strong>📍 Mapa de eventos:</strong>
+        haz click en una comunidad para filtrar las pruebas de esa región.
+      </div>
+      <div id="map"></div>
+    </section>
+  </main>
+
+  <script>
+    const DATA_URL = "data/eventos.json";
+    
+    const MODALIDAD_CONFIG = {
+      mtb: {
+        nombre: "MTB",
+        emoji: "🚵",
+        titulo: "Mountain Bike",
+        subtitulo: "Descubre las mejores rutas de montaña",
+        colorPrimary: "#16a34a",
+        colorSecondary: "#15803d"
+      },
+      carretera: {
+        nombre: "Carretera",
+        emoji: "🚴",
+        titulo: "Carretera",
+        subtitulo: "Marchas y competiciones en asfalto",
+        colorPrimary: "#2563eb",
+        colorSecondary: "#1d4ed8"
+      },
+      gravel: {
+        nombre: "Gravel",
+        emoji: "🌄",
+        titulo: "Gravel",
+        subtitulo: "Aventura por caminos sin asfaltar",
+        colorPrimary: "#fb923c",
+        colorSecondary: "#f97316"
+      },
+      enduro: {
+        nombre: "Enduro",
+        emoji: "⛰️",
+        titulo: "Enduro",
+        subtitulo: "Descensos técnicos y adrenalina pura",
+        colorPrimary: "#ef4444",
+        colorSecondary: "#dc2626"
+      }
+    };
+
+    const PROVINCIA_A_CCAA = {
+      "Álava":"País Vasco","Vizcaya":"País Vasco","Guipúzcoa":"País Vasco",
+      "Navarra":"Navarra","La Rioja":"La Rioja","Cantabria":"Cantabria","Asturias":"Asturias",
+      "Lugo":"Galicia","A Coruña":"Galicia","Ourense":"Galicia","Pontevedra":"Galicia",
+      "León":"Castilla y León","Zamora":"Castilla y León","Salamanca":"Castilla y León","Palencia":"Castilla y León","Valladolid":"Castilla y León","Burgos":"Castilla y León","Soria":"Castilla y León","Segovia":"Castilla y León","Ávila":"Castilla y León",
+      "Huesca":"Aragón","Zaragoza":"Aragón","Teruel":"Aragón",
+      "Girona":"Cataluña","Barcelona":"Cataluña","Tarragona":"Cataluña","Lleida":"Cataluña",
+      "Castellón":"Comunitat Valenciana","Valencia":"Comunitat Valenciana","Alicante":"Comunitat Valenciana",
+      "Murcia":"Región de Murcia",
+      "Albacete":"Castilla-La Mancha","Ciudad Real":"Castilla-La Mancha","Cuenca":"Castilla-La Mancha","Guadalajara":"Castilla-La Mancha","Toledo":"Castilla-La Mancha",
+      "Madrid":"Comunidad de Madrid",
+      "Badajoz":"Extremadura","Cáceres":"Extremadura",
+      "Córdoba":"Andalucía","Sevilla":"Andalucía","Huelva":"Andalucía","Cádiz":"Andalucía","Málaga":"Andalucía","Granada":"Andalucía","Jaén":"Andalucía","Almería":"Andalucía",
+      "Illes Balears":"Illes Balears","Islas Baleares":"Illes Balears"
+    };
+
+    const CCAA_CENTROS = [
+      {ccaa:"Galicia", lat:42.8, lng:-8.3},
+      {ccaa:"Asturias", lat:43.36, lng:-5.85},
+      {ccaa:"Cantabria", lat:43.2, lng:-4.04},
+      {ccaa:"País Vasco", lat:43.0, lng:-2.65},
+      {ccaa:"Navarra", lat:42.7, lng:-1.65},
+      {ccaa:"La Rioja", lat:42.3, lng:-2.45},
+      {ccaa:"Castilla y León", lat:41.7, lng:-4.9},
+      {ccaa:"Aragón", lat:41.1, lng:-0.9},
+      {ccaa:"Cataluña", lat:41.7, lng:1.6},
+      {ccaa:"Comunidad de Madrid", lat:40.42, lng:-3.7},
+      {ccaa:"Castilla-La Mancha", lat:39.6, lng:-3.1},
+      {ccaa:"Comunitat Valenciana", lat:39.5, lng:-0.6},
+      {ccaa:"Región de Murcia", lat:37.99, lng:-1.13},
+      {ccaa:"Extremadura", lat:39.2, lng:-6.0},
+      {ccaa:"Andalucía", lat:37.5, lng:-4.6},
+      {ccaa:"Illes Balears", lat:39.6, lng:2.9}
+    ];
+
+    let TODOS = [];
+    let modalidadActual = null;
+    let filtroCCAA = null;
+    let terminoBusqueda = "";
+    let mostrarPasados = false;
+    let ordenActual = "fecha";
+
+    function obtenerParametroURL(param){
+      const params = new URLSearchParams(window.location.search);
+      return params.get(param);
+    }
+
+    function obtenerCCAA(provincia, ubicacion){
+      if(!provincia && ubicacion) return PROVINCIA_A_CCAA[ubicacion] || null;
+      return PROVINCIA_A_CCAA[provincia] || null;
+    }
+
+    function esFuturo(fecha){
+      if(!fecha) return true;
+      const hoy = new Date();
+      hoy.setHours(0,0,0,0);
+      const fechaEvento = new Date(fecha + "T00:00:00");
+      return fechaEvento >= hoy;
+    }
+
+    function formatearFecha(fecha){
+      if(!fecha) return "-";
+      const f = new Date(fecha + "T00:00:00");
+      const opciones = {day:'numeric', month:'long', year:'numeric'};
+      return f.toLocaleDateString('es-ES', opciones);
+    }
+
+    function eventoHTML(e){
+      const futuro = esFuturo(e.fecha);
+      const ccaa = obtenerCCAA(e.provincia, e.ubicacion) || "—";
+      return `
+        <article class="evento">
+          <h3>${e.nombre||"Evento"}</h3>
+          <p><strong>📅 Fecha:</strong> ${formatearFecha(e.fecha)}</p>
+          ${!futuro ? `<span class="badge badge-warning">Evento pasado</span>` : ''}
+          <p><strong>📍 Ubicación:</strong> ${e.ubicacion||"-"}, ${e.provincia||"-"}</p>
+          <p class="muted">🗺️ ${ccaa}</p>
+          ${e.desnivel!=null ? `<p><strong>⛰️ Desnivel:</strong> ${e.desnivel.toLocaleString()} m</p>`:""}
+          ${e.distancia!=null ? `<p><strong>📏 Distancia:</strong> ${e.distancia} km</p>`:""}
+          ${e.enlace ? `<p><a href="${e.enlace}" target="_blank" rel="noopener">🔗 Más información</a></p>` : ""}
+        </article>
+      `;
+    }
+
+    function filtrarEventos(){
+      let lista = TODOS.filter(e => 
+        (e.modalidad||"").toLowerCase() === modalidadActual
+      );
+      
+      if(!mostrarPasados){
+        lista = lista.filter(e => esFuturo(e.fecha));
+      }
+      
+      if(filtroCCAA){
+        lista = lista.filter(e => obtenerCCAA(e.provincia, e.ubicacion) === filtroCCAA);
+      }
+      
+      if(terminoBusqueda){
+        const term = terminoBusqueda.toLowerCase();
+        lista = lista.filter(e => 
+          (e.nombre||"").toLowerCase().includes(term) ||
+          (e.ubicacion||"").toLowerCase().includes(term) ||
+          (e.provincia||"").toLowerCase().includes(term)
+        );
+      }
+      
+      // Ordenar
+      lista.sort((a,b) => {
+        if(ordenActual === "fecha"){
+          return new Date(a.fecha + "T00:00:00") - new Date(b.fecha + "T00:00:00");
+        } else if(ordenActual === "desnivel"){
+          return (b.desnivel||0) - (a.desnivel||0);
+        } else if(ordenActual === "provincia"){
+          return (a.provincia||"").localeCompare(b.provincia||"");
+        }
+        return 0;
+      });
+      
+      return lista;
+    }
+
+    function actualizarEstadisticas(){
+      const config = MODALIDAD_CONFIG[modalidadActual];
+      const eventosFiltrados = TODOS.filter(e => 
+        (e.modalidad||"").toLowerCase() === modalidadActual
+      );
+      const futuros = eventosFiltrados.filter(e => esFuturo(e.fecha));
+      const provincias = new Set(eventosFiltrados.map(e => e.provincia)).size;
+      
+      document.getElementById("hero-title").textContent = `${config.emoji} ${config.titulo}`;
+      document.getElementById("hero-subtitle").textContent = config.subtitulo;
+      document.getElementById("stat-total").textContent = futuros.length;
+      document.getElementById("stat-provincias").textContent = provincias;
+      
+      document.documentElement.style.setProperty('--color-primary', config.colorPrimary);
+      document.documentElement.style.setProperty('--color-secondary', config.colorSecondary);
+      
+      document.title = `RideRadar - ${config.titulo}`;
+      
+      document.getElementById(`nav-${modalidadActual}`).classList.add('active');
+    }
+
+    function pintarTarjetas(){
+      const container = document.getElementById("eventos-container");
+      const lista = filtrarEventos();
+      const totalModalidad = TODOS.filter(e => (e.modalidad||"").toLowerCase() === modalidadActual).length;
+      
+      document.getElementById("eventos-visibles").textContent = lista.length;
+      document.getElementById("eventos-totales").textContent = totalModalidad;
+      
+      const hayFiltros = filtroCCAA || terminoBusqueda;
+      document.getElementById("reset-filtros").style.display = hayFiltros ? "inline-block" : "none";
+      
+      if(lista.length === 0){
+        container.innerHTML = `
+          <div class="empty-state">
+            <h3>No se encontraron eventos</h3>
+            <p>Intenta ajustar los filtros o la búsqueda</p>
+          </div>
+        `;
+      } else {
+        container.innerHTML = lista.map(eventoHTML).join("");
+      }
+    }
+
+    async function cargarEventos(){
+      const res = await fetch(DATA_URL + "?t=" + Date.now(), {cache:"no-cache"});
+      if(!res.ok) throw new Error("HTTP " + res.status);
+      const data = await res.json();
+      if(!Array.isArray(data)) throw new Error("El JSON debe ser un array");
+      TODOS = data;
+    }
+
+    function initMapa(){
+      const map = L.map('map', {
+        center: [40.2, -3.7],
+        zoom: 6, minZoom: 5, maxZoom: 10, scrollWheelZoom: true
+      });
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap'
+      }).addTo(map);
+
+      CCAA_CENTROS.forEach(({ccaa, lat, lng})=>{
+        const eventosCCAA = TODOS.filter(e => 
+          obtenerCCAA(e.provincia, e.ubicacion) === ccaa && 
+          (e.modalidad||"").toLowerCase() === modalidadActual &&
+          esFuturo(e.fecha)
+        ).length;
+        
+        if(eventosCCAA === 0) return;
+        
+        const marker = L.marker([lat, lng]).addTo(map);
+        marker.bindPopup(`
+          <strong>${ccaa}</strong><br>
+          <span style="color:#6b7280;">${eventosCCAA} eventos</span><br>
+          <button id="btn-${ccaa.replaceAll(' ','-')}" class="btn" style="margin-top:8px;">Filtrar</button>
+        `);
+        
+        marker.on('popupopen', ()=>{
+          const id = `btn-${ccaa.replaceAll(' ','-')}`;
+          const el = document.getElementById(id);
+          if(el){
+            el.onclick = ()=>{
+              filtroCCAA = ccaa;
+              pintarTarjetas();
+              map.closePopup();
+              window.scrollTo({top: 0, behavior: 'smooth'});
+            };
+          }
+        });
+      });
+    }
+
+    // Event Listeners
+    document.getElementById("search-input").addEventListener("input", (e)=>{
+      terminoBusqueda = e.target.value.trim();
+      pintarTarjetas();
+    });
+
+    document.getElementById("toggle-pasados").addEventListener("click", ()=>{
+      mostrarPasados = !mostrarPasados;
+      document.getElementById("toggle-pasados").textContent = 
+        mostrarPasados ? "Ocultar pasados" : "Mostrar pasados";
+      pintarTarjetas();
+    });
+
+    document.getElementById("reset-filtros").addEventListener("click", ()=>{
+      filtroCCAA = null;
+      terminoBusqueda = "";
+      document.getElementById("search-input").value = "";
+      pintarTarjetas();
+    });
+
+    document.querySelectorAll('[data-sort]').forEach(btn => {
+      btn.addEventListener('click', ()=>{
+        document.querySelectorAll('[data-sort]').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        ordenActual = btn.dataset.sort;
+        pintarTarjetas();
+      });
+    });
+
+    // Init
+    (async function init(){
+      const tipo = obtenerParametroURL('tipo');
+      
+      if(!tipo || !MODALIDAD_CONFIG[tipo]){
+        window.location.href = 'index.html';
+        return;
+      }
+      
+      modalidadActual = tipo;
+      
+      const container = document.getElementById("eventos-container");
+      try{
+        await cargarEventos();
+        actualizarEstadisticas();
+        pintarTarjetas();
+        initMapa();
+      }catch(err){
+        console.error(err);
+        container.innerHTML = `
+          <div class="banner" style="background:#fff3cd;border-left:6px solid #ffec99;">
+            ⚠️ Error al cargar eventos. Verifica que <code>${DATA_URL}</code> existe.
+          </div>
+        `;
+      }
+    })();
+  </script>
+</body>
+</html>
