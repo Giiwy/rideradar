@@ -23,14 +23,14 @@
   },
   {
     "id": 2,
-    "nombre": "1º Gravel Hellín Ciudad del Tambor",
-    "fecha": "",
+    "nombre": "Tierra de Fronteras Gran Fondo",
+    "fecha": "09/11/2026",
     "modalidad": "gravel",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
-    "distancia_km": "",
-    "desnivel_m": "",
+    "tipo_prueba": "marcha",
+    "ubicacion": "Hellín",
+    "provincia": "Albacete",
+    "distancia_km": "132",
+    "desnivel_m": "2250",
     "cat_elite": "",
     "cat_sub23": "",
     "cat_junior": "",
@@ -41,18 +41,18 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=1%C2%BA+Gravel+Hell%C3%ADn+Ciudad+del+Tambor+2026"
+    "enlace_web": "https://tierradefronteras.es/"
   },
   {
     "id": 3,
     "nombre": "34AC Gravel Race",
-    "fecha": "",
+    "fecha": "14/06/2026",
     "modalidad": "gravel",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
-    "distancia_km": "",
-    "desnivel_m": "",
+    "tipo_prueba": "competicion",
+    "ubicacion": "Cáceceres",
+    "provincia": "Cáceceres",
+    "distancia_km": "97.16",
+    "desnivel_m": "991",
     "cat_elite": "",
     "cat_sub23": "",
     "cat_junior": "",
@@ -63,10 +63,32 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=34AC+Gravel+Race+2026"
+    "enlace_web": "https://tourgravelrace.com/34ac-gravel-race/"
   },
   {
     "id": 4,
+    "nombre": "34AC Gravel Race",
+    "fecha": "14/06/2026",
+    "modalidad": "gravel",
+    "tipo_prueba": "competicion",
+    "ubicacion": "Cáceceres",
+    "provincia": "Cáceceres",
+    "distancia_km": "60.5",
+    "desnivel_m": "470",
+    "cat_elite": "",
+    "cat_sub23": "",
+    "cat_junior": "",
+    "cat_cadete": "",
+    "cat_femenino": "",
+    "cat_master30": "",
+    "cat_master40": "",
+    "cat_master50": "",
+    "cat_master60": "",
+    "cat_open": "",
+    "enlace_web": "https://tourgravelrace.com/34ac-gravel-race/"
+  },
+  {
+    "id": 5,
     "nombre": "7ª Endubitem",
     "fecha": "15/03/2026",
     "modalidad": "enduro",
@@ -88,7 +110,7 @@
     "enlace_web": "https://rfec.com/index.php/es/smartweb/seccion/circuito/rfec/26COPAEND"
   },
   {
-    "id": 5,
+    "id": 6,
     "nombre": "Aitana Tour",
     "fecha": "31/05/2026",
     "modalidad": "carretera",
@@ -110,15 +132,15 @@
     "enlace_web": "https://www.aitanatour.com"
   },
   {
-    "id": 6,
-    "nombre": "Algodonales Extrem Enduro",
-    "fecha": "",
-    "modalidad": "",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
-    "distancia_km": "",
-    "desnivel_m": "",
+    "id": 7,
+    "nombre": "II Media Maraton Villa de Algodonales",
+    "fecha": "14/06/2026",
+    "modalidad": "mtb",
+    "tipo_prueba": "competicion",
+    "ubicacion": "Algodonales",
+    "provincia": "Cádiz",
+    "distancia_km": "46.5",
+    "desnivel_m": "1427",
     "cat_elite": "",
     "cat_sub23": "",
     "cat_junior": "",
@@ -129,10 +151,10 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=Algodonales+Extrem+Enduro+2026"
+    "enlace_web": "https://www.aitanatour.com"
   },
   {
-    "id": 7,
+    "id": 8,
     "nombre": "Alpinum TotalEnergies",
     "fecha": "04/07/2026",
     "modalidad": "carretera",
@@ -154,7 +176,7 @@
     "enlace_web": "https://www.alpinum-ride.cc"
   },
   {
-    "id": 8,
+    "id": 9,
     "nombre": "Ancares Cycling Marathon",
     "fecha": "09/08/2026",
     "modalidad": "carretera",
@@ -176,11 +198,11 @@
     "enlace_web": "https://ancarescyclingmarathon.es/"
   },
   {
-    "id": 9,
+    "id": 10,
     "nombre": "BASAJAUN",
     "fecha": "26/07/2026",
     "modalidad": "gravel",
-    "tipo_prueba": "bikepacking",
+    "tipo_prueba": "aventura",
     "ubicacion": "Vitoria-Gasteiz",
     "provincia": "Álava",
     "distancia_km": "870",
@@ -198,15 +220,15 @@
     "enlace_web": "https://www.transiberica.club"
   },
   {
-    "id": 10,
+    "id": 11,
     "nombre": "BilboFem – Marcha femenina",
-    "fecha": "",
-    "modalidad": "",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
-    "distancia_km": "",
-    "desnivel_m": "",
+    "fecha": "12/10/2026",
+    "modalidad": "carretera",
+    "tipo_prueba": "marcha",
+    "ubicacion": "Bilbao",
+    "provincia": "País Vasco",
+    "distancia_km": "86",
+    "desnivel_m": "960",
     "cat_elite": "",
     "cat_sub23": "",
     "cat_junior": "",
@@ -217,10 +239,32 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=BilboFem+%E2%80%93+Marcha+femenina+2026"
+    "enlace_web": "https://www.bilbofem.com/"
   },
   {
-    "id": 11,
+    "id": 12,
+    "nombre": "BilboFem – Marcha femenina",
+    "fecha": "12/10/2026",
+    "modalidad": "carretera",
+    "tipo_prueba": "marcha",
+    "ubicacion": "Bilbao",
+    "provincia": "País Vasco",
+    "distancia_km": "52",
+    "desnivel_m": "530",
+    "cat_elite": "",
+    "cat_sub23": "",
+    "cat_junior": "",
+    "cat_cadete": "",
+    "cat_femenino": "",
+    "cat_master30": "",
+    "cat_master40": "",
+    "cat_master50": "",
+    "cat_master60": "",
+    "cat_open": "",
+    "enlace_web": "https://www.bilbofem.com/"
+  },
+  {
+    "id": 13,
     "nombre": "Boquerón Bike (Maratón)",
     "fecha": "21/11/2026",
     "modalidad": "mtb",
@@ -242,7 +286,7 @@
     "enlace_web": "https://www.bokeronbike.com/"
   },
   {
-    "id": 12,
+    "id": 14,
     "nombre": "BTT Dos Callos",
     "fecha": "11/01/2026",
     "modalidad": "mtb",
@@ -261,54 +305,32 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://battistrada.com/en/cycling-calendar/spain/"
-  },
-  {
-    "id": 13,
-    "nombre": "Campeonato Andalucía Enduro",
-    "fecha": "",
-    "modalidad": "",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
-    "distancia_km": "",
-    "desnivel_m": "",
-    "cat_elite": "",
-    "cat_sub23": "",
-    "cat_junior": "",
-    "cat_cadete": "",
-    "cat_femenino": "",
-    "cat_master30": "",
-    "cat_master40": "",
-    "cat_master50": "",
-    "cat_master60": "",
-    "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=Campeonato+Andaluc%C3%ADa+Enduro+2026"
-  },
-  {
-    "id": 14,
-    "nombre": "Campeonato de España BTT DHI – La Molina",
-    "fecha": "",
-    "modalidad": "enduro",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
-    "distancia_km": "",
-    "desnivel_m": "",
-    "cat_elite": "",
-    "cat_sub23": "",
-    "cat_junior": "",
-    "cat_cadete": "",
-    "cat_femenino": "",
-    "cat_master30": "",
-    "cat_master40": "",
-    "cat_master50": "",
-    "cat_master60": "",
-    "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=Campeonato+de+Espa%C3%B1a+BTT+DHI+%E2%80%93+La+Molina+2026"
+    "enlace_web": "https://visitacostadamorte.com/agenda/xi-kdd-btt-de-los-callos-2026-en-a-laracha"
   },
   {
     "id": 15,
+    "nombre": "Campeonato de España XCC – La Molina",
+    "fecha": "05/06/2026",
+    "modalidad": "mtb",
+    "tipo_prueba": "competicion",
+    "ubicacion": "La Molina",
+    "provincia": "Girona",
+    "distancia_km": "0.97",
+    "desnivel_m": "23",
+    "cat_elite": "",
+    "cat_sub23": "",
+    "cat_junior": "",
+    "cat_cadete": "",
+    "cat_femenino": "",
+    "cat_master30": "",
+    "cat_master40": "",
+    "cat_master50": "",
+    "cat_master60": "",
+    "cat_open": "",
+    "enlace_web": "https://mtblamolina.com/carreras/campeonato-de-espana-xcc-la-molina/"
+  },
+  {
+    "id": 16,
     "nombre": "Campeonato de España BTT XCC",
     "fecha": "05/06/2026",
     "modalidad": "mtb",
@@ -330,7 +352,7 @@
     "enlace_web": "https://mtblamolina.com/carreras/campeonato-de-espana-xcc-la-molina/"
   },
   {
-    "id": 16,
+    "id": 17,
     "nombre": "Campeonato de España BTT XCO/XCC/XCE/XCR 2026",
     "fecha": "17/07/2026 – 19/07/2026",
     "modalidad": "mtb",
@@ -349,29 +371,7 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "",
-    "enlace_web": "https://rfec.com/es/smartweb/seccion/noticia/rfec/btt/61123-Arroyomolinos-sede-del-Campeonato-de-Espana-de-BTT-XCO-XCC-XCE-XCR-2026"
-  },
-  {
-    "id": 17,
-    "nombre": "Campeonatos España BTT DHI",
-    "fecha": "",
-    "modalidad": "enduro",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
-    "distancia_km": "",
-    "desnivel_m": "",
-    "cat_elite": "",
-    "cat_sub23": "",
-    "cat_junior": "",
-    "cat_cadete": "",
-    "cat_femenino": "",
-    "cat_master30": "",
-    "cat_master40": "",
-    "cat_master50": "",
-    "cat_master60": "",
-    "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=Campeonatos+Espa%C3%B1a+BTT+DHI+2026"
+    "enlace_web": "https://rfec.com/es/smartweb/seccion/noticia/rfec/btt/61123-Arroyomolinos-sed..."
   },
   {
     "id": 18,
@@ -400,7 +400,7 @@
     "nombre": "CAT 700 BIKEPACKING ADVENTURE",
     "fecha": "19/06/2026",
     "modalidad": "gravel",
-    "tipo_prueba": "bikepacking",
+    "tipo_prueba": "aventura",
     "ubicacion": "Colera",
     "provincia": "Girona",
     "distancia_km": "520",
@@ -422,7 +422,7 @@
     "nombre": "Clásica de Valdemorillo MTB",
     "fecha": "25/01/2026",
     "modalidad": "mtb",
-    "tipo_prueba": "xcm",
+    "tipo_prueba": "competicion",
     "ubicacion": "Valdemorillo",
     "provincia": "Madrid",
     "distancia_km": "58|35",
@@ -437,7 +437,7 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://battistrada.com/en/cycling-calendar/spain/"
+    "enlace_web": "https://clasicavaldemorillomtb.com/"
   },
   {
     "id": 21,
@@ -459,7 +459,7 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://www.alltricks.es/blog/calendario-de-marchas-cicloturistas"
+    "enlace_web": "https://www.classicadelsmurs.cat/"
   },
   {
     "id": 22,
@@ -547,39 +547,17 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "",
-    "enlace_web": "https://rfec.com/es/smartweb/seccion/noticia/rfec/btt/60056-Calendario-de-la-Copa-de-Espana-de-BTT-XCO-2026"
+    "enlace_web": "https://rfec.com/es/smartweb/seccion/noticia/rfec/btt/60056-Calendario-de-la-..."
   },
   {
     "id": 26,
-    "nombre": "Copa España Pump Track Xove - IV Gran Premio Concello de Xove",
-    "fecha": "11/07/2026",
-    "modalidad": "pumptrack",
-    "tipo_prueba": "competicion",
-    "ubicacion": "Xove",
-    "provincia": "Lugo",
-    "distancia_km": "",
-    "desnivel_m": "",
-    "cat_elite": "x",
-    "cat_sub23": "x",
-    "cat_junior": "x",
-    "cat_cadete": "x",
-    "cat_femenino": "x",
-    "cat_master30": "x",
-    "cat_master40": "x",
-    "cat_master50": "x",
-    "cat_master60": "x",
-    "cat_open": "",
-    "enlace_web": "https://rfec.com/index.php/es/smartweb/seccion/circuito/rfec/26COPAPT"
-  },
-  {
-    "id": 27,
     "nombre": "COSTA BRAVA BIKEPACKING",
-    "fecha": "",
+    "fecha": "07/06/2026",
     "modalidad": "gravel",
     "tipo_prueba": "etapas",
-    "ubicacion": "Girona",
+    "ubicacion": "Flaçá",
     "provincia": "Girona",
-    "distancia_km": "",
+    "distancia_km": "150",
     "desnivel_m": "",
     "cat_elite": "",
     "cat_sub23": "",
@@ -591,10 +569,10 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://cyclocat.cat"
+    "enlace_web": "https://www.ciclisme.cat/cursa/trobades/costa-brava-bikepacking-e3"
   },
   {
-    "id": 28,
+    "id": 27,
     "nombre": "Desafío 10 Picos Sierra de Espadán",
     "fecha": "16/05/2026",
     "modalidad": "carretera",
@@ -616,15 +594,15 @@
     "enlace_web": "https://demarragevalencia.com"
   },
   {
-    "id": 29,
-    "nombre": "Desafío Dama Roja (Copa España XCM)",
-    "fecha": "",
+    "id": 28,
+    "nombre": "Desafío Dama Roja",
+    "fecha": "11/07/2026",
     "modalidad": "mtb",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
-    "distancia_km": "",
-    "desnivel_m": "",
+    "tipo_prueba": "competicion",
+    "ubicacion": "Ramales de la Victoria",
+    "provincia": "Cantabria",
+    "distancia_km": "75",
+    "desnivel_m": "3000",
     "cat_elite": "",
     "cat_sub23": "",
     "cat_junior": "",
@@ -635,10 +613,10 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=Desaf%C3%ADo+Dama+Roja+%28Copa+Espa%C3%B1a+XCM%29+2026"
+    "enlace_web": "https://desafiodamaroja.com/"
   },
   {
-    "id": 30,
+    "id": 29,
     "nombre": "Desafío La Titánica",
     "fecha": "11/04/2026",
     "modalidad": "carretera",
@@ -660,7 +638,7 @@
     "enlace_web": "https://www.facebook.com/desafiotitanica"
   },
   {
-    "id": 31,
+    "id": 30,
     "nombre": "Desafío Lagos de Covadonga",
     "fecha": "06/06/2026",
     "modalidad": "carretera",
@@ -682,7 +660,7 @@
     "enlace_web": "https://www.desafiolagosdecovadonga.com/es"
   },
   {
-    "id": 32,
+    "id": 31,
     "nombre": "Desafío Maestrat",
     "fecha": "13/06/2026",
     "modalidad": "carretera",
@@ -704,51 +682,29 @@
     "enlace_web": "https://www.desafiomaestrat.com"
   },
   {
+    "id": 32,
+    "nombre": "Desafío Sport-Bike Ciudad Real \"Asedio a los Calatravos\"",
+    "fecha": "25/10/2026",
+    "modalidad": "carretera",
+    "tipo_prueba": "marcha",
+    "ubicacion": "Ciudad Real",
+    "provincia": "Ciudad Real",
+    "distancia_km": "180",
+    "desnivel_m": "1400",
+    "cat_elite": "",
+    "cat_sub23": "",
+    "cat_junior": "",
+    "cat_cadete": "",
+    "cat_femenino": "",
+    "cat_master30": "",
+    "cat_master40": "",
+    "cat_master50": "",
+    "cat_master60": "",
+    "cat_open": "",
+    "enlace_web": "https://sport-bike.es/producto/asedio-a-los-calatravos-inscripciones/"
+  },
+  {
     "id": 33,
-    "nombre": "Desafío MTB Sierra Norte",
-    "fecha": "15/09/2025",
-    "modalidad": "mtb",
-    "tipo_prueba": "XCM",
-    "ubicacion": "Madrid",
-    "provincia": "Madrid",
-    "distancia_km": "45",
-    "desnivel_m": "1500",
-    "cat_elite": "",
-    "cat_sub23": "",
-    "cat_junior": "",
-    "cat_cadete": "",
-    "cat_femenino": "",
-    "cat_master30": "",
-    "cat_master40": "",
-    "cat_master50": "",
-    "cat_master60": "",
-    "cat_open": "",
-    "enlace_web": "https://ejemplo.com/desafio-mtb"
-  },
-  {
-    "id": 34,
-    "nombre": "Desafío Sport-Bike Ciudad Real",
-    "fecha": "",
-    "modalidad": "",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
-    "distancia_km": "",
-    "desnivel_m": "",
-    "cat_elite": "",
-    "cat_sub23": "",
-    "cat_junior": "",
-    "cat_cadete": "",
-    "cat_femenino": "",
-    "cat_master30": "",
-    "cat_master40": "",
-    "cat_master50": "",
-    "cat_master60": "",
-    "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=Desaf%C3%ADo+Sport-Bike+Ciudad+Real+2026"
-  },
-  {
-    "id": 35,
     "nombre": "Desafío Tenerife Teide 360º",
     "fecha": "04/04/2026",
     "modalidad": "carretera",
@@ -767,10 +723,10 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://www.alltricks.es/blog/calendario-de-marchas-cicloturistas"
+    "enlace_web": "https://teide360.com/"
   },
   {
-    "id": 36,
+    "id": 34,
     "nombre": "Descenso Manzaneda Estación",
     "fecha": "28/06/2026",
     "modalidad": "descenso",
@@ -792,7 +748,7 @@
     "enlace_web": "https://rfec.com/index.php/es/smartweb/seccion/circuito/rfec/26COPADH"
   },
   {
-    "id": 37,
+    "id": 35,
     "nombre": "DHI Manzaneda Estación 2026",
     "fecha": "28/06/2026",
     "modalidad": "descenso",
@@ -814,11 +770,11 @@
     "enlace_web": "https://rfec.com/index.php/es/smartweb/seccion/circuito/rfec/26COPADH"
   },
   {
-    "id": 38,
+    "id": 36,
     "nombre": "EL MITO CHALLENGE",
-    "fecha": "",
-    "modalidad": "gravel",
-    "tipo_prueba": "ultra",
+    "fecha": "28/03/2026",
+    "modalidad": "mtb",
+    "tipo_prueba": "granfondo",
     "ubicacion": "Ronda",
     "provincia": "Málaga",
     "distancia_km": "350",
@@ -836,33 +792,11 @@
     "enlace_web": "https://www.facebook.com"
   },
   {
-    "id": 39,
-    "nombre": "Enduro Trail Pirineos",
-    "fecha": "10/09/2025",
-    "modalidad": "enduro",
-    "tipo_prueba": "competicion",
-    "ubicacion": "Biescas",
-    "provincia": "Huesca",
-    "distancia_km": "35",
-    "desnivel_m": "1800",
-    "cat_elite": "",
-    "cat_sub23": "",
-    "cat_junior": "",
-    "cat_cadete": "",
-    "cat_femenino": "",
-    "cat_master30": "",
-    "cat_master40": "",
-    "cat_master50": "",
-    "cat_master60": "",
-    "cat_open": "",
-    "enlace_web": "https://ejemplo.com/enduro-pirineos"
-  },
-  {
-    "id": 40,
+    "id": 37,
     "nombre": "ENTRE SIERRAS GRAVEL RACE",
     "fecha": "30/05/2026",
     "modalidad": "gravel",
-    "tipo_prueba": "carrera",
+    "tipo_prueba": "competicion",
     "ubicacion": "Villanueva del Trabuco",
     "provincia": "Málaga",
     "distancia_km": "",
@@ -877,10 +811,10 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": ""
+    "enlace_web": "https://andaluciaciclismo.com/index.php/smartweb/inscripciones/prueba/32190-E..."
   },
   {
-    "id": 41,
+    "id": 38,
     "nombre": "Epic Gran Canaria",
     "fecha": "07/02/2026",
     "modalidad": "carretera",
@@ -902,15 +836,15 @@
     "enlace_web": "https://epicgrancanaria.com/"
   },
   {
-    "id": 42,
+    "id": 39,
     "nombre": "FLYSCH GRAVEL",
-    "fecha": "",
+    "fecha": "no confirmado",
     "modalidad": "gravel",
     "tipo_prueba": "marcha",
     "ubicacion": "Deba",
     "provincia": "Gipuzkoa",
     "distancia_km": "65",
-    "desnivel_m": "",
+    "desnivel_m": "1500",
     "cat_elite": "",
     "cat_sub23": "",
     "cat_junior": "",
@@ -921,18 +855,18 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://www.instagram.com"
+    "enlace_web": "https://web.rockthesport.com/es/event/flysch-gravel-25"
   },
   {
-    "id": 43,
-    "nombre": "GP Canal de Castilla (Marcha + Retro)",
-    "fecha": "",
-    "modalidad": "",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
-    "distancia_km": "",
-    "desnivel_m": "",
+    "id": 40,
+    "nombre": "FLYSCH GRAVEL",
+    "fecha": "no confirmado",
+    "modalidad": "mtb",
+    "tipo_prueba": "marcha",
+    "ubicacion": "Deba",
+    "provincia": "Gipuzkoa",
+    "distancia_km": "65",
+    "desnivel_m": "1500",
     "cat_elite": "",
     "cat_sub23": "",
     "cat_junior": "",
@@ -942,77 +876,11 @@
     "cat_master40": "",
     "cat_master50": "",
     "cat_master60": "",
-    "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=GP+Canal+de+Castilla+%28Marcha+%2B+Retro%29+2026"
+    "cat_open": "x",
+    "enlace_web": "https://web.rockthesport.com/es/event/flysch-gravel-25"
   },
   {
-    "id": 44,
-    "nombre": "GP Canal de Castilla (Marcha + Retro)",
-    "fecha": "",
-    "modalidad": "",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
-    "distancia_km": "",
-    "desnivel_m": "",
-    "cat_elite": "",
-    "cat_sub23": "",
-    "cat_junior": "",
-    "cat_cadete": "",
-    "cat_femenino": "",
-    "cat_master30": "",
-    "cat_master40": "",
-    "cat_master50": "",
-    "cat_master60": "",
-    "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=GP+Canal+de+Castilla+%28Marcha+%2B+Retro%29+2026"
-  },
-  {
-    "id": 45,
-    "nombre": "GP Canal de Castilla (Marcha + Retro)",
-    "fecha": "",
-    "modalidad": "",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
-    "distancia_km": "",
-    "desnivel_m": "",
-    "cat_elite": "",
-    "cat_sub23": "",
-    "cat_junior": "",
-    "cat_cadete": "",
-    "cat_femenino": "",
-    "cat_master30": "",
-    "cat_master40": "",
-    "cat_master50": "",
-    "cat_master60": "",
-    "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=GP+Canal+de+Castilla+%28Marcha+%2B+Retro%29+2026"
-  },
-  {
-    "id": 46,
-    "nombre": "GP Canal de Castilla (Marcha + Retro)",
-    "fecha": "",
-    "modalidad": "",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
-    "distancia_km": "",
-    "desnivel_m": "",
-    "cat_elite": "",
-    "cat_sub23": "",
-    "cat_junior": "",
-    "cat_cadete": "",
-    "cat_femenino": "",
-    "cat_master30": "",
-    "cat_master40": "",
-    "cat_master50": "",
-    "cat_master60": "",
-    "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=GP+Canal+de+Castilla+%28Marcha+%2B+Retro%29+2026"
-  },
-  {
-    "id": 47,
+    "id": 41,
     "nombre": "Gran Canaria Bike Week",
     "fecha": "29/11/2026 – 04/12/2026",
     "modalidad": "carretera",
@@ -1034,7 +902,7 @@
     "enlace_web": "https://web.rockthesport.com/es/event/38-gran-canaria-bike-week-2026"
   },
   {
-    "id": 48,
+    "id": 42,
     "nombre": "Gran Fondo Alé Cycling Gandia",
     "fecha": "18/04/2026",
     "modalidad": "carretera",
@@ -1056,7 +924,7 @@
     "enlace_web": "https://ccescapada.com/ale-cycling-gandia"
   },
   {
-    "id": 49,
+    "id": 43,
     "nombre": "Gran Fondo Calella",
     "fecha": "15/03/2026",
     "modalidad": "carretera",
@@ -1078,7 +946,7 @@
     "enlace_web": "https://www.granfondo360.com/gfcalella"
   },
   {
-    "id": 50,
+    "id": 44,
     "nombre": "Gran Fondo Costa del Sol",
     "fecha": "03/10/2026",
     "modalidad": "carretera",
@@ -1100,7 +968,7 @@
     "enlace_web": "https://costadelsolgranfondo.com/"
   },
   {
-    "id": 51,
+    "id": 45,
     "nombre": "Gran Fondo Ezaro – Fin do Camiño",
     "fecha": "05/07/2026",
     "modalidad": "carretera",
@@ -1119,10 +987,10 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://battistrada.com/es/calendario-marchas-cicloturistas/edition/granfondo-ezaro-2026/50444/"
+    "enlace_web": "https://www.granfondoezaro.com/"
   },
   {
-    "id": 52,
+    "id": 46,
     "nombre": "Gran Fondo Guad Al-Xenil",
     "fecha": "18/10/2026",
     "modalidad": "carretera",
@@ -1144,7 +1012,7 @@
     "enlace_web": "https://www.buscametas.com/evento/1107571796/gran-fondo-guad-al-xenil-2026/"
   },
   {
-    "id": 53,
+    "id": 47,
     "nombre": "Gran Fondo La Nucía",
     "fecha": "18/10/2026",
     "modalidad": "carretera",
@@ -1166,7 +1034,7 @@
     "enlace_web": "https://granfondolanucia.com"
   },
   {
-    "id": 54,
+    "id": 48,
     "nombre": "Gran Fondo Jaén Paraíso Interior",
     "fecha": "14/02/2026",
     "modalidad": "carretera",
@@ -1188,7 +1056,7 @@
     "enlace_web": "https://clasicajaen.com/en/category/gran-fondo"
   },
   {
-    "id": 55,
+    "id": 49,
     "nombre": "Gran Fondo La Nucía",
     "fecha": "18/10/2026",
     "modalidad": "carretera",
@@ -1210,7 +1078,7 @@
     "enlace_web": "https://granfondolanucia.com"
   },
   {
-    "id": 56,
+    "id": 50,
     "nombre": "Gran Fondo Las 4 Cimas Gérgal",
     "fecha": "05/09/2026",
     "modalidad": "carretera",
@@ -1232,7 +1100,7 @@
     "enlace_web": "https://las4cimas.com/"
   },
   {
-    "id": 57,
+    "id": 51,
     "nombre": "Gran Fondo Lloret Costa Brava",
     "fecha": "18/04/2026",
     "modalidad": "carretera",
@@ -1254,15 +1122,15 @@
     "enlace_web": "https://www.granfondo360.com/gflloretcostabrava"
   },
   {
-    "id": 58,
+    "id": 52,
     "nombre": "Gran Fondo Pico de las Nieves",
-    "fecha": "",
+    "fecha": "29/11/2026",
     "modalidad": "carretera",
     "tipo_prueba": "granfondo",
     "ubicacion": "Arucas",
-    "provincia": "Las Palmas",
-    "distancia_km": "125|59",
-    "desnivel_m": "",
+    "provincia": "Las Palmas de Gran Canaria",
+    "distancia_km": "125",
+    "desnivel_m": "3324",
     "cat_elite": "",
     "cat_sub23": "",
     "cat_junior": "",
@@ -1276,7 +1144,7 @@
     "enlace_web": "https://picodelasnieves.com"
   },
   {
-    "id": 59,
+    "id": 53,
     "nombre": "Gran Fondo Pirineus",
     "fecha": "28/06/2026",
     "modalidad": "carretera",
@@ -1298,7 +1166,7 @@
     "enlace_web": "https://www.granfondo360.com/gfpirineus"
   },
   {
-    "id": 60,
+    "id": 54,
     "nombre": "Gran Fondo Sierra de Albacete",
     "fecha": "06/06/2026",
     "modalidad": "carretera",
@@ -1320,15 +1188,15 @@
     "enlace_web": "https://gfsierradealbacete.com"
   },
   {
-    "id": 61,
+    "id": 55,
     "nombre": "Gran Fondo Sierra de Cazorla, Segura y Las Villas",
-    "fecha": "",
+    "fecha": "26/09/2026",
     "modalidad": "carretera",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
-    "distancia_km": "",
-    "desnivel_m": "",
+    "tipo_prueba": "marcha",
+    "ubicacion": "Cazorla",
+    "provincia": "Jaén",
+    "distancia_km": "145",
+    "desnivel_m": "2090",
     "cat_elite": "",
     "cat_sub23": "",
     "cat_junior": "",
@@ -1339,10 +1207,10 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=Gran+Fondo+Sierra+de+Cazorla%2C+Segura+y+Las+Villas+2026"
+    "enlace_web": "https://granfondosierradecazorla.es/"
   },
   {
-    "id": 62,
+    "id": 56,
     "nombre": "Gran Fondo Sierra Morena",
     "fecha": "13/06/2026",
     "modalidad": "carretera",
@@ -1364,7 +1232,7 @@
     "enlace_web": "https://granfondosierramorena.com/"
   },
   {
-    "id": 63,
+    "id": 57,
     "nombre": "Gran Fondo Teika Alé",
     "fecha": "28/03/2026",
     "modalidad": "carretera",
@@ -1386,7 +1254,7 @@
     "enlace_web": "https://granfondoteikaale.com"
   },
   {
-    "id": 64,
+    "id": 58,
     "nombre": "Gran Fondo Valencia",
     "fecha": "02/05/2026",
     "modalidad": "carretera",
@@ -1408,7 +1276,7 @@
     "enlace_web": "https://www.marchaciudadvalencia.es"
   },
   {
-    "id": 65,
+    "id": 59,
     "nombre": "Gran Fondo Vitoria",
     "fecha": "20/06/2026",
     "modalidad": "carretera",
@@ -1430,11 +1298,11 @@
     "enlace_web": "https://pruebavitoria.es/es"
   },
   {
-    "id": 66,
+    "id": 60,
     "nombre": "GranGuanche Audax Road",
     "fecha": "25/01/2026",
     "modalidad": "carretera",
-    "tipo_prueba": "ultra",
+    "tipo_prueba": "granfondo",
     "ubicacion": "Haría",
     "provincia": "Las Palmas",
     "distancia_km": "650",
@@ -1449,10 +1317,10 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://battistrada.com/en/cycling-calendar/spain/"
+    "enlace_web": "https://outerdetours.com/granguanche/?utm_source=ig&utm_medium=social&utm_con..."
   },
   {
-    "id": 67,
+    "id": 61,
     "nombre": "Gravel Desert by The Traka",
     "fecha": "11/04/2026",
     "modalidad": "gravel",
@@ -1474,11 +1342,11 @@
     "enlace_web": "https://graveldesert.com/"
   },
   {
-    "id": 68,
+    "id": 62,
     "nombre": "GRAVEL DESERT BY THE TRAKA",
     "fecha": "11/04/2026",
     "modalidad": "gravel",
-    "tipo_prueba": "carrera",
+    "tipo_prueba": "competicion",
     "ubicacion": "Huesca-Monegros",
     "provincia": "Huesca",
     "distancia_km": "169",
@@ -1496,29 +1364,7 @@
     "enlace_web": "https://graveldesert.com"
   },
   {
-    "id": 69,
-    "nombre": "Gravel Experience Navarra",
-    "fecha": "25/08/2025",
-    "modalidad": "gravel",
-    "tipo_prueba": "aventura",
-    "ubicacion": "Pamplona",
-    "provincia": "Navarra",
-    "distancia_km": "80",
-    "desnivel_m": "1200",
-    "cat_elite": "",
-    "cat_sub23": "",
-    "cat_junior": "",
-    "cat_cadete": "",
-    "cat_femenino": "",
-    "cat_master30": "",
-    "cat_master40": "",
-    "cat_master50": "",
-    "cat_master60": "",
-    "cat_open": "",
-    "enlace_web": "https://ejemplo.com/gravel-navarra"
-  },
-  {
-    "id": 70,
+    "id": 63,
     "nombre": "Gravel Sendas Blancas",
     "fecha": "08/03/2026",
     "modalidad": "gravel",
@@ -1540,7 +1386,7 @@
     "enlace_web": "https://www.alltricks.es/blog/calendario-gravel-espana"
   },
   {
-    "id": 71,
+    "id": 64,
     "nombre": "UCI Gravel World Series - Sea Otter Europe",
     "fecha": "19/09/2026",
     "modalidad": "gravel",
@@ -1562,29 +1408,7 @@
     "enlace_web": "https://gironagravelworldseries.com/"
   },
   {
-    "id": 72,
-    "nombre": "I Equa Gravida MTB (Maratón)",
-    "fecha": "",
-    "modalidad": "mtb",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
-    "distancia_km": "",
-    "desnivel_m": "",
-    "cat_elite": "",
-    "cat_sub23": "",
-    "cat_junior": "",
-    "cat_cadete": "",
-    "cat_femenino": "",
-    "cat_master30": "",
-    "cat_master40": "",
-    "cat_master50": "",
-    "cat_master60": "",
-    "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=I+Equa+Gravida+MTB+%28Marat%C3%B3n%29+2026"
-  },
-  {
-    "id": 73,
+    "id": 65,
     "nombre": "Ibercaja Quebrantahuesos",
     "fecha": "20/06/2026",
     "modalidad": "carretera",
@@ -1606,7 +1430,7 @@
     "enlace_web": "https://www.quebrantahuesos.com/"
   },
   {
-    "id": 74,
+    "id": 66,
     "nombre": "Ibercaja Quebrantahuesos by TotalEnergies",
     "fecha": "20/06/2026",
     "modalidad": "carretera",
@@ -1628,7 +1452,7 @@
     "enlace_web": "https://www.quebrantahuesos.com"
   },
   {
-    "id": 75,
+    "id": 67,
     "nombre": "Gravel Tres Cantos by Specialized",
     "fecha": "09/05/2026",
     "modalidad": "gravel",
@@ -1647,10 +1471,10 @@
     "cat_master50": "x",
     "cat_master60": "x",
     "cat_open": "x",
-    "enlace_web": "https://fmciclismo.com/index.php/es/smartweb/seccion/noticia/madrid/btt/61445-Tres-Cantos-Gravel-by-Specialized-se-celebrara-el-9-de-mayo-y-mantendra-la-sede-del-Campeonato-de-Madrid-2026"
+    "enlace_web": "https://fmciclismo.com/index.php/es/smartweb/seccion/noticia/madrid/btt/61445..."
   },
   {
-    "id": 76,
+    "id": 68,
     "nombre": "III Enduro Villa de Ojén",
     "fecha": "29/03/2026",
     "modalidad": "enduro",
@@ -1672,37 +1496,15 @@
     "enlace_web": "https://rfec.com/index.php/es/smartweb/seccion/circuito/rfec/26COPAEND"
   },
   {
-    "id": 77,
-    "nombre": "II GP Toledo Flandriens – Elite/Sub23",
-    "fecha": "",
-    "modalidad": "carretera",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
-    "distancia_km": "",
-    "desnivel_m": "",
-    "cat_elite": "x",
-    "cat_sub23": "x",
-    "cat_junior": "",
-    "cat_cadete": "",
-    "cat_femenino": "",
-    "cat_master30": "",
-    "cat_master40": "",
-    "cat_master50": "",
-    "cat_master60": "",
-    "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=II+GP+Toledo+Flandriens+%E2%80%93+Elite%2FSub23+2026"
-  },
-  {
-    "id": 78,
+    "id": 69,
     "nombre": "II Gravel Costa da Morte",
-    "fecha": "",
+    "fecha": "04/10/2026",
     "modalidad": "gravel",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
-    "distancia_km": "",
-    "desnivel_m": "",
+    "tipo_prueba": "marcha",
+    "ubicacion": "Carballo",
+    "provincia": "La Coruña",
+    "distancia_km": "50",
+    "desnivel_m": "1178",
     "cat_elite": "",
     "cat_sub23": "",
     "cat_junior": "",
@@ -1713,10 +1515,10 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=II+Gravel+Costa+da+Morte+2026"
+    "enlace_web": "https://fgalegaciclismo.es/index.php/smartweb/inscripciones/prueba/34200-GRAV..."
   },
   {
-    "id": 79,
+    "id": 70,
     "nombre": "Gravel Tres Cantos by Specialized",
     "fecha": "09/05/2026",
     "modalidad": "gravel",
@@ -1735,10 +1537,10 @@
     "cat_master50": "x",
     "cat_master60": "x",
     "cat_open": "x",
-    "enlace_web": "https://cadenaser.com/cmadrid/2026/02/18/la-iv-gravel-tres-cantos-by-specialized-se-disputara-finalmente-el-9-de-mayo-ser-madrid-norte/"
+    "enlace_web": "https://www.graveltrescantos.com/"
   },
   {
-    "id": 80,
+    "id": 71,
     "nombre": "III Monclova Desert Gravel",
     "fecha": "04/10/2026",
     "modalidad": "gravel",
@@ -1760,7 +1562,7 @@
     "enlace_web": "https://rfec.com/es/smartweb/seccion/seccion/rfec/GRAVEL/calendario_gravel"
   },
   {
-    "id": 81,
+    "id": 72,
     "nombre": "Gravel & MTB La Indomable",
     "fecha": "02/05/2026",
     "modalidad": "gravel",
@@ -1782,7 +1584,7 @@
     "enlace_web": "https://laindomable.es/"
   },
   {
-    "id": 82,
+    "id": 73,
     "nombre": "Marcha Hermanos Herrada",
     "fecha": "03/10/2026",
     "modalidad": "carretera",
@@ -1804,29 +1606,7 @@
     "enlace_web": "https://marchahermanosherrada.com/"
   },
   {
-    "id": 83,
-    "nombre": "Irisasi BTT Hotzak Akabatzen",
-    "fecha": "25/01/2026",
-    "modalidad": "mtb",
-    "tipo_prueba": "marcha",
-    "ubicacion": "Usurbil",
-    "provincia": "Gipuzkoa",
-    "distancia_km": "37",
-    "desnivel_m": "",
-    "cat_elite": "",
-    "cat_sub23": "",
-    "cat_junior": "",
-    "cat_cadete": "",
-    "cat_femenino": "",
-    "cat_master30": "",
-    "cat_master40": "",
-    "cat_master50": "",
-    "cat_master60": "",
-    "cat_open": "x",
-    "enlace_web": "https://battistrada.com/en/cycling-calendar/spain/"
-  },
-  {
-    "id": 84,
+    "id": 74,
     "nombre": "Iron Gravel IG360",
     "fecha": "30/04/2026",
     "modalidad": "gravel",
@@ -1848,11 +1628,11 @@
     "enlace_web": "https://irongravel.com"
   },
   {
-    "id": 85,
+    "id": 75,
     "nombre": "IRON GRAVEL IG360",
     "fecha": "30/04/2026",
     "modalidad": "gravel",
-    "tipo_prueba": "ultra",
+    "tipo_prueba": "granfondo",
     "ubicacion": "Alicante",
     "provincia": "Alicante",
     "distancia_km": "720",
@@ -1870,7 +1650,7 @@
     "enlace_web": "https://irongravel.com"
   },
   {
-    "id": 86,
+    "id": 76,
     "nombre": "Itzulia Basque Challenge",
     "fecha": "12/04/2026",
     "modalidad": "carretera",
@@ -1892,7 +1672,7 @@
     "enlace_web": "https://itzuliabasquechallenge.com/es"
   },
   {
-    "id": 87,
+    "id": 77,
     "nombre": "Itzulia Basque Challenge",
     "fecha": "12/04/2026",
     "modalidad": "carretera",
@@ -1914,15 +1694,15 @@
     "enlace_web": "https://itzuliabasquechallenge.eus/"
   },
   {
-    "id": 88,
+    "id": 78,
     "nombre": "Jamón Bike Gravel Race",
-    "fecha": "",
-    "modalidad": "gravel",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
-    "distancia_km": "",
-    "desnivel_m": "",
+    "fecha": "21/03/2026",
+    "modalidad": "mtb",
+    "tipo_prueba": "etapas",
+    "ubicacion": "Calamocha",
+    "provincia": "Teruel",
+    "distancia_km": "100",
+    "desnivel_m": "2000",
     "cat_elite": "",
     "cat_sub23": "",
     "cat_junior": "",
@@ -1933,10 +1713,10 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=Jam%C3%B3n+Bike+Gravel+Race+2026"
+    "enlace_web": "https://jamonbike.com/"
   },
   {
-    "id": 89,
+    "id": 79,
     "nombre": "La Desértica",
     "fecha": "17/10/2026",
     "modalidad": "gravel",
@@ -1958,9 +1738,9 @@
     "enlace_web": "https://www.ladesertica.es/modalidades/"
   },
   {
-    "id": 90,
+    "id": 80,
     "nombre": "LA ENCIGALADA",
-    "fecha": "",
+    "fecha": "09/05/2026",
     "modalidad": "gravel",
     "tipo_prueba": "etapas",
     "ubicacion": "Barcelona",
@@ -1980,7 +1760,7 @@
     "enlace_web": "https://laencigalada.wixsite.com"
   },
   {
-    "id": 91,
+    "id": 81,
     "nombre": "La Indurain",
     "fecha": "25/07/2026",
     "modalidad": "carretera",
@@ -2002,11 +1782,11 @@
     "enlace_web": "https://laindurain.com"
   },
   {
-    "id": 92,
+    "id": 82,
     "nombre": "La Invernal de MotorLand",
     "fecha": "17/01/2026",
     "modalidad": "mtb",
-    "tipo_prueba": "carrera",
+    "tipo_prueba": "competicion",
     "ubicacion": "Alcañiz",
     "provincia": "Teruel",
     "distancia_km": "100|50|33",
@@ -2021,10 +1801,10 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://battistrada.com/en/cycling-calendar/spain/"
+    "enlace_web": "https://lainvernal.motorlandaragon.com/"
   },
   {
-    "id": 93,
+    "id": 83,
     "nombre": "La Legendaria Gran Fondo",
     "fecha": "09/05/2026",
     "modalidad": "carretera",
@@ -2046,11 +1826,11 @@
     "enlace_web": "https://www.legendariagranfondo.com"
   },
   {
-    "id": 94,
+    "id": 84,
     "nombre": "LA LLERA",
-    "fecha": "",
+    "fecha": "31/05/2026",
     "modalidad": "gravel",
-    "tipo_prueba": "marcha",
+    "tipo_prueba": "etapas",
     "ubicacion": "Pola de Laviana",
     "provincia": "Asturias",
     "distancia_km": "96",
@@ -2065,10 +1845,10 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://sites.google.com"
+    "enlace_web": "https://sites.google.com/view/wwwlalleragravelridecom/inicio"
   },
   {
-    "id": 95,
+    "id": 85,
     "nombre": "La Magia del Grial",
     "fecha": "30/05/2026",
     "modalidad": "carretera",
@@ -2090,15 +1870,15 @@
     "enlace_web": "https://lamagiadelgrial.com"
   },
   {
-    "id": 96,
+    "id": 86,
     "nombre": "LA MESETARIA",
-    "fecha": "",
+    "fecha": "no confirmado",
     "modalidad": "gravel",
     "tipo_prueba": "marcha",
     "ubicacion": "Ausines",
     "provincia": "Burgos",
     "distancia_km": "100",
-    "desnivel_m": "",
+    "desnivel_m": "1700",
     "cat_elite": "",
     "cat_sub23": "",
     "cat_junior": "",
@@ -2112,7 +1892,7 @@
     "enlace_web": "https://lamesetaria.com"
   },
   {
-    "id": 97,
+    "id": 87,
     "nombre": "La Perico by TotalEnergies",
     "fecha": "28/06/2026",
     "modalidad": "carretera",
@@ -2134,11 +1914,11 @@
     "enlace_web": "https://pedrodelgado.com"
   },
   {
-    "id": 98,
+    "id": 88,
     "nombre": "LABA GRAVEL",
     "fecha": "30/05/2026",
     "modalidad": "gravel",
-    "tipo_prueba": "ultra",
+    "tipo_prueba": "granfondo",
     "ubicacion": "Andoain",
     "provincia": "Gipuzkoa",
     "distancia_km": "270",
@@ -2156,9 +1936,9 @@
     "enlace_web": "https://www.labagravel.com"
   },
   {
-    "id": 99,
+    "id": 89,
     "nombre": "LADYS AND GENTLEMAN",
-    "fecha": "",
+    "fecha": "14/03/2026",
     "modalidad": "gravel",
     "tipo_prueba": "marcha",
     "ubicacion": "Barcelona",
@@ -2175,10 +1955,10 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://cyclocat.cat"
+    "enlace_web": "https://cyclocat.cat/ca/2026/01/11/10a-ladies-gentlemen-gravel-ride/"
   },
   {
-    "id": 100,
+    "id": 90,
     "nombre": "Larra-Larrau",
     "fecha": "05/09/2026",
     "modalidad": "carretera",
@@ -2200,7 +1980,7 @@
     "enlace_web": "https://larralarrau.com/edicion-2026/"
   },
   {
-    "id": 101,
+    "id": 91,
     "nombre": "Mallorca 312 OK Mobility",
     "fecha": "25/04/2026",
     "modalidad": "carretera",
@@ -2222,11 +2002,11 @@
     "enlace_web": "https://mallorca312.com"
   },
   {
-    "id": 102,
+    "id": 92,
     "nombre": "Maratón BTT Istán",
     "fecha": "18/01/2026",
     "modalidad": "mtb",
-    "tipo_prueba": "xcm",
+    "tipo_prueba": "competicion",
     "ubicacion": "Istán",
     "provincia": "Málaga",
     "distancia_km": "68",
@@ -2241,14 +2021,14 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://battistrada.com/en/cycling-calendar/spain/"
+    "enlace_web": "https://www.istan.es/es/174/com1_md3_cd-11789/x-maraton-btt-istan-2026"
   },
   {
-    "id": 103,
+    "id": 93,
     "nombre": "Marcha BTT Casinos",
     "fecha": "18/01/2026",
     "modalidad": "mtb",
-    "tipo_prueba": "carrera",
+    "tipo_prueba": "competicion",
     "ubicacion": "Casinos",
     "provincia": "Valencia",
     "distancia_km": "38",
@@ -2263,10 +2043,10 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://battistrada.com/en/cycling-calendar/spain/"
+    "enlace_web": "https://multiesport.es/event/2026-marcha-btt-casinos/"
   },
   {
-    "id": 104,
+    "id": 94,
     "nombre": "Marcha BTT La Pobla de Vallbona",
     "fecha": "11/01/2026",
     "modalidad": "mtb",
@@ -2285,10 +2065,10 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://battistrada.com/en/cycling-calendar/spain/"
+    "enlace_web": "https://fccv.es/index.php/smartweb/inscripciones/prueba/32365-MARCHA-BTT-LA-P..."
   },
   {
-    "id": 105,
+    "id": 95,
     "nombre": "Marcha Ciclodeportiva Castro-Castro",
     "fecha": "05/04/2026",
     "modalidad": "carretera",
@@ -2307,10 +2087,10 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://www.alltricks.es/blog/calendario-de-marchas-cicloturistas"
+    "enlace_web": "https://cccastro.com/marcha-cicloturista-castro-castro"
   },
   {
-    "id": 106,
+    "id": 96,
     "nombre": "Marcha Ciclodeportiva La Gamba",
     "fecha": "05/04/2026",
     "modalidad": "carretera",
@@ -2329,16 +2109,16 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://www.alltricks.es/blog/calendario-de-marchas-cicloturistas"
+    "enlace_web": "https://www.facebook.com/lagambadenia/?locale=es_LA"
   },
   {
-    "id": 107,
+    "id": 97,
     "nombre": "Marcha Cicloturista El Pino",
-    "fecha": "",
+    "fecha": "19/09/2026",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
-    "ubicacion": "",
-    "provincia": "",
+    "ubicacion": "Teror",
+    "provincia": "Las Palmas de Gran Canaria",
     "distancia_km": "",
     "desnivel_m": "",
     "cat_elite": "",
@@ -2351,10 +2131,10 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://www.google.com/search?q=Marcha+Cicloturista+El+Pino+2026"
+    "enlace_web": "https://teror.es/events/ix-marcha-cicloturista/"
   },
   {
-    "id": 108,
+    "id": 98,
     "nombre": "Marcha Cicloturista La Indomable (ruta)",
     "fecha": "06/06/2026",
     "modalidad": "carretera",
@@ -2376,7 +2156,7 @@
     "enlace_web": "https://laindomable.es"
   },
   {
-    "id": 109,
+    "id": 99,
     "nombre": "Marcha Hermanos Herrada",
     "fecha": "03/10/2026",
     "modalidad": "carretera",
@@ -2398,7 +2178,7 @@
     "enlace_web": "https://marchahermanosherrada.com"
   },
   {
-    "id": 110,
+    "id": 100,
     "nombre": "Marxa Cicloturista Terra de Remences",
     "fecha": "09/05/2026",
     "modalidad": "carretera",
@@ -2417,18 +2197,18 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://www.alltricks.es/blog/calendario-de-marchas-cicloturistas"
+    "enlace_web": "https://laremences.cat/la-marxa/"
   },
   {
-    "id": 111,
+    "id": 101,
     "nombre": "Media Maratón BTT Sierra Elvira",
-    "fecha": "",
+    "fecha": "14/06/2026",
     "modalidad": "mtb",
     "tipo_prueba": "marcha",
     "ubicacion": "Atarfe",
     "provincia": "Granada",
-    "distancia_km": "",
-    "desnivel_m": "",
+    "distancia_km": "37",
+    "desnivel_m": "1200",
     "cat_elite": "",
     "cat_sub23": "",
     "cat_junior": "",
@@ -2442,11 +2222,11 @@
     "enlace_web": "https://andaluciaciclismo.com/es/smartweb/seccion/calendario/andalucia/2026"
   },
   {
-    "id": 112,
+    "id": 102,
     "nombre": "Media Maratón Villa de Periana",
     "fecha": "11/01/2026",
     "modalidad": "mtb",
-    "tipo_prueba": "carrera",
+    "tipo_prueba": "competicion",
     "ubicacion": "Periana",
     "provincia": "Málaga",
     "distancia_km": "32",
@@ -2461,10 +2241,10 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://battistrada.com/en/cycling-calendar/spain/"
+    "enlace_web": "https://diputacionmalagabtt.com/index.php/smartweb/inscripciones/prueba/32836..."
   },
   {
-    "id": 113,
+    "id": 103,
     "nombre": "Mediterranean Epic Gran Fondo",
     "fecha": "25/04/2026",
     "modalidad": "carretera",
@@ -2486,7 +2266,7 @@
     "enlace_web": "https://medepicseries.com/mediterranean-epic-gran-fondo"
   },
   {
-    "id": 114,
+    "id": 104,
     "nombre": "Memorial Isidro Pulido Gravel",
     "fecha": "16/05/2026",
     "modalidad": "gravel",
@@ -2508,11 +2288,11 @@
     "enlace_web": "https://rfec.com/index.php/es/smartweb/seccion/circuito/rfec/26COPAGRAVEL"
   },
   {
-    "id": 115,
+    "id": 105,
     "nombre": "MMR POWER RACE LEON",
     "fecha": "21/06/2026",
     "modalidad": "gravel",
-    "tipo_prueba": "carrera",
+    "tipo_prueba": "competicion",
     "ubicacion": "León",
     "provincia": "León",
     "distancia_km": "",
@@ -2530,11 +2310,11 @@
     "enlace_web": "https://power-race.es"
   },
   {
-    "id": 116,
+    "id": 106,
     "nombre": "MONCLOVA DESERT GRAVEL",
     "fecha": "04/10/2026",
     "modalidad": "gravel",
-    "tipo_prueba": "carrera",
+    "tipo_prueba": "competicion",
     "ubicacion": "La Luisiana",
     "provincia": "Sevilla",
     "distancia_km": "",
@@ -2549,10 +2329,10 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": ""
+    "enlace_web": "https://www.desnivelzero.com/"
   },
   {
-    "id": 117,
+    "id": 107,
     "nombre": "Montaltbike",
     "fecha": "25/01/2026",
     "modalidad": "mtb",
@@ -2571,10 +2351,10 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://battistrada.com/en/cycling-calendar/spain/"
+    "enlace_web": "https://pedalmaia.cat/montcalbike/"
   },
   {
-    "id": 118,
+    "id": 108,
     "nombre": "Montefaro Enduro Race",
     "fecha": "24/05/2026",
     "modalidad": "enduro",
@@ -2593,18 +2373,18 @@
     "cat_master50": "x",
     "cat_master60": "x",
     "cat_open": "",
-    "enlace_web": "https://fgalegaciclismo.es/index.php/smartweb/inscripciones/prueba/32654-MONTEFARO-ENDURO-RACE"
+    "enlace_web": "https://fgalegaciclismo.es/index.php/smartweb/inscripciones/prueba/32654-MONT..."
   },
   {
-    "id": 119,
+    "id": 109,
     "nombre": "MONTNEGRE MONTSENY GRAVEL GRINDER",
-    "fecha": "",
+    "fecha": "16/05/2026",
     "modalidad": "gravel",
     "tipo_prueba": "marcha",
-    "ubicacion": "Santa Susanna",
+    "ubicacion": "Santa Susanna, Maresme",
     "provincia": "Barcelona",
-    "distancia_km": "200",
-    "desnivel_m": "",
+    "distancia_km": "70",
+    "desnivel_m": "1000",
     "cat_elite": "",
     "cat_sub23": "",
     "cat_junior": "",
@@ -2615,10 +2395,10 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://www.mmoutdoorculture.com"
+    "enlace_web": "https://www.b3sportevents.com/mmgravelgrinder?utm_source=ig&utm_medium=social..."
   },
   {
-    "id": 120,
+    "id": 110,
     "nombre": "Montsec-Montsec",
     "fecha": "16/05/2026",
     "modalidad": "carretera",
@@ -2640,7 +2420,7 @@
     "enlace_web": "https://montsec-montsec.com"
   },
   {
-    "id": 121,
+    "id": 111,
     "nombre": "Marcha Cicloturista Pedro Delgado - La Perico",
     "fecha": "28/06/2026",
     "modalidad": "carretera",
@@ -2662,11 +2442,11 @@
     "enlace_web": "https://pedrodelgado.com/la-perico-2026"
   },
   {
-    "id": 122,
+    "id": 112,
     "nombre": "Mussara 24h Circuit de Barcelona",
     "fecha": "04/07/2026 – 05/07/2026",
     "modalidad": "carretera",
-    "tipo_prueba": "ultra",
+    "tipo_prueba": "granfondo",
     "ubicacion": "Montmeló",
     "provincia": "Barcelona",
     "distancia_km": "4.675 km/vuelta",
@@ -2684,11 +2464,11 @@
     "enlace_web": "https://www.rockthesport.com/en/event/mussara-24h-circuit-de-barcelona-2026"
   },
   {
-    "id": 123,
+    "id": 113,
     "nombre": "Mussara 24H Comunidad de Madrid",
     "fecha": "11/07/2026 – 12/07/2026",
     "modalidad": "carretera",
-    "tipo_prueba": "ultra",
+    "tipo_prueba": "granfondo",
     "ubicacion": "San Sebastián de los Reyes",
     "provincia": "Madrid",
     "distancia_km": "circuito",
@@ -2703,10 +2483,10 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://inscripciones.rpmsports.es/es/evento/mussara-24h-comunidad-de-madrid-2026"
+    "enlace_web": "https://inscripciones.rpmsports.es/es/evento/mussara-24h-comunidad-de-madrid-..."
   },
   {
-    "id": 124,
+    "id": 114,
     "nombre": "Mussara Salou Costa Daurada",
     "fecha": "17/05/2026",
     "modalidad": "carretera",
@@ -2728,7 +2508,7 @@
     "enlace_web": "https://mussaracycling.com/mussara-salou"
   },
   {
-    "id": 125,
+    "id": 115,
     "nombre": "Mussara Villanueva del Pardillo",
     "fecha": "25/10/2026",
     "modalidad": "carretera",
@@ -2747,10 +2527,10 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://battistrada.com/es/calendario-marchas-cicloturistas/edition/mussara-villanueva-del-pardillo-2026/54358/"
+    "enlace_web": "https://mussaracycling.com/mussara-villanueva-del-pardillo-abre-inscripciones/"
   },
   {
-    "id": 126,
+    "id": 116,
     "nombre": "Occident Bilbao Bilbao",
     "fecha": "15/03/2026",
     "modalidad": "carretera",
@@ -2772,7 +2552,7 @@
     "enlace_web": "https://www.bilbaobilbao.com"
   },
   {
-    "id": 127,
+    "id": 117,
     "nombre": "Orbea Monegros",
     "fecha": "25/04/2026",
     "modalidad": "mtb",
@@ -2794,15 +2574,15 @@
     "enlace_web": "https://www.orbeamonegros.com/"
   },
   {
-    "id": 128,
+    "id": 118,
     "nombre": "ORIGENEXT",
-    "fecha": "",
+    "fecha": "22/05/2026",
     "modalidad": "gravel",
-    "tipo_prueba": "ultra",
+    "tipo_prueba": "granfondo",
     "ubicacion": "Guijo de Granadilla",
     "provincia": "Cáceres",
     "distancia_km": "334",
-    "desnivel_m": "",
+    "desnivel_m": "6049",
     "cat_elite": "",
     "cat_sub23": "",
     "cat_junior": "",
@@ -2813,10 +2593,10 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://extremenamente.com"
+    "enlace_web": "https://origenext.com/"
   },
   {
-    "id": 129,
+    "id": 119,
     "nombre": "Ourense Strade Termal",
     "fecha": "26/04/2026",
     "modalidad": "carretera",
@@ -2838,7 +2618,7 @@
     "enlace_web": "https://www.ourensestradetermal.com"
   },
   {
-    "id": 130,
+    "id": 120,
     "nombre": "Pontevedra 4 Picos Road (Clásica Evaristo Portela)",
     "fecha": "10/05/2026",
     "modalidad": "carretera",
@@ -2857,10 +2637,10 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://www.alltricks.es/blog/calendario-de-marchas-cicloturistas"
+    "enlace_web": "https://www.laroadpontevedra.com/"
   },
   {
-    "id": 131,
+    "id": 121,
     "nombre": "Pravia Asturias Challenge",
     "fecha": "16/05/2026",
     "modalidad": "carretera",
@@ -2882,11 +2662,11 @@
     "enlace_web": "https://asturiaschallenge.es"
   },
   {
-    "id": 132,
+    "id": 122,
     "nombre": "Prueba BTT La San Antón de Jumilla",
     "fecha": "25/01/2026",
     "modalidad": "mtb",
-    "tipo_prueba": "carrera",
+    "tipo_prueba": "competicion",
     "ubicacion": "Jumilla",
     "provincia": "Murcia",
     "distancia_km": "49|26",
@@ -2901,10 +2681,10 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://battistrada.com/en/cycling-calendar/spain/"
+    "enlace_web": "https://www.facebook.com/lasananton.mtb/"
   },
   {
-    "id": 133,
+    "id": 123,
     "nombre": "Ibercaja Quebrantahuesos by TotalEnergies",
     "fecha": "20/06/2026",
     "modalidad": "carretera",
@@ -2926,7 +2706,7 @@
     "enlace_web": "https://www.quebrantahuesos.com/treparriscos/"
   },
   {
-    "id": 134,
+    "id": 124,
     "nombre": "Raia Gravel Race",
     "fecha": "26/09/2026",
     "modalidad": "gravel",
@@ -2948,13 +2728,13 @@
     "enlace_web": "https://rfec.com/es/smartweb/seccion/seccion/rfec/GRAVEL/calendario_gravel"
   },
   {
-    "id": 135,
+    "id": 125,
     "nombre": "Rally BTT Ciudad de Coín",
-    "fecha": "",
+    "fecha": "13/06/2026",
     "modalidad": "mtb",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
+    "tipo_prueba": "competicion",
+    "ubicacion": "Coin",
+    "provincia": "Málaga",
     "distancia_km": "",
     "desnivel_m": "",
     "cat_elite": "",
@@ -2967,14 +2747,14 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=Rally+BTT+Ciudad+de+Co%C3%ADn+2026"
+    "enlace_web": "https://diputacionmalagabtt.com/index.php/es/smartweb/seccion/circuito/malaga..."
   },
   {
-    "id": 136,
+    "id": 126,
     "nombre": "RANXO GRAVEL BY THE TRAKA",
     "fecha": "07/06/2026",
     "modalidad": "gravel",
-    "tipo_prueba": "carrera",
+    "tipo_prueba": "competicion",
     "ubicacion": "Lleida",
     "provincia": "Lleida",
     "distancia_km": "160",
@@ -2992,7 +2772,7 @@
     "enlace_web": "https://ranxogravel.com"
   },
   {
-    "id": 137,
+    "id": 127,
     "nombre": "Cabraloka / Reino de los Mallos Enduro MTB Race",
     "fecha": "25/04/2026",
     "modalidad": "enduro",
@@ -3014,15 +2794,15 @@
     "enlace_web": "https://aragonciclismo.com/index.php/smartweb/inscripciones/prueba/34227"
   },
   {
-    "id": 138,
+    "id": 128,
     "nombre": "Ribeira Sacra Cycling Road",
-    "fecha": "",
+    "fecha": "sin confirmar",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
-    "ubicacion": "Luintra (Nogueira de Ramuín)",
+    "ubicacion": "º",
     "provincia": "Ourense",
-    "distancia_km": "120|75",
-    "desnivel_m": "",
+    "distancia_km": "120",
+    "desnivel_m": "2800",
     "cat_elite": "",
     "cat_sub23": "",
     "cat_junior": "",
@@ -3036,15 +2816,15 @@
     "enlace_web": "https://www.aribeirasacra.com"
   },
   {
-    "id": 139,
-    "nombre": "RURAL CYCLING GRAVEL",
-    "fecha": "",
-    "modalidad": "gravel",
+    "id": 129,
+    "nombre": "Ribeira Sacra Cycling Road",
+    "fecha": "sin confirmar",
+    "modalidad": "carretera",
     "tipo_prueba": "marcha",
-    "ubicacion": "Les Garrigues",
-    "provincia": "Lleida",
-    "distancia_km": "95",
-    "desnivel_m": "",
+    "ubicacion": "º",
+    "provincia": "Ourense",
+    "distancia_km": "75",
+    "desnivel_m": "1600",
     "cat_elite": "",
     "cat_sub23": "",
     "cat_junior": "",
@@ -3055,16 +2835,38 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://cecastelldans.wixsite.com"
+    "enlace_web": "https://www.aribeirasacra.com"
   },
   {
-    "id": 140,
+    "id": 130,
+    "nombre": "RURAL CYCLING GRAVEL",
+    "fecha": "07/03/2026",
+    "modalidad": "gravel",
+    "tipo_prueba": "marcha",
+    "ubicacion": "Les Garrigues",
+    "provincia": "Lleida",
+    "distancia_km": "120",
+    "desnivel_m": "1200",
+    "cat_elite": "",
+    "cat_sub23": "",
+    "cat_junior": "",
+    "cat_cadete": "",
+    "cat_femenino": "",
+    "cat_master30": "",
+    "cat_master40": "",
+    "cat_master50": "",
+    "cat_master60": "",
+    "cat_open": "x",
+    "enlace_web": "https://ruralcycle.cc/"
+  },
+  {
+    "id": 131,
     "nombre": "Ruta BTT – Zufre",
-    "fecha": "",
+    "fecha": "21/11/2026",
     "modalidad": "mtb",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
+    "tipo_prueba": "marcha",
+    "ubicacion": "Zufre",
+    "provincia": "Huelva",
     "distancia_km": "",
     "desnivel_m": "",
     "cat_elite": "",
@@ -3077,32 +2879,10 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=Ruta+BTT+%E2%80%93+Zufre+2026"
+    "enlace_web": ""
   },
   {
-    "id": 141,
-    "nombre": "Ruta Carretera Costa del Sol",
-    "fecha": "02/10/2025",
-    "modalidad": "carretera",
-    "tipo_prueba": "marcha",
-    "ubicacion": "Málaga",
-    "provincia": "Málaga",
-    "distancia_km": "120",
-    "desnivel_m": "800",
-    "cat_elite": "",
-    "cat_sub23": "",
-    "cat_junior": "",
-    "cat_cadete": "",
-    "cat_femenino": "",
-    "cat_master30": "",
-    "cat_master40": "",
-    "cat_master50": "",
-    "cat_master60": "",
-    "cat_open": "",
-    "enlace_web": "https://ejemplo.com/ruta-carretera"
-  },
-  {
-    "id": 142,
+    "id": 132,
     "nombre": "SATÉLITE NORTE TERUEL",
     "fecha": "23/05/2026",
     "modalidad": "gravel",
@@ -3124,7 +2904,7 @@
     "enlace_web": "https://norteasurbikepack.com"
   },
   {
-    "id": 143,
+    "id": 133,
     "nombre": "SB HOTELS LA GARBA",
     "fecha": "27/03/2026",
     "modalidad": "gravel",
@@ -3146,29 +2926,7 @@
     "enlace_web": "https://sbhotelslagarba.com"
   },
   {
-    "id": 144,
-    "nombre": "Sea Otter Europe",
-    "fecha": "18/09/2026 – 20/09/2026",
-    "modalidad": "multimodal",
-    "tipo_prueba": "festival",
-    "ubicacion": "Girona",
-    "provincia": "Girona",
-    "distancia_km": "",
-    "desnivel_m": "",
-    "cat_elite": "",
-    "cat_sub23": "",
-    "cat_junior": "",
-    "cat_cadete": "",
-    "cat_femenino": "",
-    "cat_master30": "",
-    "cat_master40": "",
-    "cat_master50": "",
-    "cat_master60": "",
-    "cat_open": "x",
-    "enlace_web": "https://www.seaottereurope.com/"
-  },
-  {
-    "id": 145,
+    "id": 134,
     "nombre": "Sesé Bike Tour",
     "fecha": "24/05/2026",
     "modalidad": "carretera",
@@ -3190,11 +2948,11 @@
     "enlace_web": "https://sesebiketour.com"
   },
   {
-    "id": 146,
+    "id": 135,
     "nombre": "Sierra de Alcaraz",
     "fecha": "26/04/2026",
     "modalidad": "gravel",
-    "tipo_prueba": "",
+    "tipo_prueba": "marcha",
     "ubicacion": "Alcaraz",
     "provincia": "Albacete",
     "distancia_km": "95/120",
@@ -3212,7 +2970,7 @@
     "enlace_web": "https://granfondoalcaraz.com/"
   },
   {
-    "id": 147,
+    "id": 136,
     "nombre": "Sierra de Alcaraz",
     "fecha": "26/04/2026",
     "modalidad": "mtb",
@@ -3234,7 +2992,7 @@
     "enlace_web": "https://granfondoalcaraz.com/"
   },
   {
-    "id": 148,
+    "id": 137,
     "nombre": "Sierra Nevada Límite Gran Fondo",
     "fecha": "11/07/2026",
     "modalidad": "carretera",
@@ -3256,7 +3014,7 @@
     "enlace_web": "https://www.sierranevadalimite.com"
   },
   {
-    "id": 149,
+    "id": 138,
     "nombre": "Sotosalbos-Sotosalbos \"La Nico\"",
     "fecha": "19/07/2026",
     "modalidad": "carretera",
@@ -3278,7 +3036,7 @@
     "enlace_web": "https://www.sotosalbos.com"
   },
   {
-    "id": 150,
+    "id": 139,
     "nombre": "Specialized 4 Cims",
     "fecha": "28/06/2026",
     "modalidad": "carretera",
@@ -3300,51 +3058,7 @@
     "enlace_web": "https://www.4cims.com"
   },
   {
-    "id": 151,
-    "nombre": "Subida a los Portales (Media Maratón)",
-    "fecha": "",
-    "modalidad": "mtb",
-    "tipo_prueba": "marcha",
-    "ubicacion": "Málaga",
-    "provincia": "Málaga",
-    "distancia_km": "",
-    "desnivel_m": "",
-    "cat_elite": "",
-    "cat_sub23": "",
-    "cat_junior": "",
-    "cat_cadete": "",
-    "cat_femenino": "",
-    "cat_master30": "",
-    "cat_master40": "",
-    "cat_master50": "",
-    "cat_master60": "",
-    "cat_open": "x",
-    "enlace_web": "https://www.google.com/search?q=Subida+a+los+Portales+Media+Marat%C3%B3n+BTT+2026"
-  },
-  {
-    "id": 152,
-    "nombre": "The Bandit by Colina Triste",
-    "fecha": "",
-    "modalidad": "",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
-    "distancia_km": "",
-    "desnivel_m": "",
-    "cat_elite": "",
-    "cat_sub23": "",
-    "cat_junior": "",
-    "cat_cadete": "",
-    "cat_femenino": "",
-    "cat_master30": "",
-    "cat_master40": "",
-    "cat_master50": "",
-    "cat_master60": "",
-    "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=The+Bandit+by+Colina+Triste+2026"
-  },
-  {
-    "id": 153,
+    "id": 140,
     "nombre": "The Capitals",
     "fecha": "19/07/2026",
     "modalidad": "gravel",
@@ -3366,7 +3080,7 @@
     "enlace_web": "https://pedalma.cc/en/the-capitals/"
   },
   {
-    "id": 154,
+    "id": 141,
     "nombre": "Millars Gran Fondo",
     "fecha": "22/03/2026",
     "modalidad": "carretera",
@@ -3388,7 +3102,7 @@
     "enlace_web": "https://www.millarsgranfondo.com/"
   },
   {
-    "id": 155,
+    "id": 142,
     "nombre": "Tierra Estella Epic Gravel",
     "fecha": "18/04/2026",
     "modalidad": "gravel",
@@ -3410,7 +3124,7 @@
     "enlace_web": "https://gravel.tierraestellaepic.com/es/noticias/51-fecha-edicion-2026.html"
   },
   {
-    "id": 156,
+    "id": 143,
     "nombre": "TIRRENO APOSTOL",
     "fecha": "03/07/2026",
     "modalidad": "gravel",
@@ -3432,7 +3146,7 @@
     "enlace_web": "https://tirrenoapostol.com"
   },
   {
-    "id": 157,
+    "id": 144,
     "nombre": "TotalEnergies Gran Fondo Alberto Contador",
     "fecha": "19/09/2026",
     "modalidad": "carretera",
@@ -3454,7 +3168,7 @@
     "enlace_web": "https://granfondoalbertocontador.com/reglamento/"
   },
   {
-    "id": 158,
+    "id": 145,
     "nombre": "Tour Cycling Serranía Conquense \"Memorial Luis Ocaña\"",
     "fecha": "24/05/2026",
     "modalidad": "carretera",
@@ -3476,14 +3190,58 @@
     "enlace_web": "https://www.facebook.com/laDegolla"
   },
   {
-    "id": 159,
+    "id": 146,
     "nombre": "TOUR DE HIERRO",
-    "fecha": "",
+    "fecha": "25/09/2026",
+    "modalidad": "carretera",
+    "tipo_prueba": "etapas",
+    "ubicacion": "Campo de Criptana",
+    "provincia": "Ciudad Real",
+    "distancia_km": "410",
+    "desnivel_m": "3000",
+    "cat_elite": "",
+    "cat_sub23": "",
+    "cat_junior": "",
+    "cat_cadete": "",
+    "cat_femenino": "",
+    "cat_master30": "",
+    "cat_master40": "",
+    "cat_master50": "",
+    "cat_master60": "",
+    "cat_open": "x",
+    "enlace_web": "https://caminodelquijote.com/tour-de-hierro/"
+  },
+  {
+    "id": 147,
+    "nombre": "TOUR DE HIERRO",
+    "fecha": "25/09/2026",
     "modalidad": "gravel",
     "tipo_prueba": "etapas",
     "ubicacion": "Campo de Criptana",
     "provincia": "Ciudad Real",
-    "distancia_km": "365",
+    "distancia_km": "370",
+    "desnivel_m": "2900",
+    "cat_elite": "",
+    "cat_sub23": "",
+    "cat_junior": "",
+    "cat_cadete": "",
+    "cat_femenino": "",
+    "cat_master30": "",
+    "cat_master40": "",
+    "cat_master50": "",
+    "cat_master60": "",
+    "cat_open": "x",
+    "enlace_web": "https://caminodelquijote.com/tour-de-hierro/"
+  },
+  {
+    "id": 148,
+    "nombre": "TOUR DE HIERRO",
+    "fecha": "25/09/2026",
+    "modalidad": "gravel",
+    "tipo_prueba": "etapas",
+    "ubicacion": "Campo de Criptana",
+    "provincia": "Ciudad Real",
+    "distancia_km": "750",
     "desnivel_m": "",
     "cat_elite": "",
     "cat_sub23": "",
@@ -3495,10 +3253,32 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://tourdehierro.com"
+    "enlace_web": "https://caminodelquijote.com/tour-de-hierro/"
   },
   {
-    "id": 160,
+    "id": 149,
+    "nombre": "TOUR DE HIERRO",
+    "fecha": "25/09/2026",
+    "modalidad": "mtb",
+    "tipo_prueba": "etapas",
+    "ubicacion": "Campo de Criptana",
+    "provincia": "Ciudad Real",
+    "distancia_km": "370",
+    "desnivel_m": "2900",
+    "cat_elite": "",
+    "cat_sub23": "",
+    "cat_junior": "",
+    "cat_cadete": "",
+    "cat_femenino": "",
+    "cat_master30": "",
+    "cat_master40": "",
+    "cat_master50": "",
+    "cat_master60": "",
+    "cat_open": "x",
+    "enlace_web": "https://caminodelquijote.com/tour-de-hierro/"
+  },
+  {
+    "id": 150,
     "nombre": "Transpyr Coast to Coast Gran Raid MTB",
     "fecha": "31/05/2026 – 06/06/2026",
     "modalidad": "mtb",
@@ -3520,7 +3300,7 @@
     "enlace_web": "https://transpyr.com/en/grand-raid-mtb"
   },
   {
-    "id": 161,
+    "id": 151,
     "nombre": "TRANSPYR GRAVEL ADVENTURE",
     "fecha": "30/05/2026",
     "modalidad": "gravel",
@@ -3542,11 +3322,11 @@
     "enlace_web": "https://www.ciclismoafondo.es"
   },
   {
-    "id": 162,
+    "id": 152,
     "nombre": "UCI GRAVEL WORLD SERIES - SEA OTTER EUROPE",
     "fecha": "19/09/2026",
     "modalidad": "gravel",
-    "tipo_prueba": "carrera",
+    "tipo_prueba": "competicion",
     "ubicacion": "Girona",
     "provincia": "Girona",
     "distancia_km": "107",
@@ -3564,7 +3344,7 @@
     "enlace_web": "https://gironagravelworldseries.com"
   },
   {
-    "id": 163,
+    "id": 153,
     "nombre": "Ultrabike Club Santa Rosa Lanzarote",
     "fecha": "04/07/2026 – 05/07/2026",
     "modalidad": "mtb",
@@ -3586,7 +3366,7 @@
     "enlace_web": "https://www.uci.org/competition-details/2026/MTB/77541"
   },
   {
-    "id": 164,
+    "id": 154,
     "nombre": "UTOPÍA GRAVEL",
     "fecha": "04/04/2026",
     "modalidad": "gravel",
@@ -3608,7 +3388,7 @@
     "enlace_web": "https://epicos.cc"
   },
   {
-    "id": 165,
+    "id": 155,
     "nombre": "VI Enduro Monte Castelo Burela",
     "fecha": "19/04/2026",
     "modalidad": "enduro",
@@ -3630,7 +3410,7 @@
     "enlace_web": "https://rfec.com/index.php/es/smartweb/seccion/circuito/rfec/26COPAEND"
   },
   {
-    "id": 166,
+    "id": 156,
     "nombre": "VACALOURA GRAVEL",
     "fecha": "28/06/2026",
     "modalidad": "gravel",
@@ -3652,33 +3432,11 @@
     "enlace_web": "https://www.instagram.com"
   },
   {
-    "id": 167,
-    "nombre": "VI Enduro MTB Ciudad de Cuenca",
-    "fecha": "",
-    "modalidad": "enduro",
-    "tipo_prueba": "competicion",
-    "ubicacion": "Cuenca",
-    "provincia": "Cuenca",
-    "distancia_km": "",
-    "desnivel_m": "",
-    "cat_elite": "",
-    "cat_sub23": "",
-    "cat_junior": "",
-    "cat_cadete": "",
-    "cat_femenino": "",
-    "cat_master30": "",
-    "cat_master40": "",
-    "cat_master50": "",
-    "cat_master60": "",
-    "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=VI+Enduro+MTB+Ciudad+de+Cuenca+2026"
-  },
-  {
-    "id": 168,
-    "nombre": "VI Maratón BTT de Cazalla de la Sierra",
-    "fecha": "",
+    "id": 157,
+    "nombre": "VII Maratón BTT de Cazalla de la Sierra",
+    "fecha": "25/10/2026",
     "modalidad": "mtb",
-    "tipo_prueba": "marcha",
+    "tipo_prueba": "competicion",
     "ubicacion": "Cazalla de la Sierra",
     "provincia": "Sevilla",
     "distancia_km": "",
@@ -3693,14 +3451,14 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://www.google.com/search?q=VI+Marat%C3%B3n+BTT+de+Cazalla+de+la+Sierra+2026"
+    "enlace_web": "https://andaluciaciclismo.com/index.php/en/smartweb/seccion/circuito/andaluci..."
   },
   {
-    "id": 169,
+    "id": 158,
     "nombre": "VIAEXTREMA 348",
     "fecha": "02/05/2026",
     "modalidad": "gravel",
-    "tipo_prueba": "ultra",
+    "tipo_prueba": "granfondo",
     "ubicacion": "Baños de Montemayor",
     "provincia": "Cáceres",
     "distancia_km": "342",
@@ -3718,7 +3476,7 @@
     "enlace_web": "https://viaextrema348.com"
   },
   {
-    "id": 170,
+    "id": 159,
     "nombre": "La Desértica MTB",
     "fecha": "17/10/2026",
     "modalidad": "mtb",
@@ -3740,14 +3498,14 @@
     "enlace_web": "https://www.ladesertica.es/modalidades/"
   },
   {
-    "id": 171,
+    "id": 160,
     "nombre": "VIII Cicloturista La Rioja",
-    "fecha": "",
+    "fecha": "04/07/2026",
     "modalidad": "carretera",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
-    "distancia_km": "",
+    "tipo_prueba": "marcha",
+    "ubicacion": "Logroño",
+    "provincia": "Logroño",
+    "distancia_km": "126",
     "desnivel_m": "",
     "cat_elite": "",
     "cat_sub23": "",
@@ -3759,58 +3517,14 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=VIII+Cicloturista+La+Rioja+2026"
+    "enlace_web": "https://cicloturismolarioja.com/"
   },
   {
-    "id": 172,
-    "nombre": "Villa Gravel Race",
-    "fecha": "",
-    "modalidad": "gravel",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
-    "distancia_km": "",
-    "desnivel_m": "",
-    "cat_elite": "",
-    "cat_sub23": "",
-    "cat_junior": "",
-    "cat_cadete": "",
-    "cat_femenino": "",
-    "cat_master30": "",
-    "cat_master40": "",
-    "cat_master50": "",
-    "cat_master60": "",
-    "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=Villa+Gravel+Race+2026"
-  },
-  {
-    "id": 173,
-    "nombre": "Villa Gravel?Race",
-    "fecha": "",
-    "modalidad": "gravel",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
-    "distancia_km": "",
-    "desnivel_m": "",
-    "cat_elite": "",
-    "cat_sub23": "",
-    "cat_junior": "",
-    "cat_cadete": "",
-    "cat_femenino": "",
-    "cat_master30": "",
-    "cat_master40": "",
-    "cat_master50": "",
-    "cat_master60": "",
-    "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=Villa+Gravel%3FRace+2026"
-  },
-  {
-    "id": 174,
+    "id": 161,
     "nombre": "Villamanta MTB",
     "fecha": "18/01/2026",
     "modalidad": "mtb",
-    "tipo_prueba": "carrera",
+    "tipo_prueba": "competicion",
     "ubicacion": "Villamanta",
     "provincia": "Madrid",
     "distancia_km": "55|38",
@@ -3825,36 +3539,14 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://battistrada.com/en/cycling-calendar/spain/"
+    "enlace_web": "https://www.mtbchallenge.net/viilamantamtb"
   },
   {
-    "id": 175,
-    "nombre": "Volcánica MTB 2025",
-    "fecha": "",
-    "modalidad": "mtb",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
-    "distancia_km": "",
-    "desnivel_m": "",
-    "cat_elite": "",
-    "cat_sub23": "",
-    "cat_junior": "",
-    "cat_cadete": "",
-    "cat_femenino": "",
-    "cat_master30": "",
-    "cat_master40": "",
-    "cat_master50": "",
-    "cat_master60": "",
-    "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=Volc%C3%A1nica+MTB+2025+2026"
-  },
-  {
-    "id": 176,
+    "id": 162,
     "nombre": "Volta Cicloturista Internacional a Menorca",
-    "fecha": "",
+    "fecha": "23/10/2026",
     "modalidad": "carretera",
-    "tipo_prueba": "marcha",
+    "tipo_prueba": "etapas",
     "ubicacion": "Menorca",
     "provincia": "Illes Balears",
     "distancia_km": "",
@@ -3869,10 +3561,10 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://www.ibizabtt.com"
+    "enlace_web": "https://www.menorcacicloturista.com/"
   },
   {
-    "id": 177,
+    "id": 163,
     "nombre": "Vuelta al Teide",
     "fecha": "16/05/2026",
     "modalidad": "carretera",
@@ -3894,7 +3586,7 @@
     "enlace_web": "https://vteide.com"
   },
   {
-    "id": 178,
+    "id": 164,
     "nombre": "Vuelta Ciclista a Lanzarote",
     "fecha": "03/10/2026",
     "modalidad": "carretera",
@@ -3916,7 +3608,7 @@
     "enlace_web": "https://www.clublasanta.com/es/eventos/vuelta-ciclista-a-lanzarote"
   },
   {
-    "id": 179,
+    "id": 165,
     "nombre": "Gran Canaria Bike Week",
     "fecha": "29/11/2026 – 04/12/2026",
     "modalidad": "carretera",
@@ -3938,7 +3630,7 @@
     "enlace_web": "https://web.rockthesport.com/es/event/38-gran-canaria-bike-week-2026"
   },
   {
-    "id": 180,
+    "id": 166,
     "nombre": "Vuelta Cicloturista a Ibiza Campagnolo",
     "fecha": "09/10/2026 – 12/10/2026",
     "modalidad": "carretera",
@@ -3960,37 +3652,15 @@
     "enlace_web": "https://www.ibizabtt.com/"
   },
   {
-    "id": 181,
-    "nombre": "Vuelta Córdoba Noreste (Media Maratón)",
-    "fecha": "",
-    "modalidad": "carretera",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
-    "distancia_km": "",
-    "desnivel_m": "",
-    "cat_elite": "",
-    "cat_sub23": "",
-    "cat_junior": "",
-    "cat_cadete": "",
-    "cat_femenino": "",
-    "cat_master30": "",
-    "cat_master40": "",
-    "cat_master50": "",
-    "cat_master60": "",
-    "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=Vuelta+C%C3%B3rdoba+Noreste+%28Media+Marat%C3%B3n%29+2026"
-  },
-  {
-    "id": 182,
+    "id": 167,
     "nombre": "Wineland Gravel Experience",
-    "fecha": "",
+    "fecha": "24/10/2026",
     "modalidad": "gravel",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
-    "distancia_km": "",
-    "desnivel_m": "",
+    "tipo_prueba": "etapas",
+    "ubicacion": "Requena",
+    "provincia": "Valencia",
+    "distancia_km": "125",
+    "desnivel_m": "1400",
     "cat_elite": "",
     "cat_sub23": "",
     "cat_junior": "",
@@ -4001,14 +3671,36 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=Wineland+Gravel+Experience+2026"
+    "enlace_web": "https://winelandcycling.com/"
   },
   {
-    "id": 183,
+    "id": 168,
+    "nombre": "Wineland Gravel Experience",
+    "fecha": "24/10/2026",
+    "modalidad": "mtb",
+    "tipo_prueba": "etapas",
+    "ubicacion": "Requena",
+    "provincia": "Valencia",
+    "distancia_km": "105",
+    "desnivel_m": "2700",
+    "cat_elite": "",
+    "cat_sub23": "",
+    "cat_junior": "",
+    "cat_cadete": "",
+    "cat_femenino": "",
+    "cat_master30": "",
+    "cat_master40": "",
+    "cat_master50": "",
+    "cat_master60": "",
+    "cat_open": "",
+    "enlace_web": "https://winelandcycling.com/"
+  },
+  {
+    "id": 169,
     "nombre": "XCO Rally Quintana de la Serena",
     "fecha": "18/01/2026",
     "modalidad": "mtb",
-    "tipo_prueba": "xco",
+    "tipo_prueba": "competicion",
     "ubicacion": "Quintana de la Serena",
     "provincia": "Badajoz",
     "distancia_km": "",
@@ -4023,14 +3715,14 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://battistrada.com/en/cycling-calendar/spain/"
+    "enlace_web": "https://ciclismoextremadura.es/index.php/smartweb/inscripciones/prueba/33539-..."
   },
   {
-    "id": 184,
+    "id": 170,
     "nombre": "XCO Resistencia Barlobike",
     "fecha": "10/01/2026",
     "modalidad": "mtb",
-    "tipo_prueba": "carrera",
+    "tipo_prueba": "competicion",
     "ubicacion": "Barlovento",
     "provincia": "Santa Cruz de Tenerife",
     "distancia_km": "",
@@ -4045,62 +3737,40 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "x",
-    "enlace_web": "https://battistrada.com/en/cycling-calendar/spain/"
+    "enlace_web": "https://www.barlobike.org/resistencia/"
   },
   {
-    "id": 185,
-    "nombre": "XGravel Altea",
-    "fecha": "",
-    "modalidad": "gravel",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
-    "distancia_km": "",
-    "desnivel_m": "",
-    "cat_elite": "",
-    "cat_sub23": "",
-    "cat_junior": "",
-    "cat_cadete": "",
-    "cat_femenino": "",
-    "cat_master30": "",
-    "cat_master40": "",
-    "cat_master50": "",
-    "cat_master60": "",
-    "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=XGravel+Altea+2026"
-  },
-  {
-    "id": 186,
-    "nombre": "XGravel Altea",
-    "fecha": "",
-    "modalidad": "",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
-    "distancia_km": "",
-    "desnivel_m": "",
-    "cat_elite": "",
-    "cat_sub23": "",
-    "cat_junior": "",
-    "cat_cadete": "",
-    "cat_femenino": "",
-    "cat_master30": "",
-    "cat_master40": "",
-    "cat_master50": "",
-    "cat_master60": "",
-    "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=XGravel+Altea+2026"
-  },
-  {
-    "id": 187,
+    "id": 171,
     "nombre": "XV Maratón BTT Sierra de Cazorla",
-    "fecha": "",
+    "fecha": "03/10/2026",
+    "modalidad": "gravel",
+    "tipo_prueba": "etapas",
+    "ubicacion": "Tíscar",
+    "provincia": "Jaén",
+    "distancia_km": "60",
+    "desnivel_m": "2150",
+    "cat_elite": "",
+    "cat_sub23": "",
+    "cat_junior": "",
+    "cat_cadete": "",
+    "cat_femenino": "",
+    "cat_master30": "",
+    "cat_master40": "",
+    "cat_master50": "",
+    "cat_master60": "",
+    "cat_open": "",
+    "enlace_web": "https://sierracazorlabikerace.com/"
+  },
+  {
+    "id": 172,
+    "nombre": "XV Maratón BTT Sierra de Cazorla",
+    "fecha": "03/10/2026",
     "modalidad": "mtb",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
-    "distancia_km": "",
-    "desnivel_m": "",
+    "tipo_prueba": "etapas",
+    "ubicacion": "Tíscar",
+    "provincia": "Jaén",
+    "distancia_km": "59",
+    "desnivel_m": "2150",
     "cat_elite": "",
     "cat_sub23": "",
     "cat_junior": "",
@@ -4111,16 +3781,16 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=XV+Marat%C3%B3n+BTT+Sierra+de+Cazorla+2026"
+    "enlace_web": "https://sierracazorlabikerace.com/"
   },
   {
-    "id": 188,
-    "nombre": "XXI Marcha Comunitat Valenciana",
-    "fecha": "",
+    "id": 173,
+    "nombre": "XXII Marcha Comunitat Valenciana",
+    "fecha": "27/09/2026",
     "modalidad": "carretera",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
+    "tipo_prueba": "marcha",
+    "ubicacion": "Bellreguard",
+    "provincia": "Valencia",
     "distancia_km": "",
     "desnivel_m": "",
     "cat_elite": "",
@@ -4133,18 +3803,18 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=XXI+Marcha+Comunitat+Valenciana+2026"
+    "enlace_web": "https://fccv.es/index.php/es/smartweb/seccion/calendario/valenciana/2026"
   },
   {
-    "id": 189,
-    "nombre": "XXXVII Cicloturista Maestrazgo",
-    "fecha": "",
+    "id": 174,
+    "nombre": "Gran Fondo Geoparque del Maestrazgo",
+    "fecha": "16/05/2026",
     "modalidad": "carretera",
-    "tipo_prueba": "",
-    "ubicacion": "",
-    "provincia": "",
-    "distancia_km": "",
-    "desnivel_m": "",
+    "tipo_prueba": "granfondo",
+    "ubicacion": "Alcorisa",
+    "provincia": "Teruel",
+    "distancia_km": "147",
+    "desnivel_m": "2850",
     "cat_elite": "",
     "cat_sub23": "",
     "cat_junior": "",
@@ -4155,6 +3825,116 @@
     "cat_master50": "",
     "cat_master60": "",
     "cat_open": "",
-    "enlace_web": "https://www.google.com/search?q=XXXVII+Cicloturista+Maestrazgo+2026"
+    "enlace_web": "https://weekendcycling.es/"
+  },
+  {
+    "id": 175,
+    "nombre": "Gran Fondo Geoparque del Maestrazgo",
+    "fecha": "16/05/2026",
+    "modalidad": "carretera",
+    "tipo_prueba": "granfondo",
+    "ubicacion": "Alcorisa",
+    "provincia": "Teruel",
+    "distancia_km": "75",
+    "desnivel_m": "1365",
+    "cat_elite": "",
+    "cat_sub23": "",
+    "cat_junior": "",
+    "cat_cadete": "",
+    "cat_femenino": "",
+    "cat_master30": "",
+    "cat_master40": "",
+    "cat_master50": "",
+    "cat_master60": "",
+    "cat_open": "",
+    "enlace_web": "https://weekendcycling.es/"
+  },
+  {
+    "id": 176,
+    "nombre": "Gran Fondo Geoparque del Maestrazgo",
+    "fecha": "16/05/2026",
+    "modalidad": "mtb",
+    "tipo_prueba": "marcha",
+    "ubicacion": "Alcorisa",
+    "provincia": "Teruel",
+    "distancia_km": "55",
+    "desnivel_m": "1200",
+    "cat_elite": "",
+    "cat_sub23": "",
+    "cat_junior": "",
+    "cat_cadete": "",
+    "cat_femenino": "",
+    "cat_master30": "",
+    "cat_master40": "",
+    "cat_master50": "",
+    "cat_master60": "",
+    "cat_open": "",
+    "enlace_web": "https://weekendcycling.es/"
+  },
+  {
+    "id": 177,
+    "nombre": "Gran Fondo Geoparque del Maestrazgo",
+    "fecha": "16/05/2026",
+    "modalidad": "mtb",
+    "tipo_prueba": "marcha",
+    "ubicacion": "Alcorisa",
+    "provincia": "Teruel",
+    "distancia_km": "30",
+    "desnivel_m": "380",
+    "cat_elite": "",
+    "cat_sub23": "",
+    "cat_junior": "",
+    "cat_cadete": "",
+    "cat_femenino": "",
+    "cat_master30": "",
+    "cat_master40": "",
+    "cat_master50": "",
+    "cat_master60": "",
+    "cat_open": "",
+    "enlace_web": "https://weekendcycling.es/"
+  },
+  {
+    "id": 178,
+    "nombre": "Gran Fondo Pico de las Nieves",
+    "fecha": "29/11/2026",
+    "modalidad": "carretera",
+    "tipo_prueba": "marcha",
+    "ubicacion": "Arucas",
+    "provincia": "Las Palmas de Gran Canaria",
+    "distancia_km": "59",
+    "desnivel_m": "1845",
+    "cat_elite": "",
+    "cat_sub23": "",
+    "cat_junior": "",
+    "cat_cadete": "",
+    "cat_femenino": "",
+    "cat_master30": "",
+    "cat_master40": "",
+    "cat_master50": "",
+    "cat_master60": "",
+    "cat_open": "",
+    "enlace_web": "https://picodelasnieves.com"
+  },
+  {
+    "id": 179,
+    "nombre": "Tierra de Fronteras Medio Fondo",
+    "fecha": "09/11/2026",
+    "modalidad": "mtb",
+    "tipo_prueba": "marcha",
+    "ubicacion": "Hellín",
+    "provincia": "Albacete",
+    "distancia_km": "87",
+    "desnivel_m": "1450",
+    "cat_elite": "",
+    "cat_sub23": "",
+    "cat_junior": "",
+    "cat_cadete": "",
+    "cat_femenino": "",
+    "cat_master30": "",
+    "cat_master40": "",
+    "cat_master50": "",
+    "cat_master60": "",
+    "cat_open": "",
+    "enlace_web": "https://tierradefronteras.es/"
   }
 ]
