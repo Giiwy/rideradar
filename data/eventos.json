@@ -2,7 +2,7 @@
   {
     "id": 1,
     "nombre": "114 Gravel Race",
-    "fecha": "09-08-2026",
+    "fecha": "2026-03-28",
     "modalidad": "gravel",
     "tipo_prueba": "aventura",
     "ubicacion": "Badajoz",
@@ -24,7 +24,7 @@
   {
     "id": 2,
     "nombre": "Tierra de Fronteras Gran Fondo",
-    "fecha": "09 Nov 2026",
+    "fecha": "2026-11-09",
     "modalidad": "gravel",
     "tipo_prueba": "marcha",
     "ubicacion": "Hellín",
@@ -46,7 +46,7 @@
   {
     "id": 3,
     "nombre": "34AC Gravel Race",
-    "fecha": "14 Jun 2026",
+    "fecha": "2026-06-14",
     "modalidad": "gravel",
     "tipo_prueba": "competicion",
     "ubicacion": "Cáceceres",
@@ -68,7 +68,7 @@
   {
     "id": 4,
     "nombre": "34AC Gravel Race",
-    "fecha": "14 Jun 2026",
+    "fecha": "2026-06-14",
     "modalidad": "gravel",
     "tipo_prueba": "competicion",
     "ubicacion": "Cáceceres",
@@ -90,7 +90,7 @@
   {
     "id": 5,
     "nombre": "7ª Endubitem",
-    "fecha": "15 Mar 2026",
+    "fecha": "2026-03-15",
     "modalidad": "enduro",
     "tipo_prueba": "competicion",
     "ubicacion": "Bítem",
@@ -112,7 +112,7 @@
   {
     "id": 6,
     "nombre": "Aitana Tour",
-    "fecha": "31 May 2026",
+    "fecha": "2026-05-31",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Callosa d’en Sarrià",
@@ -134,7 +134,7 @@
   {
     "id": 7,
     "nombre": "II Media Maraton Villa de Algodonales",
-    "fecha": "14 Jun 2026",
+    "fecha": "2026-06-14",
     "modalidad": "mtb",
     "tipo_prueba": "competicion",
     "ubicacion": "Algodonales",
@@ -156,7 +156,7 @@
   {
     "id": 8,
     "nombre": "Alpinum TotalEnergies",
-    "fecha": "04 Jul 2026",
+    "fecha": "2026-07-04",
     "modalidad": "carretera",
     "tipo_prueba": "granfondo",
     "ubicacion": "Alp",
@@ -178,7 +178,7 @@
   {
     "id": 9,
     "nombre": "Ancares Cycling Marathon",
-    "fecha": "09 Aug 2026",
+    "fecha": "2026-08-09",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Pedrafita do Cebreiro",
@@ -200,7 +200,7 @@
   {
     "id": 10,
     "nombre": "BASAJAUN",
-    "fecha": "26 Jul 2026",
+    "fecha": "2026-07-26",
     "modalidad": "gravel",
     "tipo_prueba": "aventura",
     "ubicacion": "Vitoria-Gasteiz",
@@ -222,7 +222,7 @@
   {
     "id": 11,
     "nombre": "BilboFem – Marcha femenina",
-    "fecha": "12 Oct 2026",
+    "fecha": "2026-10-12",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Bilbao",
@@ -244,7 +244,7 @@
   {
     "id": 12,
     "nombre": "BilboFem – Marcha femenina",
-    "fecha": "12 Oct 2026",
+    "fecha": "2026-10-12",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Bilbao",
@@ -266,7 +266,7 @@
   {
     "id": 13,
     "nombre": "Boquerón Bike (Maratón)",
-    "fecha": "21 Nov 2026",
+    "fecha": "2026-11-21",
     "modalidad": "mtb",
     "tipo_prueba": "marcha",
     "ubicacion": "Málaga",
@@ -288,7 +288,7 @@
   {
     "id": 14,
     "nombre": "BTT Dos Callos",
-    "fecha": "11 Jan 2026",
+    "fecha": "2026-01-11",
     "modalidad": "mtb",
     "tipo_prueba": "marcha",
     "ubicacion": "Salceda de Caselas",
@@ -310,7 +310,7 @@
   {
     "id": 15,
     "nombre": "Campeonato de España XCC – La Molina",
-    "fecha": "05 Jun 2026",
+    "fecha": "2026-06-05",
     "modalidad": "mtb",
     "tipo_prueba": "competicion",
     "ubicacion": "La Molina",
@@ -332,7 +332,7 @@
   {
     "id": 16,
     "nombre": "Campeonato de España BTT XCC",
-    "fecha": "05 Jun 2026",
+    "fecha": "2026-06-05",
     "modalidad": "mtb",
     "tipo_prueba": "competicion",
     "ubicacion": "La Molina",
@@ -354,7 +354,7 @@
   {
     "id": 17,
     "nombre": "Campeonato de España BTT XCO/XCC/XCE/XCR 2026",
-    "fecha": "17 Jul 2026",
+    "fecha": "2026-07-17",
     "modalidad": "mtb",
     "tipo_prueba": "competicion",
     "ubicacion": "Arroyomolinos",
@@ -376,7 +376,7 @@
   {
     "id": 18,
     "nombre": "Castellón Gravel Race",
-    "fecha": "21 Feb 2026",
+    "fecha": "2026-02-21",
     "modalidad": "gravel",
     "tipo_prueba": "competicion",
     "ubicacion": "Llucena",
@@ -398,7 +398,7 @@
   {
     "id": 19,
     "nombre": "CAT 700 BIKEPACKING ADVENTURE",
-    "fecha": "19 Jun 2026",
+    "fecha": "2026-06-19",
     "modalidad": "gravel",
     "tipo_prueba": "aventura",
     "ubicacion": "Colera",
@@ -420,7 +420,7 @@
   {
     "id": 20,
     "nombre": "Clásica de Valdemorillo MTB",
-    "fecha": "25 Jan 2026",
+    "fecha": "2026-01-25",
     "modalidad": "mtb",
     "tipo_prueba": "competicion",
     "ubicacion": "Valdemorillo",
@@ -442,7 +442,7 @@
   {
     "id": 21,
     "nombre": "Classica dels Murs",
-    "fecha": "03 May 2026",
+    "fecha": "2026-05-03",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Cervera",
@@ -464,7 +464,7 @@
   {
     "id": 22,
     "nombre": "Coal Gravel Race",
-    "fecha": "14 Mar 2026",
+    "fecha": "2026-03-14",
     "modalidad": "gravel",
     "tipo_prueba": "competicion",
     "ubicacion": "Llerena",
@@ -486,7 +486,7 @@
   {
     "id": 23,
     "nombre": "Colina Triste (XCM)",
-    "fecha": "25 Jun 2026",
+    "fecha": "2026-06-25",
     "modalidad": "mtb",
     "tipo_prueba": "competicion",
     "ubicacion": "Santo Domingo de Silos",
@@ -508,7 +508,7 @@
   {
     "id": 24,
     "nombre": "Comunidad de Madrid 7 Picos",
-    "fecha": "09 May 2026",
+    "fecha": "2026-05-09",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Buitrago de Lozoya",
@@ -530,7 +530,7 @@
   {
     "id": 25,
     "nombre": "Copa España BTT XCO Cofidis – GP Ciudad del Ciclismo",
-    "fecha": "27 Jun 2026",
+    "fecha": "2026-06-27",
     "modalidad": "mtb",
     "tipo_prueba": "competicion",
     "ubicacion": "Cervera del Maestre",
@@ -552,7 +552,7 @@
   {
     "id": 26,
     "nombre": "COSTA BRAVA BIKEPACKING",
-    "fecha": "07 Jun 2026",
+    "fecha": "2026-06-07",
     "modalidad": "gravel",
     "tipo_prueba": "etapas",
     "ubicacion": "Flaçá",
@@ -574,7 +574,7 @@
   {
     "id": 27,
     "nombre": "Desafío 10 Picos Sierra de Espadán",
-    "fecha": "16 May 2026",
+    "fecha": "2026-05-16",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Onda",
@@ -596,7 +596,7 @@
   {
     "id": 28,
     "nombre": "Desafío Dama Roja",
-    "fecha": "11 Jul 2026",
+    "fecha": "2026-07-11",
     "modalidad": "mtb",
     "tipo_prueba": "competicion",
     "ubicacion": "Ramales de la Victoria",
@@ -618,7 +618,7 @@
   {
     "id": 29,
     "nombre": "Desafío La Titánica",
-    "fecha": "11 Apr 2026",
+    "fecha": "2026-04-11",
     "modalidad": "carretera",
     "tipo_prueba": "etapas",
     "ubicacion": "Mogán",
@@ -640,7 +640,7 @@
   {
     "id": 30,
     "nombre": "Desafío Lagos de Covadonga",
-    "fecha": "06 Jun 2026",
+    "fecha": "2026-06-06",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Cangas de Onís",
@@ -662,7 +662,7 @@
   {
     "id": 31,
     "nombre": "Desafío Maestrat",
-    "fecha": "13 Jun 2026",
+    "fecha": "2026-06-13",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Benicarló",
@@ -684,7 +684,7 @@
   {
     "id": 32,
     "nombre": "Desafío Sport-Bike Ciudad Real \"Asedio a los Calatravos\"",
-    "fecha": "25 Oct 2026",
+    "fecha": "2026-10-25",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Ciudad Real",
@@ -706,7 +706,7 @@
   {
     "id": 33,
     "nombre": "Desafío Tenerife Teide 360º",
-    "fecha": "04 Apr 2026",
+    "fecha": "2026-04-04",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Vilaflor de Chasna",
@@ -728,7 +728,7 @@
   {
     "id": 34,
     "nombre": "Descenso Manzaneda Estación",
-    "fecha": "28 Jun 2026",
+    "fecha": "2026-06-28",
     "modalidad": "descenso",
     "tipo_prueba": "competicion",
     "ubicacion": "Estación de Montaña Manzaneda",
@@ -750,7 +750,7 @@
   {
     "id": 35,
     "nombre": "DHI Manzaneda Estación 2026",
-    "fecha": "28 Jun 2026",
+    "fecha": "2026-06-28",
     "modalidad": "descenso",
     "tipo_prueba": "competicion",
     "ubicacion": "Estación de Montaña Manzaneda",
@@ -772,7 +772,7 @@
   {
     "id": 36,
     "nombre": "EL MITO CHALLENGE",
-    "fecha": "28 Mar 2026",
+    "fecha": "2026-03-28",
     "modalidad": "mtb",
     "tipo_prueba": "granfondo",
     "ubicacion": "Ronda",
@@ -794,7 +794,7 @@
   {
     "id": 37,
     "nombre": "ENTRE SIERRAS GRAVEL RACE",
-    "fecha": "30 May 2026",
+    "fecha": "2026-05-30",
     "modalidad": "gravel",
     "tipo_prueba": "competicion",
     "ubicacion": "Villanueva del Trabuco",
@@ -816,7 +816,7 @@
   {
     "id": 38,
     "nombre": "Epic Gran Canaria",
-    "fecha": "07 Feb 2026",
+    "fecha": "2026-02-07",
     "modalidad": "carretera",
     "tipo_prueba": "granfondo",
     "ubicacion": "Maspalomas",
@@ -882,7 +882,7 @@
   {
     "id": 41,
     "nombre": "Gran Canaria Bike Week",
-    "fecha": "29 Nov 2026",
+    "fecha": "2026-11-29",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Maspalomas",
@@ -904,7 +904,7 @@
   {
     "id": 42,
     "nombre": "Gran Fondo Alé Cycling Gandia",
-    "fecha": "18 Apr 2026",
+    "fecha": "2026-04-18",
     "modalidad": "carretera",
     "tipo_prueba": "granfondo",
     "ubicacion": "Gandía",
@@ -926,7 +926,7 @@
   {
     "id": 43,
     "nombre": "Gran Fondo Calella",
-    "fecha": "15 Mar 2026",
+    "fecha": "2026-03-15",
     "modalidad": "carretera",
     "tipo_prueba": "granfondo",
     "ubicacion": "Calella",
@@ -948,7 +948,7 @@
   {
     "id": 44,
     "nombre": "Gran Fondo Costa del Sol",
-    "fecha": "03 Oct 2026",
+    "fecha": "2026-10-03",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Estepona",
@@ -970,7 +970,7 @@
   {
     "id": 45,
     "nombre": "Gran Fondo Ezaro – Fin do Camiño",
-    "fecha": "05 Jul 2026",
+    "fecha": "2026-07-05",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Dumbría",
@@ -992,7 +992,7 @@
   {
     "id": 46,
     "nombre": "Gran Fondo Guad Al-Xenil",
-    "fecha": "18 Oct 2026",
+    "fecha": "2026-10-18",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Loja",
@@ -1014,7 +1014,7 @@
   {
     "id": 47,
     "nombre": "Gran Fondo La Nucía",
-    "fecha": "18 Oct 2026",
+    "fecha": "2026-10-18",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "La Nucía",
@@ -1036,7 +1036,7 @@
   {
     "id": 48,
     "nombre": "Gran Fondo Jaén Paraíso Interior",
-    "fecha": "14 Feb 2026",
+    "fecha": "2026-02-14",
     "modalidad": "carretera",
     "tipo_prueba": "granfondo",
     "ubicacion": "Úbeda",
@@ -1058,7 +1058,7 @@
   {
     "id": 49,
     "nombre": "Gran Fondo La Nucía",
-    "fecha": "18 Oct 2026",
+    "fecha": "2026-10-18",
     "modalidad": "carretera",
     "tipo_prueba": "granfondo",
     "ubicacion": "La Nucía",
@@ -1080,7 +1080,7 @@
   {
     "id": 50,
     "nombre": "Gran Fondo Las 4 Cimas Gérgal",
-    "fecha": "05 Sep 2026",
+    "fecha": "2026-09-05",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Gérgal",
@@ -1102,7 +1102,7 @@
   {
     "id": 51,
     "nombre": "Gran Fondo Lloret Costa Brava",
-    "fecha": "18 Apr 2026",
+    "fecha": "2026-04-18",
     "modalidad": "carretera",
     "tipo_prueba": "granfondo",
     "ubicacion": "Lloret de Mar",
@@ -1124,7 +1124,7 @@
   {
     "id": 52,
     "nombre": "Gran Fondo Pico de las Nieves",
-    "fecha": "29 Nov 2026",
+    "fecha": "2026-11-29",
     "modalidad": "carretera",
     "tipo_prueba": "granfondo",
     "ubicacion": "Arucas",
@@ -1146,7 +1146,7 @@
   {
     "id": 53,
     "nombre": "Gran Fondo Pirineus",
-    "fecha": "28 Jun 2026",
+    "fecha": "2026-06-28",
     "modalidad": "carretera",
     "tipo_prueba": "granfondo",
     "ubicacion": "Camprodon",
@@ -1168,7 +1168,7 @@
   {
     "id": 54,
     "nombre": "Gran Fondo Sierra de Albacete",
-    "fecha": "06 Jun 2026",
+    "fecha": "2026-06-06",
     "modalidad": "carretera",
     "tipo_prueba": "granfondo",
     "ubicacion": "Riópar",
@@ -1190,7 +1190,7 @@
   {
     "id": 55,
     "nombre": "Gran Fondo Sierra de Cazorla, Segura y Las Villas",
-    "fecha": "26 Sep 2026",
+    "fecha": "2026-09-26",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Cazorla",
@@ -1212,7 +1212,7 @@
   {
     "id": 56,
     "nombre": "Gran Fondo Sierra Morena",
-    "fecha": "13 Jun 2026",
+    "fecha": "2026-06-13",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Córdoba",
@@ -1234,7 +1234,7 @@
   {
     "id": 57,
     "nombre": "Gran Fondo Teika Alé",
-    "fecha": "28 Mar 2026",
+    "fecha": "2026-03-28",
     "modalidad": "carretera",
     "tipo_prueba": "granfondo",
     "ubicacion": "Simat de Valldigna",
@@ -1256,7 +1256,7 @@
   {
     "id": 58,
     "nombre": "Gran Fondo Valencia",
-    "fecha": "02 May 2026",
+    "fecha": "2026-05-02",
     "modalidad": "carretera",
     "tipo_prueba": "granfondo",
     "ubicacion": "Valencia",
@@ -1278,7 +1278,7 @@
   {
     "id": 59,
     "nombre": "Gran Fondo Vitoria",
-    "fecha": "20 Jun 2026",
+    "fecha": "2026-06-20",
     "modalidad": "carretera",
     "tipo_prueba": "granfondo",
     "ubicacion": "Vitoria-Gasteiz",
@@ -1300,7 +1300,7 @@
   {
     "id": 60,
     "nombre": "GranGuanche Audax Road",
-    "fecha": "25 Jan 2026",
+    "fecha": "2026-01-25",
     "modalidad": "carretera",
     "tipo_prueba": "granfondo",
     "ubicacion": "Haría",
@@ -1322,7 +1322,7 @@
   {
     "id": 61,
     "nombre": "Gravel Desert by The Traka",
-    "fecha": "11 Apr 2026",
+    "fecha": "2026-04-11",
     "modalidad": "gravel",
     "tipo_prueba": "aventura",
     "ubicacion": "Grañén / Monegros",
@@ -1344,7 +1344,7 @@
   {
     "id": 62,
     "nombre": "GRAVEL DESERT BY THE TRAKA",
-    "fecha": "11 Apr 2026",
+    "fecha": "2026-04-11",
     "modalidad": "gravel",
     "tipo_prueba": "competicion",
     "ubicacion": "Huesca-Monegros",
@@ -1366,7 +1366,7 @@
   {
     "id": 63,
     "nombre": "Gravel Sendas Blancas",
-    "fecha": "08 Mar 2026",
+    "fecha": "2026-03-08",
     "modalidad": "gravel",
     "tipo_prueba": "marcha",
     "ubicacion": "San Martín de la Vega",
@@ -1388,7 +1388,7 @@
   {
     "id": 64,
     "nombre": "UCI Gravel World Series - Sea Otter Europe",
-    "fecha": "19 Sep 2026",
+    "fecha": "2026-09-19",
     "modalidad": "gravel",
     "tipo_prueba": "competicion",
     "ubicacion": "Girona",
@@ -1410,7 +1410,7 @@
   {
     "id": 65,
     "nombre": "Ibercaja Quebrantahuesos",
-    "fecha": "20 Jun 2026",
+    "fecha": "2026-06-20",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Sabiñánigo",
@@ -1432,7 +1432,7 @@
   {
     "id": 66,
     "nombre": "Ibercaja Quebrantahuesos by TotalEnergies",
-    "fecha": "20 Jun 2026",
+    "fecha": "2026-06-20",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Sabiñánigo",
@@ -1454,7 +1454,7 @@
   {
     "id": 67,
     "nombre": "Gravel Tres Cantos by Specialized",
-    "fecha": "09 May 2026",
+    "fecha": "2026-05-09",
     "modalidad": "gravel",
     "tipo_prueba": "competicion",
     "ubicacion": "Tres Cantos",
@@ -1476,7 +1476,7 @@
   {
     "id": 68,
     "nombre": "III Enduro Villa de Ojén",
-    "fecha": "29 Mar 2026",
+    "fecha": "2026-03-29",
     "modalidad": "enduro",
     "tipo_prueba": "competicion",
     "ubicacion": "Ojén",
@@ -1498,7 +1498,7 @@
   {
     "id": 69,
     "nombre": "II Gravel Costa da Morte",
-    "fecha": "04 Oct 2026",
+    "fecha": "2026-10-04",
     "modalidad": "gravel",
     "tipo_prueba": "marcha",
     "ubicacion": "Carballo",
@@ -1520,7 +1520,7 @@
   {
     "id": 70,
     "nombre": "Gravel Tres Cantos by Specialized",
-    "fecha": "09 May 2026",
+    "fecha": "2026-05-09",
     "modalidad": "gravel",
     "tipo_prueba": "competicion",
     "ubicacion": "Tres Cantos",
@@ -1542,7 +1542,7 @@
   {
     "id": 71,
     "nombre": "III Monclova Desert Gravel",
-    "fecha": "04 Oct 2026",
+    "fecha": "2026-10-04",
     "modalidad": "gravel",
     "tipo_prueba": "competicion",
     "ubicacion": "La Luisiana",
@@ -1564,7 +1564,7 @@
   {
     "id": 72,
     "nombre": "Gravel & MTB La Indomable",
-    "fecha": "02 May 2026",
+    "fecha": "2026-05-02",
     "modalidad": "gravel",
     "tipo_prueba": "competicion",
     "ubicacion": "Berja",
@@ -1586,7 +1586,7 @@
   {
     "id": 73,
     "nombre": "Marcha Hermanos Herrada",
-    "fecha": "03 Oct 2026",
+    "fecha": "2026-10-03",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Cuenca",
@@ -1608,7 +1608,7 @@
   {
     "id": 74,
     "nombre": "Iron Gravel IG360",
-    "fecha": "30 Apr 2026",
+    "fecha": "2026-04-30",
     "modalidad": "gravel",
     "tipo_prueba": "aventura",
     "ubicacion": "Alicante",
@@ -1630,7 +1630,7 @@
   {
     "id": 75,
     "nombre": "IRON GRAVEL IG360",
-    "fecha": "30 Apr 2026",
+    "fecha": "2026-04-30",
     "modalidad": "gravel",
     "tipo_prueba": "granfondo",
     "ubicacion": "Alicante",
@@ -1652,7 +1652,7 @@
   {
     "id": 76,
     "nombre": "Itzulia Basque Challenge",
-    "fecha": "12 Apr 2026",
+    "fecha": "2026-04-12",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Bergara",
@@ -1674,7 +1674,7 @@
   {
     "id": 77,
     "nombre": "Itzulia Basque Challenge",
-    "fecha": "12 Apr 2026",
+    "fecha": "2026-04-12",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Bergara",
@@ -1696,7 +1696,7 @@
   {
     "id": 78,
     "nombre": "Jamón Bike Gravel Race",
-    "fecha": "21 Mar 2026",
+    "fecha": "2026-03-21",
     "modalidad": "mtb",
     "tipo_prueba": "etapas",
     "ubicacion": "Calamocha",
@@ -1718,7 +1718,7 @@
   {
     "id": 79,
     "nombre": "La Desértica",
-    "fecha": "17 Oct 2026",
+    "fecha": "2026-10-17",
     "modalidad": "gravel",
     "tipo_prueba": "marcha",
     "ubicacion": "Roquetas de Mar",
@@ -1740,7 +1740,7 @@
   {
     "id": 80,
     "nombre": "LA ENCIGALADA",
-    "fecha": "09 May 2026",
+    "fecha": "2026-05-09",
     "modalidad": "gravel",
     "tipo_prueba": "etapas",
     "ubicacion": "Barcelona",
@@ -1762,7 +1762,7 @@
   {
     "id": 81,
     "nombre": "La Indurain",
-    "fecha": "25 Jul 2026",
+    "fecha": "2026-07-25",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Villava",
@@ -1784,7 +1784,7 @@
   {
     "id": 82,
     "nombre": "La Invernal de MotorLand",
-    "fecha": "17 Jan 2026",
+    "fecha": "2026-01-17",
     "modalidad": "mtb",
     "tipo_prueba": "competicion",
     "ubicacion": "Alcañiz",
@@ -1806,7 +1806,7 @@
   {
     "id": 83,
     "nombre": "La Legendaria Gran Fondo",
-    "fecha": "09 May 2026",
+    "fecha": "2026-05-09",
     "modalidad": "carretera",
     "tipo_prueba": "granfondo",
     "ubicacion": "Ontinyent",
@@ -1828,7 +1828,7 @@
   {
     "id": 84,
     "nombre": "LA LLERA",
-    "fecha": "31 May 2026",
+    "fecha": "2026-05-31",
     "modalidad": "gravel",
     "tipo_prueba": "etapas",
     "ubicacion": "Pola de Laviana",
@@ -1850,7 +1850,7 @@
   {
     "id": 85,
     "nombre": "La Magia del Grial",
-    "fecha": "30 May 2026",
+    "fecha": "2026-05-30",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Huesca",
@@ -1894,7 +1894,7 @@
   {
     "id": 87,
     "nombre": "La Perico by TotalEnergies",
-    "fecha": "28 Jun 2026",
+    "fecha": "2026-06-28",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Segovia",
@@ -1916,7 +1916,7 @@
   {
     "id": 88,
     "nombre": "LABA GRAVEL",
-    "fecha": "30 May 2026",
+    "fecha": "2026-05-30",
     "modalidad": "gravel",
     "tipo_prueba": "granfondo",
     "ubicacion": "Andoain",
@@ -1938,7 +1938,7 @@
   {
     "id": 89,
     "nombre": "LADYS AND GENTLEMAN",
-    "fecha": "14 Mar 2026",
+    "fecha": "2026-03-14",
     "modalidad": "gravel",
     "tipo_prueba": "marcha",
     "ubicacion": "Barcelona",
@@ -1960,7 +1960,7 @@
   {
     "id": 90,
     "nombre": "Larra-Larrau",
-    "fecha": "05 Sep 2026",
+    "fecha": "2026-09-05",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Isaba",
@@ -1982,7 +1982,7 @@
   {
     "id": 91,
     "nombre": "Mallorca 312 OK Mobility",
-    "fecha": "25 Apr 2026",
+    "fecha": "2026-04-25",
     "modalidad": "carretera",
     "tipo_prueba": "granfondo",
     "ubicacion": "Mallorca",
@@ -2004,7 +2004,7 @@
   {
     "id": 92,
     "nombre": "Maratón BTT Istán",
-    "fecha": "18 Jan 2026",
+    "fecha": "2026-01-18",
     "modalidad": "mtb",
     "tipo_prueba": "competicion",
     "ubicacion": "Istán",
@@ -2026,7 +2026,7 @@
   {
     "id": 93,
     "nombre": "Marcha BTT Casinos",
-    "fecha": "18 Jan 2026",
+    "fecha": "2026-01-18",
     "modalidad": "mtb",
     "tipo_prueba": "competicion",
     "ubicacion": "Casinos",
@@ -2048,7 +2048,7 @@
   {
     "id": 94,
     "nombre": "Marcha BTT La Pobla de Vallbona",
-    "fecha": "11 Jan 2026",
+    "fecha": "2026-01-11",
     "modalidad": "mtb",
     "tipo_prueba": "marcha",
     "ubicacion": "La Pobla de Vallbona",
@@ -2070,7 +2070,7 @@
   {
     "id": 95,
     "nombre": "Marcha Ciclodeportiva Castro-Castro",
-    "fecha": "05 Apr 2026",
+    "fecha": "2026-04-05",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Castro-Urdiales",
@@ -2092,7 +2092,7 @@
   {
     "id": 96,
     "nombre": "Marcha Ciclodeportiva La Gamba",
-    "fecha": "05 Apr 2026",
+    "fecha": "2026-04-05",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Dénia",
@@ -2114,7 +2114,7 @@
   {
     "id": 97,
     "nombre": "Marcha Cicloturista El Pino",
-    "fecha": "19 Sep 2026",
+    "fecha": "2026-09-19",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Teror",
@@ -2136,7 +2136,7 @@
   {
     "id": 98,
     "nombre": "Marcha Cicloturista La Indomable (ruta)",
-    "fecha": "06 Jun 2026",
+    "fecha": "2026-06-06",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Berja",
@@ -2158,7 +2158,7 @@
   {
     "id": 99,
     "nombre": "Marcha Hermanos Herrada",
-    "fecha": "03 Oct 2026",
+    "fecha": "2026-10-03",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Cuenca",
@@ -2180,7 +2180,7 @@
   {
     "id": 100,
     "nombre": "Marxa Cicloturista Terra de Remences",
-    "fecha": "09 May 2026",
+    "fecha": "2026-05-09",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "La Vall d’en Bas",
@@ -2202,7 +2202,7 @@
   {
     "id": 101,
     "nombre": "Media Maratón BTT Sierra Elvira",
-    "fecha": "14 Jun 2026",
+    "fecha": "2026-06-14",
     "modalidad": "mtb",
     "tipo_prueba": "marcha",
     "ubicacion": "Atarfe",
@@ -2224,7 +2224,7 @@
   {
     "id": 102,
     "nombre": "Media Maratón Villa de Periana",
-    "fecha": "11 Jan 2026",
+    "fecha": "2026-01-11",
     "modalidad": "mtb",
     "tipo_prueba": "competicion",
     "ubicacion": "Periana",
@@ -2246,7 +2246,7 @@
   {
     "id": 103,
     "nombre": "Mediterranean Epic Gran Fondo",
-    "fecha": "25 Apr 2026",
+    "fecha": "2026-04-25",
     "modalidad": "carretera",
     "tipo_prueba": "granfondo",
     "ubicacion": "Oropesa del Mar",
@@ -2268,7 +2268,7 @@
   {
     "id": 104,
     "nombre": "Memorial Isidro Pulido Gravel",
-    "fecha": "16 May 2026",
+    "fecha": "2026-05-16",
     "modalidad": "gravel",
     "tipo_prueba": "competicion",
     "ubicacion": "Villanueva de Córdoba",
@@ -2290,7 +2290,7 @@
   {
     "id": 105,
     "nombre": "MMR POWER RACE LEON",
-    "fecha": "21 Jun 2026",
+    "fecha": "2026-06-21",
     "modalidad": "gravel",
     "tipo_prueba": "competicion",
     "ubicacion": "León",
@@ -2312,7 +2312,7 @@
   {
     "id": 106,
     "nombre": "MONCLOVA DESERT GRAVEL",
-    "fecha": "04 Oct 2026",
+    "fecha": "2026-10-04",
     "modalidad": "gravel",
     "tipo_prueba": "competicion",
     "ubicacion": "La Luisiana",
@@ -2334,7 +2334,7 @@
   {
     "id": 107,
     "nombre": "Montaltbike",
-    "fecha": "25 Jan 2026",
+    "fecha": "2026-01-25",
     "modalidad": "mtb",
     "tipo_prueba": "marcha",
     "ubicacion": "Sant Vicenç de Montalt",
@@ -2356,7 +2356,7 @@
   {
     "id": 108,
     "nombre": "Montefaro Enduro Race",
-    "fecha": "24 May 2026",
+    "fecha": "2026-05-24",
     "modalidad": "enduro",
     "tipo_prueba": "competicion",
     "ubicacion": "Ares / Mugardos",
@@ -2378,7 +2378,7 @@
   {
     "id": 109,
     "nombre": "MONTNEGRE MONTSENY GRAVEL GRINDER",
-    "fecha": "16 May 2026",
+    "fecha": "2026-05-16",
     "modalidad": "gravel",
     "tipo_prueba": "marcha",
     "ubicacion": "Santa Susanna, Maresme",
@@ -2400,7 +2400,7 @@
   {
     "id": 110,
     "nombre": "Montsec-Montsec",
-    "fecha": "16 May 2026",
+    "fecha": "2026-05-16",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Balaguer",
@@ -2422,7 +2422,7 @@
   {
     "id": 111,
     "nombre": "Marcha Cicloturista Pedro Delgado - La Perico",
-    "fecha": "28 Jun 2026",
+    "fecha": "2026-06-28",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Segovia",
@@ -2444,7 +2444,7 @@
   {
     "id": 112,
     "nombre": "Mussara 24h Circuit de Barcelona",
-    "fecha": "04 Jul 2026",
+    "fecha": "2026-07-04",
     "modalidad": "carretera",
     "tipo_prueba": "granfondo",
     "ubicacion": "Montmeló",
@@ -2466,7 +2466,7 @@
   {
     "id": 113,
     "nombre": "Mussara 24H Comunidad de Madrid",
-    "fecha": "11 Jul 2026",
+    "fecha": "2026-07-11",
     "modalidad": "carretera",
     "tipo_prueba": "granfondo",
     "ubicacion": "San Sebastián de los Reyes",
@@ -2488,7 +2488,7 @@
   {
     "id": 114,
     "nombre": "Mussara Salou Costa Daurada",
-    "fecha": "17 May 2026",
+    "fecha": "2026-05-17",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Salou",
@@ -2510,7 +2510,7 @@
   {
     "id": 115,
     "nombre": "Mussara Villanueva del Pardillo",
-    "fecha": "25 Oct 2026",
+    "fecha": "2026-10-25",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Villanueva del Pardillo",
@@ -2532,7 +2532,7 @@
   {
     "id": 116,
     "nombre": "Occident Bilbao Bilbao",
-    "fecha": "15 Mar 2026",
+    "fecha": "2026-03-15",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Bilbao",
@@ -2554,7 +2554,7 @@
   {
     "id": 117,
     "nombre": "Orbea Monegros",
-    "fecha": "25 Apr 2026",
+    "fecha": "2026-04-25",
     "modalidad": "mtb",
     "tipo_prueba": "marcha",
     "ubicacion": "Sariñena",
@@ -2576,7 +2576,7 @@
   {
     "id": 118,
     "nombre": "ORIGENEXT",
-    "fecha": "22 May 2026",
+    "fecha": "2026-05-22",
     "modalidad": "gravel",
     "tipo_prueba": "granfondo",
     "ubicacion": "Guijo de Granadilla",
@@ -2598,7 +2598,7 @@
   {
     "id": 119,
     "nombre": "Ourense Strade Termal",
-    "fecha": "26 Apr 2026",
+    "fecha": "2026-04-26",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Lobios",
@@ -2620,7 +2620,7 @@
   {
     "id": 120,
     "nombre": "Pontevedra 4 Picos Road (Clásica Evaristo Portela)",
-    "fecha": "10 May 2026",
+    "fecha": "2026-05-10",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Pontevedra",
@@ -2642,7 +2642,7 @@
   {
     "id": 121,
     "nombre": "Pravia Asturias Challenge",
-    "fecha": "16 May 2026",
+    "fecha": "2026-05-16",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Pravia",
@@ -2664,7 +2664,7 @@
   {
     "id": 122,
     "nombre": "Prueba BTT La San Antón de Jumilla",
-    "fecha": "25 Jan 2026",
+    "fecha": "2026-01-25",
     "modalidad": "mtb",
     "tipo_prueba": "competicion",
     "ubicacion": "Jumilla",
@@ -2686,7 +2686,7 @@
   {
     "id": 123,
     "nombre": "Ibercaja Quebrantahuesos by TotalEnergies",
-    "fecha": "20 Jun 2026",
+    "fecha": "2026-06-20",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Sabiñánigo",
@@ -2708,7 +2708,7 @@
   {
     "id": 124,
     "nombre": "Raia Gravel Race",
-    "fecha": "26 Sep 2026",
+    "fecha": "2026-09-26",
     "modalidad": "gravel",
     "tipo_prueba": "competicion",
     "ubicacion": "La Palma del Condado",
@@ -2730,7 +2730,7 @@
   {
     "id": 125,
     "nombre": "Rally BTT Ciudad de Coín",
-    "fecha": "13 Jun 2026",
+    "fecha": "2026-06-13",
     "modalidad": "mtb",
     "tipo_prueba": "competicion",
     "ubicacion": "Coin",
@@ -2752,7 +2752,7 @@
   {
     "id": 126,
     "nombre": "RANXO GRAVEL BY THE TRAKA",
-    "fecha": "07 Jun 2026",
+    "fecha": "2026-06-07",
     "modalidad": "gravel",
     "tipo_prueba": "competicion",
     "ubicacion": "Lleida",
@@ -2774,7 +2774,7 @@
   {
     "id": 127,
     "nombre": "Cabraloka / Reino de los Mallos Enduro MTB Race",
-    "fecha": "25 Apr 2026",
+    "fecha": "2026-04-25",
     "modalidad": "enduro",
     "tipo_prueba": "competicion",
     "ubicacion": "Ayerbe",
@@ -2840,7 +2840,7 @@
   {
     "id": 130,
     "nombre": "RURAL CYCLING GRAVEL",
-    "fecha": "07 Mar 2026",
+    "fecha": "2026-03-07",
     "modalidad": "gravel",
     "tipo_prueba": "marcha",
     "ubicacion": "Les Garrigues",
@@ -2862,7 +2862,7 @@
   {
     "id": 131,
     "nombre": "Ruta BTT – Zufre",
-    "fecha": "21 Nov 2026",
+    "fecha": "2026-11-21",
     "modalidad": "mtb",
     "tipo_prueba": "marcha",
     "ubicacion": "Zufre",
@@ -2884,7 +2884,7 @@
   {
     "id": 132,
     "nombre": "SATÉLITE NORTE TERUEL",
-    "fecha": "23 May 2026",
+    "fecha": "2026-05-23",
     "modalidad": "gravel",
     "tipo_prueba": "etapas",
     "ubicacion": "Griegos",
@@ -2906,7 +2906,7 @@
   {
     "id": 133,
     "nombre": "SB HOTELS LA GARBA",
-    "fecha": "27 Mar 2026",
+    "fecha": "2026-03-27",
     "modalidad": "gravel",
     "tipo_prueba": "etapas",
     "ubicacion": "L'Ampolla",
@@ -2928,7 +2928,7 @@
   {
     "id": 134,
     "nombre": "Sesé Bike Tour",
-    "fecha": "24 May 2026",
+    "fecha": "2026-05-24",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Urrea de Gaén",
@@ -2950,7 +2950,7 @@
   {
     "id": 135,
     "nombre": "Sierra de Alcaraz",
-    "fecha": "26 Apr 2026",
+    "fecha": "2026-04-26",
     "modalidad": "gravel",
     "tipo_prueba": "marcha",
     "ubicacion": "Alcaraz",
@@ -2972,7 +2972,7 @@
   {
     "id": 136,
     "nombre": "Sierra de Alcaraz",
-    "fecha": "26 Apr 2026",
+    "fecha": "2026-04-26",
     "modalidad": "mtb",
     "tipo_prueba": "marcha",
     "ubicacion": "Alcaraz",
@@ -2994,7 +2994,7 @@
   {
     "id": 137,
     "nombre": "Sierra Nevada Límite Gran Fondo",
-    "fecha": "11 Jul 2026",
+    "fecha": "2026-07-11",
     "modalidad": "carretera",
     "tipo_prueba": "granfondo",
     "ubicacion": "Cenes de la Vega",
@@ -3016,7 +3016,7 @@
   {
     "id": 138,
     "nombre": "Sotosalbos-Sotosalbos \"La Nico\"",
-    "fecha": "19 Jul 2026",
+    "fecha": "2026-07-19",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Sotosalbos",
@@ -3038,7 +3038,7 @@
   {
     "id": 139,
     "nombre": "Specialized 4 Cims",
-    "fecha": "28 Jun 2026",
+    "fecha": "2026-06-28",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Bagà",
@@ -3060,7 +3060,7 @@
   {
     "id": 140,
     "nombre": "The Capitals",
-    "fecha": "19 Jul 2026",
+    "fecha": "2026-07-19",
     "modalidad": "gravel",
     "tipo_prueba": "aventura",
     "ubicacion": "Barcelona",
@@ -3082,7 +3082,7 @@
   {
     "id": 141,
     "nombre": "Millars Gran Fondo",
-    "fecha": "22 Mar 2026",
+    "fecha": "2026-03-22",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Castellón de la Plana",
@@ -3104,7 +3104,7 @@
   {
     "id": 142,
     "nombre": "Tierra Estella Epic Gravel",
-    "fecha": "18 Apr 2026",
+    "fecha": "2026-04-18",
     "modalidad": "gravel",
     "tipo_prueba": "competicion",
     "ubicacion": "Villatuerta",
@@ -3126,7 +3126,7 @@
   {
     "id": 143,
     "nombre": "TIRRENO APOSTOL",
-    "fecha": "03 Jul 2026",
+    "fecha": "2026-07-03",
     "modalidad": "gravel",
     "tipo_prueba": "etapas",
     "ubicacion": "Santiago de Compostela",
@@ -3148,7 +3148,7 @@
   {
     "id": 144,
     "nombre": "TotalEnergies Gran Fondo Alberto Contador",
-    "fecha": "19 Sep 2026",
+    "fecha": "2026-09-19",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Oliva",
@@ -3170,7 +3170,7 @@
   {
     "id": 145,
     "nombre": "Tour Cycling Serranía Conquense \"Memorial Luis Ocaña\"",
-    "fecha": "24 May 2026",
+    "fecha": "2026-05-24",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Priego",
@@ -3192,7 +3192,7 @@
   {
     "id": 146,
     "nombre": "TOUR DE HIERRO",
-    "fecha": "25 Sep 2026",
+    "fecha": "2026-09-25",
     "modalidad": "carretera",
     "tipo_prueba": "etapas",
     "ubicacion": "Campo de Criptana",
@@ -3214,7 +3214,7 @@
   {
     "id": 147,
     "nombre": "TOUR DE HIERRO",
-    "fecha": "25 Sep 2026",
+    "fecha": "2026-09-25",
     "modalidad": "gravel",
     "tipo_prueba": "etapas",
     "ubicacion": "Campo de Criptana",
@@ -3236,7 +3236,7 @@
   {
     "id": 148,
     "nombre": "TOUR DE HIERRO",
-    "fecha": "25 Sep 2026",
+    "fecha": "2026-09-25",
     "modalidad": "gravel",
     "tipo_prueba": "etapas",
     "ubicacion": "Campo de Criptana",
@@ -3258,7 +3258,7 @@
   {
     "id": 149,
     "nombre": "TOUR DE HIERRO",
-    "fecha": "25 Sep 2026",
+    "fecha": "2026-09-25",
     "modalidad": "mtb",
     "tipo_prueba": "etapas",
     "ubicacion": "Campo de Criptana",
@@ -3280,7 +3280,7 @@
   {
     "id": 150,
     "nombre": "Transpyr Coast to Coast Gran Raid MTB",
-    "fecha": "31 May 2026",
+    "fecha": "2026-05-31",
     "modalidad": "mtb",
     "tipo_prueba": "aventura",
     "ubicacion": "Roses → Hondarribia",
@@ -3302,7 +3302,7 @@
   {
     "id": 151,
     "nombre": "TRANSPYR GRAVEL ADVENTURE",
-    "fecha": "30 May 2026",
+    "fecha": "2026-05-30",
     "modalidad": "gravel",
     "tipo_prueba": "etapas",
     "ubicacion": "Roses-Irún",
@@ -3324,7 +3324,7 @@
   {
     "id": 152,
     "nombre": "UCI GRAVEL WORLD SERIES - SEA OTTER EUROPE",
-    "fecha": "19 Sep 2026",
+    "fecha": "2026-09-19",
     "modalidad": "gravel",
     "tipo_prueba": "competicion",
     "ubicacion": "Girona",
@@ -3346,7 +3346,7 @@
   {
     "id": 153,
     "nombre": "Ultrabike Club Santa Rosa Lanzarote",
-    "fecha": "04 Jul 2026",
+    "fecha": "2026-07-04",
     "modalidad": "mtb",
     "tipo_prueba": "competicion",
     "ubicacion": "Teguise",
@@ -3368,7 +3368,7 @@
   {
     "id": 154,
     "nombre": "UTOPÍA GRAVEL",
-    "fecha": "04 Apr 2026",
+    "fecha": "2026-04-04",
     "modalidad": "gravel",
     "tipo_prueba": "etapas",
     "ubicacion": "Baza",
@@ -3390,7 +3390,7 @@
   {
     "id": 155,
     "nombre": "VI Enduro Monte Castelo Burela",
-    "fecha": "19 Apr 2026",
+    "fecha": "2026-04-19",
     "modalidad": "enduro",
     "tipo_prueba": "competicion",
     "ubicacion": "Burela",
@@ -3412,7 +3412,7 @@
   {
     "id": 156,
     "nombre": "VACALOURA GRAVEL",
-    "fecha": "28 Jun 2026",
+    "fecha": "2026-06-28",
     "modalidad": "gravel",
     "tipo_prueba": "marcha",
     "ubicacion": "Castro de Rei",
@@ -3434,7 +3434,7 @@
   {
     "id": 157,
     "nombre": "VII Maratón BTT de Cazalla de la Sierra",
-    "fecha": "25 Oct 2026",
+    "fecha": "2026-10-25",
     "modalidad": "mtb",
     "tipo_prueba": "competicion",
     "ubicacion": "Cazalla de la Sierra",
@@ -3456,7 +3456,7 @@
   {
     "id": 158,
     "nombre": "VIAEXTREMA 348",
-    "fecha": "02 May 2026",
+    "fecha": "2026-05-02",
     "modalidad": "gravel",
     "tipo_prueba": "granfondo",
     "ubicacion": "Baños de Montemayor",
@@ -3478,7 +3478,7 @@
   {
     "id": 159,
     "nombre": "La Desértica MTB",
-    "fecha": "17 Oct 2026",
+    "fecha": "2026-10-17",
     "modalidad": "mtb",
     "tipo_prueba": "marcha",
     "ubicacion": "Roquetas de Mar",
@@ -3500,7 +3500,7 @@
   {
     "id": 160,
     "nombre": "VIII Cicloturista La Rioja",
-    "fecha": "04 Jul 2026",
+    "fecha": "2026-07-04",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Logroño",
@@ -3522,7 +3522,7 @@
   {
     "id": 161,
     "nombre": "Villamanta MTB",
-    "fecha": "18 Jan 2026",
+    "fecha": "2026-01-18",
     "modalidad": "mtb",
     "tipo_prueba": "competicion",
     "ubicacion": "Villamanta",
@@ -3544,7 +3544,7 @@
   {
     "id": 162,
     "nombre": "Volta Cicloturista Internacional a Menorca",
-    "fecha": "23 Oct 2026",
+    "fecha": "2026-10-23",
     "modalidad": "carretera",
     "tipo_prueba": "etapas",
     "ubicacion": "Menorca",
@@ -3566,7 +3566,7 @@
   {
     "id": 163,
     "nombre": "Vuelta al Teide",
-    "fecha": "16 May 2026",
+    "fecha": "2026-05-16",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Puerto de la Cruz",
@@ -3588,7 +3588,7 @@
   {
     "id": 164,
     "nombre": "Vuelta Ciclista a Lanzarote",
-    "fecha": "03 Oct 2026",
+    "fecha": "2026-10-03",
     "modalidad": "carretera",
     "tipo_prueba": "etapas",
     "ubicacion": "Lanzarote",
@@ -3610,7 +3610,7 @@
   {
     "id": 165,
     "nombre": "Gran Canaria Bike Week",
-    "fecha": "29 Nov 2026",
+    "fecha": "2026-11-29",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Maspalomas",
@@ -3632,7 +3632,7 @@
   {
     "id": 166,
     "nombre": "Vuelta Cicloturista a Ibiza Campagnolo",
-    "fecha": "09 Oct 2026",
+    "fecha": "2026-10-09",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Ibiza",
@@ -3654,7 +3654,7 @@
   {
     "id": 167,
     "nombre": "Wineland Gravel Experience",
-    "fecha": "24 Oct 2026",
+    "fecha": "2026-10-24",
     "modalidad": "gravel",
     "tipo_prueba": "etapas",
     "ubicacion": "Requena",
@@ -3676,7 +3676,7 @@
   {
     "id": 168,
     "nombre": "Wineland Gravel Experience",
-    "fecha": "24 Oct 2026",
+    "fecha": "2026-10-24",
     "modalidad": "mtb",
     "tipo_prueba": "etapas",
     "ubicacion": "Requena",
@@ -3698,7 +3698,7 @@
   {
     "id": 169,
     "nombre": "XCO Rally Quintana de la Serena",
-    "fecha": "18 Jan 2026",
+    "fecha": "2026-01-18",
     "modalidad": "mtb",
     "tipo_prueba": "competicion",
     "ubicacion": "Quintana de la Serena",
@@ -3720,7 +3720,7 @@
   {
     "id": 170,
     "nombre": "XCO Resistencia Barlobike",
-    "fecha": "10 Jan 2026",
+    "fecha": "2026-01-10",
     "modalidad": "mtb",
     "tipo_prueba": "competicion",
     "ubicacion": "Barlovento",
@@ -3742,7 +3742,7 @@
   {
     "id": 171,
     "nombre": "XV Maratón BTT Sierra de Cazorla",
-    "fecha": "03 Oct 2026",
+    "fecha": "2026-10-03",
     "modalidad": "gravel",
     "tipo_prueba": "etapas",
     "ubicacion": "Tíscar",
@@ -3764,7 +3764,7 @@
   {
     "id": 172,
     "nombre": "XV Maratón BTT Sierra de Cazorla",
-    "fecha": "03 Oct 2026",
+    "fecha": "2026-10-03",
     "modalidad": "mtb",
     "tipo_prueba": "etapas",
     "ubicacion": "Tíscar",
@@ -3786,7 +3786,7 @@
   {
     "id": 173,
     "nombre": "XXII Marcha Comunitat Valenciana",
-    "fecha": "27 Sep 2026",
+    "fecha": "2026-09-27",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Bellreguard",
@@ -3808,7 +3808,7 @@
   {
     "id": 174,
     "nombre": "Gran Fondo Geoparque del Maestrazgo",
-    "fecha": "16 May 2026",
+    "fecha": "2026-05-16",
     "modalidad": "carretera",
     "tipo_prueba": "granfondo",
     "ubicacion": "Alcorisa",
@@ -3830,7 +3830,7 @@
   {
     "id": 175,
     "nombre": "Gran Fondo Geoparque del Maestrazgo",
-    "fecha": "16 May 2026",
+    "fecha": "2026-05-16",
     "modalidad": "carretera",
     "tipo_prueba": "granfondo",
     "ubicacion": "Alcorisa",
@@ -3852,7 +3852,7 @@
   {
     "id": 176,
     "nombre": "Gran Fondo Geoparque del Maestrazgo",
-    "fecha": "16 May 2026",
+    "fecha": "2026-05-16",
     "modalidad": "mtb",
     "tipo_prueba": "marcha",
     "ubicacion": "Alcorisa",
@@ -3874,7 +3874,7 @@
   {
     "id": 177,
     "nombre": "Gran Fondo Geoparque del Maestrazgo",
-    "fecha": "16 May 2026",
+    "fecha": "2026-05-16",
     "modalidad": "mtb",
     "tipo_prueba": "marcha",
     "ubicacion": "Alcorisa",
@@ -3896,7 +3896,7 @@
   {
     "id": 178,
     "nombre": "Gran Fondo Pico de las Nieves",
-    "fecha": "29 Nov 2026",
+    "fecha": "2026-11-29",
     "modalidad": "carretera",
     "tipo_prueba": "marcha",
     "ubicacion": "Arucas",
@@ -3918,7 +3918,7 @@
   {
     "id": 179,
     "nombre": "Tierra de Fronteras Medio Fondo",
-    "fecha": "09 Nov 2026",
+    "fecha": "2026-11-09",
     "modalidad": "mtb",
     "tipo_prueba": "marcha",
     "ubicacion": "Hellín",
